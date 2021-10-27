@@ -7,3 +7,33 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
+.common-gap{
+	padding: 50px 0px 0px 0px;
+}
+.appointment-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.single-appointment-section span {
+    text-align: center;
+    padding: 9px 0px;
+    display: inline-block;
+    font-size: 20px;
+}
+.single-appointment-section {
+    padding: 10px 10px;
+    background: #fff;
+    margin: 10px 10px;
+    max-width: 200px;
+    width: 100%;
+	transition: 0.5s;
+}
+.single-appointment-section:hover,.single-appointment-section:focus{
+	box-shadow: 0 0 10px rgb(0 0 0 / 12%);
+	transition: 0.5s;
+	background-color: #262d47;
+}
+.single-appointment-section:hover.single-appointment-section span,.single-appointment-section:hover.single-appointment-section h6{
+	color: #fff;
+	transition: 0.5s ease-in-out;
+}
