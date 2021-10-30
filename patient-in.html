@@ -178,15 +178,20 @@
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class="active">
-                    <a href="index.html"><i class="ft-calendar"></i><span class="menu-title"
-                            data-i18n="">Appointment</span></a>
+                    <a href="index.html">
+                        <i class="ft-calendar"></i>
+                        <span class="menu-title"data-i18n="">Appointment</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#"><i class="ft-user-plus"></i><span class="menu-title" data-i18n="">Patient
-                            Register</span></a>
+                    <a href="#">
+                        <i class="ft-user-plus"></i>
+                        <span class="menu-title" data-i18n="">Patient Register</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/patient-in.html"><i class="ft-droplet"></i><span class="menu-title"
+                    <a href="/patient-in.html">
+                        <i class="ft-droplet"></i><span class="menu-title"
                             data-i18n="">In-Patient</span></a>
                 </li>
                 <li class="nav-item">
@@ -240,7 +245,17 @@
     <div class="app-content content">
         <div class="content-wrapper">
             <div class="content-header row"></div>
-            <div class="content-body mt-5">
+            <div class="common-gap"></div>
+            <div class="table-top d-flex align-items-center justify-content-between mb-2">
+                <div class="table-top">
+                    <h4>All Patient</h4>
+                </div>
+                <div class="show-entry d-flex align-items-center">
+                    <label >Show Entries</label>
+                    <input type="text" class="custom-field" value="1">
+                </div>
+            </div>
+            <div class="content-body">
                 <table class="table table-bordered">
                     <thead>
                         <tr>

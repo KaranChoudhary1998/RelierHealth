@@ -11,8 +11,9 @@ body{
 	padding: 50px 0px 0px 0px;
 }
 .appointment-section {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .single-appointment-section span {
     text-align: center;
@@ -45,4 +46,18 @@ body{
     border-radius: 50%;
     margin-bottom: 10px;
     padding: 15px;
+}
+.show-entry label{
+    padding: 0px 8px 0px 0px;
+}
+.custom-field{
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    max-width: 100px;
+}
+
+@media only screen and (max-width: 992px) {
+.single-appointment-section {
+    max-width: 100%;
+}
 }
