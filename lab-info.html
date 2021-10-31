@@ -5,69 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <title>Relier Health</title>
+    <title>Relier Medical</title>
     <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico" />
     <link
         href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- BEGIN VENDOR CSS-->
+    <!-- Start VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css" />
-    <link rel="stylesheet" type="text/css" href="theme-assets/vendors/css/charts/chartist.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="theme-assets/vendors/css/charts/chartist.css" /> -->
     <!-- END VENDOR CSS-->
-    <!-- BEGIN Relier Website  CSS-->
+
+    <!-- Start Relier Website  CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css" />
     <!-- END Relier Website  CSS-->
-    <!-- BEGIN Page Level CSS-->
+
+    <!-- Start Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/css/pages/dashboard-ecommerce.css" />
     <!-- END Page Level CSS-->
-    <!-- BEGIN Custom CSS-->
-    <!-- END Custom CSS-->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
 </head>
-<style>
-    .content-body {
-        overflow-x: auto;
-    }
-
-    .content-body table {
-        background-color: #fff;
-    }
-
-    .table_icons {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .table_icons span {
-        height: 28px;
-        width: 28px;
-        font-size: 12px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .table_icons .icn1 {
-        background-color: #11cf89;
-    }
-
-    .table_icons .icn2 {
-        background-color: #fbbf3a;
-    }
-
-    .table_icons .icn3 {
-        background-color: #e54934;
-    }
-</style>
 
 <body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
     data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
@@ -147,7 +109,7 @@
                                     <a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
                                     <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Task</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
+                                    <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Logout</a>
                                 </div>
                             </div>
                         </li>
@@ -283,119 +245,59 @@
         <div class="content-wrapper">
             <div class="content-header row"></div>
             <div class="common-gap"></div>
-            <div class="table-top d-flex align-items-center justify-content-between mb-2">
-                <div class="table-top">
-                    <h4>All Patient</h4>
+            <div class="appointment-section">
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/quick_request.svg">
+                    <h6>Quick Request Entry</h6>
                 </div>
-                <div class="show-entry d-flex align-items-center">
-                    <label>Show Entries</label>
-                    <input type="text" class="custom-field" value="1">
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/request_entry.svg">
+                    <h6>Request Entry</h6>
                 </div>
-            </div>
-            <div class="content-body">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">
-                                <div>
-                                    <span>ID</span>
-                                    <span></span>
-                                </div>
-                            </th>
-                            <th scope="col">Patient Name</th>
-                            <th scope="col">Phone</th>
-                            <th scope="col">Blood Group</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>123456897</td>
-                            <td>A+</td>
-                            <td>20 Sep 2021</td>
-                            <td>
-                                <div class="table_icons">
-                                    <span class="icn1"><i class="fal fa-eye"></i></span>
-                                    <span class="icn2"><i class="fas fa-pencil"></i></span>
-                                    <span class="icn3"><i class="fas fa-trash"></i></span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>123456897</td>
-                            <td>B+</td>
-                            <td>20 Sep 2021</td>
-                            <td>
-                                <div class="table_icons">
-                                    <span class="icn1"><i class="fal fa-eye"></i></span>
-                                    <span class="icn2"><i class="fas fa-pencil"></i></span>
-                                    <span class="icn3"><i class="fas fa-trash"></i></span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry the Bird</td>
-                            <td>123456897</td>
-                            <td>AB+</td>
-                            <td>20 Sep 2021</td>
-                            <td>
-                                <div class="table_icons">
-                                    <span class="icn1"><i class="fal fa-eye"></i></span>
-                                    <span class="icn2"><i class="fas fa-pencil"></i></span>
-                                    <span class="icn3"><i class="fas fa-trash"></i></span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Larry the Bird</td>
-                            <td>123456897</td>
-                            <td>AB+</td>
-                            <td>20 Sep 2021</td>
-                            <td>
-                                <div class="table_icons">
-                                    <span class="icn1"><i class="fal fa-eye"></i></span>
-                                    <span class="icn2"><i class="fas fa-pencil"></i></span>
-                                    <span class="icn3"><i class="fas fa-trash"></i></span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Larry the Bird</td>
-                            <td>123456897</td>
-                            <td>AB+</td>
-                            <td>20 Sep 2021</td>
-                            <td>
-                                <div class="table_icons">
-                                    <span class="icn1"><i class="fal fa-eye"></i></span>
-                                    <span class="icn2"><i class="fas fa-pencil"></i></span>
-                                    <span class="icn3"><i class="fas fa-trash"></i></span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Larry the Bird</td>
-                            <td>123456897</td>
-                            <td>AB+</td>
-                            <td>20 Sep 2021</td>
-                            <td>
-                                <div class="table_icons">
-                                    <span class="icn1"><i class="fal fa-eye"></i></span>
-                                    <span class="icn2"><i class="fas fa-pencil"></i></span>
-                                    <span class="icn3"><i class="fas fa-trash"></i></span>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/workflow.svg">
+                    <h6>Work Flow</h6>
+                </div>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/patient_edit.svg">
+                    <h6>Patient Edit</h6>
+                </div>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/doctor_edit.svg">
+                    <h6>Doctor Edit</h6>
+                </div>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/spec_labels.svg">
+                    <h6>Spec/Labels</h6>
+                </div>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/view_result.svg">
+                    <h6>View Results</h6>
+                </div>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/online_orders.svg">
+                    <h6>Online Orders</h6>
+                </div>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/results_editor.svg">
+                    <h6>Results Editor</h6>
+                </div>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/patient_reports.svg">
+                    <h6>Pateint Reports</h6>
+                </div>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/doctor_reports.svg">
+                    <h6>Doctor Reports</h6>
+                </div>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/view_log.svg">
+                    <h6>View HL7 Log</h6>
+                </div>
+                <div class="single-appointment-section">
+                    <img src="theme-assets/images/image_viewer.svg">
+                    <h6>Image Viewer</h6>
+                </div>
             </div>
         </div>
     </div>
@@ -412,22 +314,22 @@
         </div>
     </footer>
 
-   <!-- BEGIN VENDOR JS-->
-   <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
-   <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN VENDOR JS-->
+    <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+    <!-- BEGIN VENDOR JS-->
 
-   <!-- BEGIN PAGE VENDOR JS-->
-   <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
-   <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
+    <!-- END PAGE VENDOR JS-->
 
-   <!-- BEGIN Relier Website  JS-->
-   <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
-   <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
-   <!-- END Relier Website  JS-->
+    <!-- BEGIN Relier Website  JS-->
+    <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
+    <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
+    <!-- END Relier Website  JS-->
 
-   <!-- BEGIN PAGE LEVEL JS-->
-   <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
-   <!-- END PAGE LEVEL JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
+    <!-- END PAGE LEVEL JS-->
 </body>
 
 </html>
