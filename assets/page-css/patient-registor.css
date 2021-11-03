@@ -29,7 +29,7 @@
   display: none;
 }
 
-.patient_registor #msform input {
+.patient_registor #msform input, .patient_registor #msform select {
   padding: 8px 15px 8px 15px;
   border: 1px solid #ccc;
   border-radius: 0px;
@@ -44,7 +44,7 @@
   letter-spacing: 1px;
 }
 
-.patient_registor #msform input:focus {
+.patient_registor #msform input:focus, .patient_registor #msform select:focus {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   border: 1px solid #fa7179;
