@@ -8,6 +8,10 @@
   font-weight: normal;
 }
 
+.patient_registor ul {
+  padding: 0;
+}
+
 .patient_registor #msform {
   text-align: center;
   position: relative;
@@ -29,7 +33,8 @@
   display: none;
 }
 
-.patient_registor #msform input, .patient_registor #msform select {
+.patient_registor #msform input,
+.patient_registor #msform select {
   padding: 8px 15px 8px 15px;
   border: 1px solid #ccc;
   border-radius: 0px;
@@ -44,7 +49,8 @@
   letter-spacing: 1px;
 }
 
-.patient_registor #msform input:focus, .patient_registor #msform select:focus {
+.patient_registor #msform input:focus,
+.patient_registor #msform select:focus {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   border: 1px solid #fa7179;
@@ -164,7 +170,7 @@
 .patient_registor #progressbar li {
   list-style-type: none;
   font-size: 15px;
-  width: 25%;
+  width: 20%;
   float: left;
   position: relative;
   font-weight: 400;
@@ -202,12 +208,16 @@
   content: "2";
 }
 
-.patient_registor #progressbar #payment::before {
+.patient_registor #progressbar #insurance::before {
   content: "3";
 }
 
-.patient_registor #progressbar #confirm::before {
+.patient_registor #progressbar #social::before {
   content: "4";
+}
+
+.patient_registor #progressbar #confirm::before {
+  content: "5";
 }
 
 .patient_registor #progressbar li.active::before {
@@ -234,5 +244,47 @@
 
 #msform .action-button-previous:focus {
   background-color: #000000;
+}
+
+@media screen and (max-width: 576px) {
+  .patient_registor .card {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .patient_registor #progressbar li {
+    font-size: 14px;
+  }
+  .patient_registor #progressbar li strong {
+    font-weight: 400;
+  }
+  .patient_registor #progressbar li::after {
+    top: 20px;
+  }
+  .patient_registor #progressbar li::before {
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .patient_registor #heading {
+    font-size: 20px;
+  }
+  .patient_registor #progressbar {
+    margin-bottom: 15px;
+  }
+  .patient_registor #progressbar li {
+    width: 33.3%;
+    margin-bottom: 10px;
+  }
+  .patient_registor #progressbar li::after {
+    display: none;
+  }
+  .patient_registor #progressbar li::before {
+    margin-bottom: 0px;
+  }
 }
 /*# sourceMappingURL=patient-registor.css.map */
