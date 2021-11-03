@@ -196,3 +196,29 @@ body{
     text-align: center;
     color: #f00;
 }
+
+/* =====insurance management page========== */
+.patient_form h2{
+    margin-bottom: 30px;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #fff;
+    border-color: #babfc7 #626e82 #fa7179;
+    background-color: #fa7179;
+}
+.nav-link {
+    color: #1d2336;
+}
+.nav-link:hover {
+    color: #1d2336;
+}
+.add_patient{
+    background-color: unset;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.add_patient i{
+    font-size: 20px;
+    margin-left: 9px;
+}

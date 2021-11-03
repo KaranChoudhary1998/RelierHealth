@@ -12,22 +12,17 @@
     <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/vendors/css/charts/chartist.css" />
     <!-- END VENDOR CSS-->
-    
     <!-- Start Relier Website  CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css" />
     <!-- END Relier Website  CSS-->
-
     <!-- Start Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/css/pages/dashboard-ecommerce.css" />
     <!-- END Page Level CSS-->
-    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
     <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
 </head>
-
 <body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
     data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
     <!-- fixed-top-->
@@ -115,9 +110,7 @@
             </div>
         </div>
     </nav>
-
     <!-- Sidebar-Code-Star-->
-
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true"
     data-img="theme-assets/images/backgrounds/02.jpg">
     <div class="navbar-header">
@@ -238,101 +231,94 @@
     <a class="btn btn-danger btn-block btn-glow btn-upgrade-pro mx-1" href="#">Relier Health</a>
     <div class="navigation-background"></div>
 </div>
-
-
-
     <div class="app-content content">
         <div class="content-wrapper">
             <div class="content-header row"></div>
             <div class="common-gap"></div>
-
             <div class="ot-booking">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#ot-booking">OT BOOKING</a>
+                        <a class="nav-link active" data-toggle="tab" href="#addPatient">Add Patient</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#operation-theatre">OPERATION THEATRE</a>
+                        <a class="nav-link" data-toggle="tab" href="#managePatient">Manage Patient</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#surgery-reports">SURGERY REPORTS</a>
+                        <a class="nav-link" data-toggle="tab" href="#manageDoctor">Manage Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#ManageTest">Manage Tests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Master Data</a>
                     </li>
                 </ul>
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div class="tab-pane active" id="ot-booking">
-                        <div class="ot-booking-top-bar mt-2 text-right">
-                            <button class="btn btn-secondary">New Booking</button>
+                        <div class="my-md-3 mt-1">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <label>Filter date:</label>
+                                            <input type="date" class="form-control" placeholder="Enter patient name" id="start-date">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label>Find patient ref:</label>
+                                            <input type="text" class="form-control" placeholder="Enter value" id="start-date">
+                                        </div>
+                                        <div class="col-lg-6 mt-1">
+                                            <button class="btn btn-primary">Find Lab</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <button class="btn add_patient">Add Patient <i class="fas fa-plus-square"></i></button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ot-booking-form">
+                        <div class="ot-booking-form patient_form">
+                            <h2>Patient Lab Order Form</h2>
                             <form  action="/action_page.php">
                                 <div class="row">
                                     <div class="col-lg-6 mb-2">
-                                        <label for="operation-theatre">Booking ID:</label>
-                                        <input type="text" class="form-control" placeholder="Booking ID" id="booking-id">
+                                        <label for="operation-theatre">Find patient ref:</label>
+                                        <input type="text" class="form-control" placeholder="Enter patient name" id="start-date">
                                     </div>
                                     <div class="col-lg-6 mb-2">
-                                        <div class="upload_file">
-                                            <main class="main_full">
-                                                <div class="upload_file-data">
-                                                    <div class="panel">
-                                                        <div class="button_outer">
-                                                            <div class="btn_upload">
-                                                                <input type="file" id="upload_file" name="">
-                                                                <i class="fas fa-camera"></i>
-                                                            </div>
-                                                            <div class="processing_bar"></div>
-                                                            <div class="success_box"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="error_msg"></div>
-                                                    <div class="uploaded_file_view" id="uploaded_view">
-                                                        <span class="file_remove">X</span>
-                                                    </div>
-                                                </div>
-                                            </main>
-                                        </div>
+                                        <label for="start-date">Patient name:</label>
+                                        <input type="text" class="form-control" placeholder="Enter patient name" id="start-date">
                                     </div>
                                     <div class="col-lg-6 mb-2">
-                                        <label for="operation-theatre">Operation Theatre:</label>
+                                        <label for="start-date">Gender:</label>
                                         <select class="form-control">
-                                            <option>Select</option>
+                                            <option disabled selected>Select Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>other</option>
                                         </select>
                                     </div>
                                     <div class="col-lg-6 mb-2">
-                                        <label for="start-date">Start Date:</label>
-                                        <input type="text" class="form-control" placeholder="Start Date" id="start-date">
+                                        <label for="start-date">Age:</label>
+                                        <input type="text" class="form-control" placeholder="Enter patient age" id="start-date">
                                     </div>
                                     <div class="col-lg-6 mb-2">
-                                        <label for="operation-theatre">Patient:</label>
-                                        <select class="form-control">
-                                            <option>Select</option>
-                                        </select>
+                                        <label for="start-date">Dr. referred by:</label>
+                                        <input type="text" class="form-control" placeholder="Enter doctor name" id="start-date">
                                     </div>
                                     <div class="col-lg-6 mb-2">
-                                        <label for="start-date">End Date:</label>
-                                        <input type="text" class="form-control" placeholder="Start Date" id="start-date">
+                                        <label for="start-date">Date of birth:</label>
+                                        <input type="date" class="form-control" placeholder="Start Date" id="start-date">
                                     </div>
                                     <div class="col-lg-6 mb-2">
-                                        <label>Surgery Template:</label>
-                                        <select class="form-control">
-                                            <option>Select</option>
-                                        </select>
+                                        <label for="start-time">Address:</label>
+                                        <input type="text" class="form-control" placeholder="Write address here" id="start-time">
                                     </div>
                                     <div class="col-lg-6 mb-2">
-                                        <label for="start-time">Start Time:</label>
-                                        <input type="text" class="form-control" placeholder="Start Time" id="start-time">
-                                    </div>
-                                    <div class="col-lg-6 mb-2">
-                                        <label>Surgery Procedure:</label>
-                                        <select class="form-control">
-                                            <option>Select</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 mb-2">
-                                        <label for="end-time">End Time:</label>
-                                        <input type="text" class="form-control" placeholder="End Time" id="end-time">
+                                        <label for="end-time">Emirates ID:</label>
+                                        <input type="text" class="form-control" placeholder="Enter emirates id here" id="end-time">
                                     </div>
                                     <div class="col-lg-12 text-right">
                                         <button type="submit" class="btn btn-primary">Submit</button>          
@@ -347,14 +333,7 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
     <!-- ////////////////////////////////////////////////////////////////////////////-->
-
     <footer class="footer footer-static footer-light navbar-border navbar-shadow">
         <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
             <span class="float-md-left d-block d-md-inline-block">2021 &copy; Copyright <a
@@ -365,24 +344,19 @@
             </ul>
         </div>
     </footer>
-
     <!-- BEGIN VENDOR JS-->
     <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
-
     <!-- BEGIN PAGE VENDOR JS-->
     <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
     <!-- END PAGE VENDOR JS-->
-
     <!-- BEGIN Relier Website  JS-->
     <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
     <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
     <!-- END Relier Website  JS-->
-
     <!-- BEGIN PAGE LEVEL JS-->
     <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
     <!-- END PAGE LEVEL JS-->
-
     <script>
         var btnUpload = $("#upload_file"),
         btnOuter = $(".button_outer");
@@ -410,5 +384,4 @@
         });
     </script>
 </body>
-
 </html>

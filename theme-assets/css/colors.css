@@ -862,12 +862,12 @@ input:focus ~ .bg-primary
 
 .primary
 {
-    color: #6967ce !important;
+    color: #fa7179 !important;
 }
 
 .bg-primary
 {
-    background-color: #6967ce !important;
+    background-color: #fa7179 !important;
 }
 .bg-primary .card-header,
 .bg-primary .card-footer
@@ -883,7 +883,7 @@ input:focus ~ .bg-primary
 body.vertical-layout[data-color=bg-primary] .navbar-container,
 body.vertical-layout[data-color=bg-primary] .content-wrapper-before
 {
-    background-color: #6967ce !important;
+    background-color: #fa7179 !important;
 }
 
 body.horizontal-layout[data-color=bg-primary] .navbar-horizontal
@@ -893,12 +893,12 @@ body.horizontal-layout[data-color=bg-primary] .navbar-horizontal
 
 body.horizontal-layout[data-color=bg-primary] .content-wrapper-before
 {
-    background-color: #6967ce !important;
+    background-color: #fa7179 !important;
 }
 
 .selectboxit.selectboxit-btn.bg-primary
 {
-    background-color: #6967ce !important;
+    background-color: #fa7179 !important;
 }
 
 .alert-primary
@@ -914,12 +914,12 @@ body.horizontal-layout[data-color=bg-primary] .content-wrapper-before
 
 .border-primary
 {
-    border-color: #6967ce;
+    border-color: #fa7179;
 }
 
 .overlay-primary
 {
-    background: #6967ce;
+    background: #fa7179;
     /* The Fallback */
     background: rgba(105, 103, 206, .8);
 }
@@ -927,13 +927,14 @@ body.horizontal-layout[data-color=bg-primary] .content-wrapper-before
 .btn-primary
 {
     color: #fff; 
-    background-color: #6967ce;
+    background-color: #fa7179;
+    border-color: #fa7179;
 }
 .btn-primary:hover
 {
     color: #fff; 
-    border-color: #7473d2;
-    background-color: #7473d2;
+    border-color: #e85b64;
+    background-color: #e85b64;
     -webkit-box-shadow: 0 1px 2px 0 rgba(105, 103, 206, .451), 0 1px 3px 1px rgba(105, 103, 206, .302);
             box-shadow: 0 1px 2px 0 rgba(105, 103, 206, .451), 0 1px 3px 1px rgba(105, 103, 206, .302);
 }
@@ -941,8 +942,8 @@ body.horizontal-layout[data-color=bg-primary] .content-wrapper-before
 .btn-primary:active
 {
     color: #fff; 
-    border-color: #7473d2;
-    background-color: #7473d2;
+    border-color: #e85b64;
+    background-color: #e85b64;
     -webkit-box-shadow: 0 1px 2px 0 rgba(105, 103, 206, .451), 0 1px 3px 1px rgba(105, 103, 206, .302) !important;
             box-shadow: 0 1px 2px 0 rgba(105, 103, 206, .451), 0 1px 3px 1px rgba(105, 103, 206, .302) !important;
 }
@@ -955,14 +956,14 @@ body.horizontal-layout[data-color=bg-primary] .content-wrapper-before
 
 .btn-outline-primary
 {
-    color: #6967ce; 
-    border-color: #6967ce;
+    color: #fa7179; 
+    border-color: #fa7179;
     background-color: transparent;
 }
 .btn-outline-primary:hover
 {
     color: #fff !important; 
-    background-color: #6967ce;
+    background-color: #fa7179;
     -webkit-box-shadow: 0 1px 2px 0 rgba(105, 103, 206, .451), 0 1px 3px 1px rgba(105, 103, 206, .302) !important;
             box-shadow: 0 1px 2px 0 rgba(105, 103, 206, .451), 0 1px 3px 1px rgba(105, 103, 206, .302) !important;
 }
@@ -975,7 +976,7 @@ body.horizontal-layout[data-color=bg-primary] .content-wrapper-before
 input[type='checkbox'].bg-primary + .custom-control-label:before,
 input[type='radio'].bg-primary + .custom-control-label:before
 {
-    background-color: #6967ce !important;
+    background-color: #fa7179 !important;
 }
 
 /* .custom-control-label{
@@ -985,33 +986,33 @@ input[type='radio'].bg-primary + .custom-control-label:before
       } */
 input:focus ~ .bg-primary
 {
-    -webkit-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .21rem #6967ce !important;
-            box-shadow: 0 0 0 .075rem #fff, 0 0 0 .21rem #6967ce !important;
+    -webkit-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .21rem #fa7179 !important;
+            box-shadow: 0 0 0 .075rem #fff, 0 0 0 .21rem #fa7179 !important;
 }
 
 .border-primary
 {
-    border: 1px solid #6967ce !important;
+    border: 1px solid #fa7179 !important;
 }
 
 .border-top-primary
 {
-    border-top: 1px solid #6967ce;
+    border-top: 1px solid #fa7179;
 }
 
 .border-bottom-primary
 {
-    border-bottom: 1px solid #6967ce;
+    border-bottom: 1px solid #fa7179;
 }
 
 .border-left-primary
 {
-    border-left: 1px solid #6967ce;
+    border-left: 1px solid #fa7179;
 }
 
 .border-right-primary
 {
-    border-right: 1px solid #6967ce;
+    border-right: 1px solid #fa7179;
 }
 
 .primary.darken-1
