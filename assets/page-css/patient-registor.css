@@ -1,205 +1,238 @@
-.patient_registor{
-    text-align: center;
+.patient_registor {
+  text-align: center;
 }
+
 .patient_registor #heading {
-    text-transform: uppercase;
-    color: #fa7179;
-    font-weight: normal
+  text-transform: uppercase;
+  color: #fa7179;
+  font-weight: normal;
 }
 
 .patient_registor #msform {
-    text-align: center;
-    position: relative;
-    margin-top: 20px
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
 }
 
 .patient_registor #msform fieldset {
-    /* background: white; */
-    border: 0 none;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
-    position: relative
-}
-
-.patient_registor .form-card {
-    text-align: left
+  border: 0 none;
+  border-radius: 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
 }
 
 .patient_registor #msform fieldset:not(:first-of-type) {
-    display: none
+  display: none;
 }
 
-.patient_registor #msform input,
+.patient_registor #msform input {
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #2c3e50;
+  background-color: #eceff1;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.patient_registor #msform input:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #fa7179;
+  outline-width: 0;
+}
+
 .patient_registor #msform textarea {
-    padding: 8px 15px 8px 15px;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    margin-bottom: 25px;
-    margin-top: 2px;
-    width: 100%;
-    box-sizing: border-box;
-    color: #2C3E50;
-    background-color: #ECEFF1;
-    font-size: 16px;
-    letter-spacing: 1px
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #2c3e50;
+  background-color: #eceff1;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
-.patient_registor #msform input:focus,
 .patient_registor #msform textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #fa7179;
-    outline-width: 0
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #fa7179;
+  outline-width: 0;
 }
 
 .patient_registor #msform .action-button {
-    width: 100px;
-    background: #fa7179;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 0px 10px 5px;
-    float: right
+  width: 100px;
+  background: #fa7179;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right;
 }
 
-.patient_registor #msform .action-button:hover,
+.patient_registor #msform .action-button:hover {
+  background-color: #311b92;
+}
+
 .patient_registor #msform .action-button:focus {
-    background-color: #311B92
+  background-color: #311b92;
 }
 
 .patient_registor #msform .action-button-previous {
-    width: 100px;
-    background: #616161;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px 10px 0px;
-    float: right
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
 }
 
-.patient_registor #msform .action-button-previous:hover,
-#msform .action-button-previous:focus {
-    background-color: #000000
+.patient_registor #msform .action-button-previous:hover {
+  background-color: #000000;
+}
+
+.patient_registor .form-card {
+  text-align: left;
 }
 
 .patient_registor .card {
-    z-index: 0;
-    border: none;
-    position: relative;
-    background-color: transparent;
-    padding: 3rem;
-    box-shadow: none;
+  z-index: 0;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  padding: 3rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .patient_registor .fs-title {
-    font-size: 25px;
-    color: #fa7179;
-    margin-bottom: 15px;
-    font-weight: normal;
-    text-align: left
+  font-size: 25px;
+  color: #fa7179;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left;
 }
 
 .patient_registor .purple-text {
-    color: #fa7179;
-    font-weight: normal
+  color: #fa7179;
+  font-weight: normal;
 }
 
 .patient_registor .steps {
-    font-size: 25px;
-    color: gray;
-    margin-bottom: 10px;
-    font-weight: normal;
-    text-align: right
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right;
 }
 
 .patient_registor .fieldlabels {
-    color: gray;
-    text-align: left
+  color: gray;
+  text-align: left;
 }
 
 .patient_registor #progressbar {
-    margin-bottom: 30px;
-    overflow: hidden;
-    color: lightgrey
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
 }
 
 .patient_registor #progressbar .active {
-    color: #fa7179
+  color: #fa7179;
 }
 
 .patient_registor #progressbar li {
-    list-style-type: none;
-    font-size: 15px;
-    width: 25%;
-    float: left;
-    position: relative;
-    font-weight: 400
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400;
 }
 
-.patient_registor #progressbar #account:before {
-    content: "\f13e"
+.patient_registor #progressbar li::before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
 }
 
-.patient_registor #progressbar #personal:before {
-    content: "\f007"
+.patient_registor #progressbar li::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
 }
 
-.patient_registor #progressbar #payment:before {
-    content: "\f030"
+.patient_registor #progressbar #account::before {
+  content: "1";
 }
 
-.patient_registor #progressbar #confirm:before {
-    content: "\f00c"
+.patient_registor #progressbar #personal::before {
+  content: "2";
 }
 
-.patient_registor #progressbar li:before {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    display: block;
-    font-size: 20px;
-    color: #ffffff;
-    background: lightgray;
-    border-radius: 50%;
-    margin: 0 auto 10px auto;
-    padding: 2px
+.patient_registor #progressbar #payment::before {
+  content: "3";
 }
 
-.patient_registor #progressbar li:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: lightgray;
-    position: absolute;
-    left: 0;
-    top: 25px;
-    z-index: -1
+.patient_registor #progressbar #confirm::before {
+  content: "4";
 }
 
-.patient_registor #progressbar li.active:before,
-.patient_registor #progressbar li.active:after {
-    background: #fa7179
+.patient_registor #progressbar li.active::before {
+  background: #fa7179;
+}
+
+.patient_registor #progressbar li.active::after {
+  background: #fa7179;
 }
 
 .patient_registor .progress {
-    height: 20px
+  height: 20px;
 }
 
 .patient_registor .progress-bar {
-    background-color: #fa7179
+  background-color: #fa7179;
 }
 
 .patient_registor .fit-image {
-    width: 100%;
-    object-fit: cover
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
+#msform .action-button-previous:focus {
+  background-color: #000000;
+}
+/*# sourceMappingURL=patient-registor.css.map */
