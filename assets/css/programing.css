@@ -222,3 +222,16 @@ body{
     font-size: 20px;
     margin-left: 9px;
 }
+
+/* ========edit profile====== */
+
+.edit_profile{
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.3);
+}
+.edit_profile h2{
+    padding-bottom: 20px;
+}
