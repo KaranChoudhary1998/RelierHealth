@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Relier Medical</title>
+    <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
+        rel="stylesheet" />
+    <!-- Start VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/vendors/css/charts/chartist.css" />
+    <!-- END VENDOR CSS-->
+
+    <!-- Start Relier Website  CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css" />
+    <!-- END Relier Website  CSS-->
+
+    <!-- Start Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/pages/dashboard-ecommerce.css" />
+    <!-- END Page Level CSS-->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
+    <link rel="stylesheet" href="assets/page-css/admin_global.css">
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
+    data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
+    <!-- fixed-top-->
+    <nav
+        class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse show" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-block d-md-none">
+                            <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a>
+                        </li>
+                        <li class="nav-item dropdown navbar-search">
+                            <a class="nav-link dropdown-toggle hide" data-toggle="dropdown" href="#"><i
+                                    class="ficon ft-search"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="arrow_box">
+                                    <form>
+                                        <div class="input-group search-box">
+                                            <div class="position-relative has-icon-right full-width">
+                                                <input class="form-control" id="search" type="text"
+                                                    placeholder="Search here..." />
+                                                <div class="form-control-position navbar-search-close"><i class="ft-x">
+                                                    </i></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-language nav-item">
+                            <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="flag-icon flag-icon-us"></i><span class="selected-language"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+                                <div class="arrow_box">
+                                    <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-us"></i>English</a>
+                                    <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-es"></i>Arabic</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-notification nav-item">
+                            <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-mail">
+                                </i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="arrow_box_right">
+                                    <a class="dropdown-item" href="#"><i class="ft-book"></i> Read Mail</a><a
+                                        class="dropdown-item" href="#"><i class="ft-bookmark"></i> Read Later</a>
+                                    <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Mark all Read </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <span class="avatar avatar-online">
+                                    <img src="theme-assets/images/user.webp" alt="avatar" /><i></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="arrow_box_right">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="avatar avatar-online"><img
+                                                src="theme-assets/images/portrait/small/avatar-s-19.png"
+                                                alt="avatar" /><span class="user-name text-bold-700 ml-1">Dr.
+                                                Praveen</span></span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
+
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar-Code-Star-->
+
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true"
+        data-img="theme-assets/images/backgrounds/02.jpg">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="brand-logo" alt="Relier Website admin logo"
+                            src="theme-assets/images/logo/logo.png" />
+                        <h3 class="brand-text">Relier Health</h3>
+                    </a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <a class="nav-link close-navbar"><i class="ft-x"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="nav-item">
+                    <a><i class="ft-calendar"></i><span class="menu-title" data-i18n="">Appointment</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="index.html">Appointment</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-user-plus"></i><span class="menu-title" data-i18n="">Patient Register</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="patient-registration.html">Patient Register</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-droplet"></i><span class="menu-title" data-i18n="">In-Patient</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="patient-in.html">In-Patient</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-layers"></i><span class="menu-title" data-i18n="">Out-Patient</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="index.html">Out-Patient</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-box"></i><span class="menu-title" data-i18n="">Laboratory</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="lab-info.html">Laboratory</a></li>
+                        <li><a href="laboratory-information.html">Laboratory Information</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-bold"></i><span class="menu-title" data-i18n="">Radiology</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="radiology-system.html">Radiology</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Insurance</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="insurance-management.html">Insurance</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-layout"></i><span class="menu-title" data-i18n="">Forms</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="index.html">Forms</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-layout"></i><span class="menu-title" data-i18n="">Billing</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="index.html">Billing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-layout"></i><span class="menu-title" data-i18n="">OT Booking</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="ot-booking.html">OT Booking</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-layout"></i><span class="menu-title" data-i18n="">Procedure</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="index.html">Procedure</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-layout"></i><span class="menu-title" data-i18n="">Administration</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="index.html">Administration</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-layout"></i><span class="menu-title" data-i18n="">Report</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="index.html">Report</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-layout"></i><span class="menu-title" data-i18n="">Users</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="index.html">Users</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-layout"></i><span class="menu-title" data-i18n="">Data</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="index.html">Data</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a><i class="ft-layout"></i><span class="menu-title" data-i18n="">Marketing</span></a>
+                    <ul class="drop_menu">
+                        <li><a href="index.html">Marketing</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <a class="btn btn-danger btn-block btn-glow btn-upgrade-pro mx-1" href="#">Relier Health</a>
+        <div class="navigation-background"></div>
+    </div>
+
+    <!-- Sidebar-Code-Star end-->
+
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row"></div>
+            <!-- <div class="common-gap"></div> -->
+            <div class="admin_global">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#appearance">Appearance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#managePatient">Locale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#manageDoctor">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#ManageTest">Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Billing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">E-Sign</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Insurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Security</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">CDR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Logging</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Miscellaneous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Portal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Connectors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">Rx</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#masterData">PDF</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="appearance">
+                        <div class="page_heading">
+                            <h2>Appearance</h2>
+                        </div>
+                        <div class="admin_global_content">
+                            <div class="admin_global_stripe">
+                                <h6>Main Top Pane Screen(Or Default First Tab)</h6>
+                                <div class="form_field">
+                                    <select class="form-control" name="form_0" id="form_0">
+                                        <option selected>Calendar Screen</option>
+                                        <option>Patient Search/Add Screen</option>
+                                        <option>Patient Finder Screen</option>
+                                        <option>Patient Flow Board</option>
+                                        <option>Messages Screen</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Default Second Tab</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>None</option>
+                                        <option selected="">Messages Screen</option>
+                                        <option>Calendar Screen</option>
+                                        <option>Patient Search/Add Screen</option>
+                                        <option>Patient Finder Screen</option>
+                                        <option>Patient Flow Board</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Tabs Layout Theme*</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Compact</option>
+                                        <option selected="">Full</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Login Page Layout*</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Centered Layout</option>
+                                        <option selected="">Left-Form Layout</option>
+                                        <option selected="">Right-Form Layout</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>General Theme*</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Ash blue</option>
+                                        <option>Burgundy</option>
+                                        <option>Cadmium yellow</option>
+                                        <option>Chocolate</option>
+                                        <option>Cobalt blue</option>
+                                        <option>Coral</option>
+                                        <option>Dark</option>
+                                        <option>Deep purple</option>
+                                        <option>Dune</option>
+                                        <option>Emerald</option>
+                                        <option>Forest green</option>
+                                        <option selected>Light</option>
+                                        <option>Manila</option>
+                                        <option>Mauve</option>
+                                        <option>Mustard green</option>
+                                        <option>Olive</option>
+                                        <option>Pink</option>
+                                        <option>Powder blue</option>
+                                        <option>Red</option>
+                                        <option>Sienna</optio>
+                                        <option>Solar</option>
+                                        <option>Tangerine</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Enable Compact Mode</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Vertical Menu Style for Frames</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Tree</option>
+                                        <option selected="">Sliding</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Search Patient By Any Demographics</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option selected>Dual</option>
+                                        <option>Comprehensive</option>
+                                        <option>Fixed</option>
+                                        <option>None</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Default Encounter View</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Clinical View</option>
+                                        <option selected="">Billing View</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Navigation Area Width for Frames</h6>
+                                <div class="form_field">
+                                    <input value="150" class="form-control" type="text"
+                                        placeholder="Enter numeric value">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Application Title</h6>
+                                <div class="form_field">
+                                    <input value="Tittle name" class="form-control" type="text"
+                                        placeholder="Enter tittle name">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Enable Group Therapy</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>New Patient Form</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Old-style static form without search or duplication check</option>
+                                        <option selected="">All demographics fields, with search and duplication check</option>
+                                        <option>Mandatory or specified fields only, search and dup check</option>
+                                        <option>Mandatory or specified fields only, dup check, no search</option>
+                                        <option>Mandatory or specified fields only, use patient validation Zend module</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Modify Patient Form</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Standard check</option>
+                                        <option selected="">Zend Module check in addition to standard check</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Patient Search Results Style</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Encounter statistics</option>
+                                        <option selected="">Mandatory and specified fields</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Tall Navigation Area</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Navigation Area Visit Forms</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Simplified Prescriptions</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Simplified Co-Pay</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Use Charges Panel</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Enable Fees Submenu</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Enable Batch Payment</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Enable Posting</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Enable EDI History</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Online Support Link</h6>
+                                <div class="form_field">
+                                    <input class="form-control" value="http://open-emr.org/" type="text" placeholder="Enter link here">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Support Phone Number</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Encounter Page Size</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option selected="">Show All</option>
+                                        <option>5</option>
+                                        <option>10</option>
+                                        <option>15</option>
+                                        <option>20</option>
+                                        <option>25</option>
+                                        <option>50</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Patient List Page Size</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>10</option>
+                                        <option>25</option>
+                                        <option>50</option>
+                                        <option>100</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Patient List New Window</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Number of Messages Displayed in Patient Summary</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Vitals Form Options</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Standard</option>
+                                        <option selected="">Omit circumferences</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>How to sort a drop-lists</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Sort by seq</option>
+                                        <option selected="">Sort alphabetically</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Show Title on Login</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Show Extra Logo on Login</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Show Mini Logo 1</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Show Mini Logo 2</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Prevent Web Browser Refresh*</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option>Do not warn or prevent web browser refresh</option>
+                                        <option selected="">Warn, but do not prevent web browser refresh</option>
+                                        <option selected="">Warn and prevent web browser refresh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="btns mt-3 text-right">
+                                <div class="btn btn-primary">Save</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="managePatient">...</div>
+                    <div class="tab-pane fade" id="manageDoctor">...</div>
+                    <div class="tab-pane fade" id="ManageTest">...</div>
+                    <div class="tab-pane fade" id="masterData">...</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+            <span class="float-md-left d-block d-md-inline-block">2021 &copy; Copyright <a
+                    class="text-bold-800 grey darken-2" href="#" target="_blank">Relier Health</a></span>
+            <ul class="list-inline float-md-right d-block d-md-inline-blockd-none d-lg-block mb-0">
+                <li class="list-inline-item"><a class="my-1" href="#" target="_blank"> Term & Condition</a></li>
+                <li class="list-inline-item"><a class="my-1" href="#" target="_blank"> Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- BEGIN VENDOR JS-->
+    <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+    <!-- BEGIN VENDOR JS-->
+
+    <!-- BEGIN PAGE VENDOR JS-->
+    <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
+    <!-- END PAGE VENDOR JS-->
+
+    <!-- BEGIN Relier Website  JS-->
+    <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
+    <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
+    <!-- END Relier Website  JS-->
+
+    <!-- BEGIN PAGE LEVEL JS-->
+    <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
+    <!-- END PAGE LEVEL JS-->
+
+    <script>
+        var btnUpload = $("#upload_file"),
+            btnOuter = $(".button_outer");
+        btnUpload.on("change", function (e) {
+            var ext = btnUpload.val().split('.').pop().toLowerCase();
+            if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+                $(".error_msg").text("Not an Image...");
+            } else {
+                $(".error_msg").text("");
+                btnOuter.addClass("file_uploading");
+                setTimeout(function () {
+                    btnOuter.addClass("file_uploaded");
+                }, 3000);
+                var uploadedFile = URL.createObjectURL(e.target.files[0]);
+                setTimeout(function () {
+                    $("#uploaded_view").append('<img src="' + uploadedFile + '" />').addClass("show");
+                }, 3500);
+            }
+        });
+        $(".file_remove").on("click", function (e) {
+            $("#uploaded_view").removeClass("show");
+            $("#uploaded_view").find("img").remove();
+            btnOuter.removeClass("file_uploading");
+            btnOuter.removeClass("file_uploaded");
+        });
+    </script>
+</body>
+
+</html>

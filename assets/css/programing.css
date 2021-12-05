@@ -9,6 +9,9 @@ body{
 .common-gap{
 	padding: 40px 0px 0px 0px;
 }
+.page_heading{
+    margin-bottom: 15px;
+}
 .appointment-section {
 	display: flex;
 	flex-wrap: wrap;

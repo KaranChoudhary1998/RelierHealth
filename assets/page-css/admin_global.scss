@@ -1,0 +1,35 @@
+.content-wrapper{
+    margin-top: 20px;
+}
+.content .content-wrapper{
+    padding-top: 2rem !important;
+}
+.admin_global{
+    .nav-tabs{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        margin-bottom: 24px;
+        li{
+           a{
+               white-space: nowrap;
+           } 
+        }
+    }
+}
+.admin_global_content{
+    padding: 10px 0 ;
+}
+.admin_global_stripe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    h6{
+        flex-basis: 50%;
+        margin: 0;
+    }
+    .form_field{
+        flex-basis: 40%;
+    }
+}
