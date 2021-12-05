@@ -45,4 +45,14 @@
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
 }
+
+@media (max-width: 767px) {
+  .admin_global_stripe {
+    margin-bottom: 6px;
+    display: block;
+  }
+  .admin_global_stripe h6 {
+    margin-bottom: 6px;
+  }
+}
 /*# sourceMappingURL=admin_global.css.map */
