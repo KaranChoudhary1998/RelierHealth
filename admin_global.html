@@ -271,7 +271,7 @@
                         <a class="nav-link" data-toggle="tab" href="#esign">E-Sign</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">Documents</a>
+                        <a class="nav-link" data-toggle="tab" href="#documents">Documents</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#masterData">Calendar</a>
@@ -1618,12 +1618,525 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="report"></div>
-                    <div class="tab-pane fade" id="billing">...</div>
-                    <div class="tab-pane fade" id="esign">...</div>
+                    <div class="tab-pane fade" id="report">
+                        <div class="page_heading">
+                            <h2>Report</h2>
+                        </div>
+                        <div class="admin_global_content">
+                            <div class="admin_global_stripe">
+                                <h6>Use Custom End of Day Report</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="0">None</option>
+                                        <option value="1" selected="">Print End of Day Report 1</option>
+                                        <option value="2">Print End of Day Report 2</option>
+                                        <option value="3">Print End of Day Report 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>End of Day by Provider or allow Totals Only</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="0">Provider</option>
+                                        <option value="1" selected="">Totals Only</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Beginning Date for Ledger Report</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="Y1" selected="">One Year Ago</option>
+                                        <option value="Y2">Two Years Ago</option>
+                                        <option value="M6">Six Months Ago</option>
+                                        <option value="M3">Three Months Ago</option>
+                                        <option value="M1">One Month Ago</option>
+                                        <option value="D1">One Day Ago</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Print the Next Appointment on the Bottom of the Ledger</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Display Invoice Number or Patient Name or Both in the Sales Report</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="0">Invoice Number</option>
+                                        <option value="1">Patient Name and ID</option>
+                                        <option value="2" selected="">Patient Name and Invoice</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Display Invoice Number or Patient Name in the Cash Receipt Report</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="0" selected="">Invoice Number</option>
+                                        <option value="1">Patient Name</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="btns mt-3 text-right">
+                                <button class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="billing">
+                        <div class="page_heading">
+                            <h2>Billing</h2>
+                        </div>
+                        <div class="admin_global_content">
+                            <div class="admin_global_stripe">
+                                <h6>Activate UB04/837I Claim Support</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Default top print margin for UB04</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="14">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Default left print margin for UB04</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="11">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Default top print margin for CMS 1500</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="24">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Default left print margin for CMS 1500</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="20">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Prints the CMS 1500 on the Preprinted form</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>CMS 1500: Box 31 Format</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="0" selected="">Signature on File</option>
+                                        <option value="1">Firstname Lastname</option>
+                                        <option value="2">None</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>CMS 1500: Date in Box 31 (Signature)</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="0" selected="">None</option>
+                                        <option value="1">Date of Service</option>
+                                        <option value="2">Today</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Default Search Code Type</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="CPT4">CPT4 Procedure/Service</option>
+                                        <option value="HCPCS">HCPCS Procedure/Service</option>
+                                        <option value="CVX">CVX Immunisation</option>
+                                        <option value="ICD10" selected="">ICD10 Diagnosis</option>
+                                        <option value="LOINC">LOINC</option>
+                                        <option value="PHIN Questions">PHIN Questions</option>
+                                        <option value="NCI-CONCEPT-ID">NCI CONCEPT ID</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Default Rendering Provider in Fee Sheet</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="0">Please Select</option>
+                                        <option value="1" selected="">Current Provider</option>
+                                        <option value="2">Current Logged in User</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Disable Auto Adjustment Calculations in EOB Posting</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Show all payment history in Patient Ledger</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Support provider in line item in fee sheet</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Default to a provider for line item in the fee sheet</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Automatically replicate justification codes in Fee Sheet</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Display the Units Column on the Billing Screen</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Which notes are to be displayed in the Billing Screen</h6>
+                                <div class="form_field">
+                                    <select class="form-control" name="form_120" id="form_120">
+                                        <option value="0">None</option>
+                                        <option value="1">Encounter Billing Note</option>
+                                        <option value="2">Patient Billing Note</option>
+                                        <option value="3" selected="">All</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Set POS code in encounter</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Statement Logo GIF Filename</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="practice_logo.gif">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Use Custom Statement</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Statement Appearance</h6>
+                                <div class="form_field">
+                                    <select class="form-control" name="form_124" id="form_124">
+                                        <option value="0">Plain Text</option>
+                                        <option value="1" selected="">Modern/images</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Custom Billing Phone Number</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Show Aging on Custom Statement</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Allow Statement Exclusions from Printing</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Total Minimum Amount of Statement to Allow Printing</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="1.00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Print Patient Billing Note</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Number of Appointments on Statement</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Print Custom Message</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Custom Statement message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Use Custom Dunning Messages</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Number of days before showing first account message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>First account message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Number of days before showing second account message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Second account message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Number of days before showing third account message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Third account message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Number of days before showing fourth account message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Fourth account message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Number of days before showing fifth account message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Fifth account message</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Save codes history</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Enable percent-based price levels</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="btns mt-3 text-right">
+                                <button class="btn btn-primary">Save</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="esign">
+                        <div class="page_heading">
+                            <h2>E-Sign</h2>
+                        </div>
+                        <div class="admin_global_content">
+                            <div class="admin_global_stripe">
+                                <h6>Allows E-Sign on the entire encounter</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Lock e-signed encounters and their forms</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Allows E-Signing Individual Forms</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Lock an e-signed form individually</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Enable lock toggle</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Hide Empty E-Sign Logs On Report</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="btns mt-3 text-right">
+                                <button class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="documents">
+                        <div class="page_heading">
+                            <h2>Documents</h2>
+                        </div>
+                        <div class="admin_global_content">
+                            <div class="admin_global_stripe">
+                                <h6>Document Storage Method</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="0" selected="">Hard Disk</option>
+                                        <option value="1">CouchDB</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>CouchDB HostName</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="localhost">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>CouchDB UserName</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>CouchDB Password</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>CouchDB Port</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="4654">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>CouchDB Database</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>CouchDB Connection SSL</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>CouchDB SSL Allow Selfsigned Certificate</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>CouchDB Log Enable</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Expand All Document Categories</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Patient ID Category Name</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Patient Photo Category Name</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Lab Results Category Name</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>MDM Document Category Name</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Generate thumbnail</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Thumbnail size</h6>
+                                <div class="form_field">
+                                    <input class="form-control" type="text" value="100">
+                                </div>
+                            </div>
+                            <div class="btns mt-3 text-right">
+                                <button class="btn btn-primary">Save</button>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 
