@@ -256,7 +256,7 @@
                         <a class="nav-link" data-toggle="tab" href="#appearance">Appearance</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#locale">Locale</a>
+                        <a class="nav-link" data-toggle="tab" href="#locale">Locale</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#features">Features</a>
@@ -274,37 +274,37 @@
                         <a class="nav-link" data-toggle="tab" href="#documents">Documents</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">Calendar</a>
+                        <a class="nav-link active" data-toggle="tab" href="#calendar">Calendar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">Insurance</a>
+                        <a class="nav-link" data-toggle="tab" href="#insurance">Insurance</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">Security</a>
+                        <a class="nav-link" data-toggle="tab" href="#security">Security</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">Notifications</a>
+                        <a class="nav-link" data-toggle="tab" href="#notifications">Notifications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">CDR</a>
+                        <a class="nav-link" data-toggle="tab" href="#CDR">CDR</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">Logging</a>
+                        <a class="nav-link" data-toggle="tab" href="#logging">Logging</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">Miscellaneous</a>
+                        <a class="nav-link" data-toggle="tab" href="#miscellaneous">Miscellaneous</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">Portal</a>
+                        <a class="nav-link" data-toggle="tab" href="#Portal">Portal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">Connectors</a>
+                        <a class="nav-link" data-toggle="tab" href="#Connectors">Connectors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">Rx</a>
+                        <a class="nav-link" data-toggle="tab" href="#Rx">Rx</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#masterData">PDF</a>
+                        <a class="nav-link" data-toggle="tab" href="#PDF">PDF</a>
                     </li>
                 </ul>
                 <!-- Tab panes -->
@@ -635,7 +635,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane active" id="locale">
+                    <div class="tab-pane fade" id="locale">
                         <div class="page_heading">
                             <h2>Locale</h2>
                         </div>
@@ -2134,6 +2134,307 @@
                             </div>
 
                         </div>
+                    </div>
+                    <div class="tab-pane active" id="calendar">
+                        <div class="page_heading">
+                            <h2>Calendar</h2>
+                        </div>
+                        <div class="admin_global_content">
+                            <div class="admin_global_stripe">
+                                <h6>Disable Calendar</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Calendar Starting Hour</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="0">12 AM</option>
+                                        <option value="1">1 AM</option>
+                                        <option value="2">2 AM</option>
+                                        <option value="3">3 AM</option>
+                                        <option value="4">4 AM</option>
+                                        <option value="5">5 AM</option>
+                                        <option value="6">6 AM</option>
+                                        <option value="7">7 AM</option>
+                                        <option value="8" selected="">8 AM</option>
+                                        <option value="9">9 AM</option>
+                                        <option value="10">10 AM</option>
+                                        <option value="11">11 AM</option>
+                                        <option value="12">12 PM</option>
+                                        <option value="13">1 PM</option>
+                                        <option value="14">2 PM</option>
+                                        <option value="15">3 PM</option>
+                                        <option value="16">4 PM</option>
+                                        <option value="17">5 PM</option>
+                                        <option value="18">6 PM</option>
+                                        <option value="19">7 PM</option>
+                                        <option value="20">8 PM</option>
+                                        <option value="21">9 PM</option>
+                                        <option value="22">10 PM</option>
+                                        <option value="23">11 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Calendar Ending Hour</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="0">12 AM</option>
+                                        <option value="1">1 AM</option>
+                                        <option value="2">2 AM</option>
+                                        <option value="3">3 AM</option>
+                                        <option value="4">4 AM</option>
+                                        <option value="5">5 AM</option>
+                                        <option value="6">6 AM</option>
+                                        <option value="7">7 AM</option>
+                                        <option value="8">8 AM</option>
+                                        <option value="9">9 AM</option>
+                                        <option value="10">10 AM</option>
+                                        <option value="11">11 AM</option>
+                                        <option value="12">12 PM</option>
+                                        <option value="13">1 PM</option>
+                                        <option value="14">2 PM</option>
+                                        <option value="15">3 PM</option>
+                                        <option value="16">4 PM</option>
+                                        <option value="17" selected="">5 PM</option>
+                                        <option value="18">6 PM</option>
+                                        <option value="19">7 PM</option>
+                                        <option value="20">8 PM</option>
+                                        <option value="21">9 PM</option>
+                                        <option value="22">10 PM</option>
+                                        <option value="23">11 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Calendar Interval</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="15" selected="">15</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="60">60</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Default Calendar View</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="day" selected="">Day</option>
+                                        <option value="week">Week</option>
+                                        <option value="month">Month</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>First day in the week</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="1" selected="">Monday</option>
+                                        <option value="0">Sunday</option>
+                                        <option value="6">Saturday</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Appointment Display Style</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="1">Last name</option>
+                                        <option value="2" selected="">Last name, first name</option>
+                                        <option value="3">Last name, first name (title)</option>
+                                        <option value="4">Last name, first name (title: comments)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Appointment/Event Color</h6>
+                                <div class="form_field">
+                                    <select class="form-control">
+                                        <option value="1" selected="">Category Color Schema</option>
+                                        <option value="2">Facility Color Schema</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Appointments - Patient Summary - Number to Display</h6>
+                                <div class="form_field">
+                                    <input type="text" class="form-control" value="10">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Appointments - Group Summary - Number to Display</h6>
+                                <div class="form_field">
+                                    <input type="text" class="form-control" value="10">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Excluded Appointments - Tooltip - Number to Display</h6>
+                                <div class="form_field">
+                                    <input type="text" class="form-control" value="15">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Appointment Display Sets - Ignore Display Limit (Last Set)</h6>
+                                <div class="form_field">
+                                    <input class="form-control p-0" type="color">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Appointment Display Sets - Color 1</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Appointment Display Sets - Color 2</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Appointment Display Sets - Color 3</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Appointment Display Sets - Color 4</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Recurrent Appointment Display Widget</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Past Appointment Display Widget</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Providers See Entire Calendar</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Auto-Create New Encounters</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Allow Early Check In</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Submit Changes For All Appts At Once</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Disable</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Show Visit Reason</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Show Patient ID</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Show Encounter Number</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Show Staff Action</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Allow Date Range</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Default Starting Date</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Default Ending Date</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Timer Refresh Interval</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: display completed checkouts (minutes)</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Enable Random Drug Testing</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Percentage of Patients to Drug Test</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Flow Board: Max tests per Patient per year</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="admin_global_stripe">
+                                <h6>Recall Board: Disable</h6>
+                                <div class="form_field">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+
+                            <div class="btns mt-3 text-right">
+                                <button class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
