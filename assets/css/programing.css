@@ -317,4 +317,49 @@ body{
 }
 table.table.table-bordered thead tr th {
     background: #e9e9e9;
+    min-width: 150px;
+}
+.modal-footer {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+.jumbotron {
+    background-color: #e9ecef;
+}
+.jumbotron p {
+    color: #111;
+}
+
+/*Batch-list-css-start */
+.content-body {
+    overflow-x: auto;
+}
+.content-body table {
+    background-color: #fff;
+}
+.table_icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.table_icons span {
+    height: 28px;
+    width: 28px;
+    font-size: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+.table_icons .icn1 {
+    background-color: #11cf89;
+}
+.table_icons .icn2 {
+    background-color: #fbbf3a;
+}
+.table_icons .icn3 {
+    background-color: #e54934;
 }
