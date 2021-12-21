@@ -211,8 +211,8 @@ body{
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
     color: #fff;
-    border-color: #babfc7 #626e82 #fa7179;
-    background-color: #fa7179;
+    border-color: #babfc7 #626e82 #0d7b3e;
+    background-color: #0d7b3e;
 }
 .nav-link {
     color: #1d2336;
