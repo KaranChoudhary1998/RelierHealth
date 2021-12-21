@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 
@@ -29,6 +33,45 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
 </head>
+<style>
+    .content-body {
+        overflow-x: auto;
+    }
+
+    .content-body table {
+        background-color: #fff;
+    }
+
+    .table_icons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .table_icons span {
+        height: 28px;
+        width: 28px;
+        font-size: 12px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .table_icons .icn1 {
+        background-color: #11cf89;
+    }
+
+    .table_icons .icn2 {
+        background-color: #fbbf3a;
+    }
+
+    .table_icons .icn3 {
+        background-color: #e54934;
+    }
+</style>
 
 <body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
     data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
@@ -240,45 +283,92 @@
         <div class="navigation-background"></div>
     </div>
 
-    <div class="app-content content">
+    <div class="app-content content Holidays-management">
         <div class="content-wrapper">
             <div class="content-header row"></div>
             <div class="common-gap"></div>
             <div class="table-top d-flex align-items-center justify-content-between mb-2">
                 <div class="table-top">
-                    <h4>Procedure Results</h4>
+                    <h4>Merge Patients</h4>
                 </div>
             </div>
-            <div class="load-lab-compendium">
-                <div class="row align-items-end">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label>Procedure:</label>
-                            <input type="text" class="form-control">
-                        </div>
+            <div class="content-body">
+                <form>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td>Target Patient</td>
+                                <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#merge-patient">Click To Select</button></td>
+                                <td>This is the main chart that is to receive the merged data.</td>
+                            </tr>
+                            <tr>
+                                <td>Source Patient</td>
+                                <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#merge-patient">Click To Select</button></td>
+                                <td>This is the chart that is to be merged into the main chart and then deleted.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form-group text-right">
+                        <button type="submit" class="btn btn-info">Merge</button>
                     </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label>From:</label>
-                            <input type="text" class="form-control">
-                        </div>
+                    <div class="jumbotron">
+                        <p class="font-weight-bold">This utility is experimental. Back up your database and documents before using it!</p>
+                        <p>This will merge two patient charts into one.  It is useful when a patient has been duplicated by mistake.  If that happens often, fix your office procedures - do not run this routinely!</p>
+                        <p>The first (`target`) chart is the one that is considered the most complete and accurate. Demographics, history and insurance sections for this one will be retained.</p>
+                        <p>The second (`source`) chart will have its demographics, history and insurance sections discarded.  Its other data will be merged into the target chart.</p>
+                        <p>The merge will not run unless SSN and DOB for the two charts are identical. DOBs cannot be empty.</p>
                     </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label>To:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group text-right">
-                            <button type="submit" class="btn btn-primary">Save</button>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
+    </div>
     <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+ <!-- The Modal -->
+ <div class="modal" id="merge-patient">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Enter Your Search Criteria Above</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="/action_page.php">
+                    <div class="row align-items-end">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Search By:</label>
+                                <select class="form-control">
+                                    <option value="Last">Name</option>
+                                    <option value="Phone">Phone</option>
+                                    <option value="ID">ID</option>
+                                    <option value="SSN">SSN</option>
+                                    <option value="DOB">DOB</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">for:</label>
+                                <input class="form-control" type="text" name="">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                        
+                    </div>
+                  </form>
+            </div>
+            <!-- Modal footer -->
+        </div>
+    </div>
+</div>
+    <!-- Modal Add New Provider Code  -->
 
     <footer class="footer footer-static footer-light navbar-border navbar-shadow">
         <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
