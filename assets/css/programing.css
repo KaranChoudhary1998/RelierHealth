@@ -1,10 +1,19 @@
-/*****************************
-******************************Welcome To Relier Health *******************************
-										*******************************/
+/******************Welcome To Relier Health *************************/
 
 body{
 	margin: 0px;
 	padding: 0px;
+}
+.navbar-brand {
+    text-align: center;
+    display: block;
+}
+.navbar-header {
+    height: 120px !important;
+}
+.navbar-header .navbar-brand .brand-logo {
+    width: auto !important;
+    height: 100px;
 }
 .common-gap{
 	padding: 40px 0px 0px 0px;
