@@ -109,14 +109,14 @@ body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation li.has-s
 {
     top: 8px;
 }
-body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation li.open > a:not(.mm-next):after
+/* body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation li.open > a:not(.mm-next):after
 {
     -webkit-transform: rotate(90deg);
        -moz-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
          -o-transform: rotate(90deg);
             transform: rotate(90deg);
-}
+} */
 body.vertical-layout.vertical-menu.menu-expanded .main-menu .main-menu-footer
 {
     width: 260px;
