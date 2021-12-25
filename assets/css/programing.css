@@ -382,3 +382,26 @@ table.table.table-bordered thead tr th {
 button:focus {
     outline: none !important;
 }
+
+.content-body {
+    padding: 10px 10px;
+}
+.external-database-single-section {
+    padding: 20px;
+    background-color: #e9ecef;
+}
+span.msg {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+    background-color: #89A4CC;
+    line-height: 16px;
+    color: var(--white);
+    font-size: 0.8125rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
