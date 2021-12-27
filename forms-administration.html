@@ -1,0 +1,1157 @@
+
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Relier Health</title>
+    <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/vendors/css/charts/chartist.css" />
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN Relier Website  CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css" />
+    <!-- END Relier Website  CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/pages/dashboard-ecommerce.css" />
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <!-- END Custom CSS-->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
+</head>
+<style>
+    .content-body {
+        overflow-x: auto;
+    }
+
+    .content-body table {
+        background-color: #fff;
+    }
+
+    .table_icons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .table_icons span {
+        height: 28px;
+        width: 28px;
+        font-size: 12px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .table_icons .icn1 {
+        background-color: #11cf89;
+    }
+
+    .table_icons .icn2 {
+        background-color: #fbbf3a;
+    }
+
+    .table_icons .icn3 {
+        background-color: #e54934;
+    }
+</style>
+
+<body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
+    data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
+    <!-- fixed-top-->
+    <nav
+        class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse show" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-block d-md-none">
+                            <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a>
+                        </li>
+                        <li class="nav-item dropdown navbar-search">
+                            <a class="nav-link dropdown-toggle hide" data-toggle="dropdown" href="#"><i
+                                    class="ficon ft-search"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="arrow_box">
+                                    <form>
+                                        <div class="input-group search-box">
+                                            <div class="position-relative has-icon-right full-width">
+                                                <input class="form-control" id="search" type="text"
+                                                    placeholder="Search here..." />
+                                                <div class="form-control-position navbar-search-close"><i class="ft-x">
+                                                    </i></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-language nav-item">
+                            <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="flag-icon flag-icon-us"></i><span class="selected-language"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+                                <div class="arrow_box">
+                                    <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-us"></i>English</a>
+                                    <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-es"></i>Arabic</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-notification nav-item">
+                            <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-mail">
+                                </i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="arrow_box_right">
+                                    <a class="dropdown-item" href="#"><i class="ft-book"></i> Read Mail</a><a
+                                        class="dropdown-item" href="#"><i class="ft-bookmark"></i> Read Later</a>
+                                    <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Mark all Read </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <span class="avatar avatar-online">
+                                    <img src="theme-assets/images/user.webp" alt="avatar" /><i></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="arrow_box_right">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="avatar avatar-online"><img
+                                                src="theme-assets/images/portrait/small/avatar-s-19.png"
+                                                alt="avatar" /><span class="user-name text-bold-700 ml-1">Dr.
+                                                Praveen</span></span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
+                                    
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar-Code-Star-->
+
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true"
+    data-img="theme-assets/images/backgrounds/02.jpg">
+    <div class="navbar-header">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="index.html">
+                    <img class="brand-logo" alt="Relier Website admin logo"
+                    src="theme-assets/images/logo/logo.svg"/>
+                    <!-- <h3 class="brand-text">Relier Health</h3> -->
+                </a>
+            </li>
+            <li class="nav-item d-md-none">
+                <a class="nav-link close-navbar"><i class="ft-x"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+            <li class="nav-item">
+                <a><i class="ft-calendar"></i><span class="menu-title">Appointment</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Appointment</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-user-plus"></i><span class="menu-title">Patient Register</span></a>
+                <ul class="drop_menu">
+                    <li><a href="patient-registration.html">Patient Register</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-droplet"></i><span class="menu-title">In-Patient</span></a>
+                <ul class="drop_menu">
+                    <li><a href="patient-in.html">In-Patient</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layers"></i><span class="menu-title">Out-Patient</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Out-Patient</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-box"></i><span class="menu-title">Laboratory</span></a>
+                <ul class="drop_menu">
+                    <li><a href="lab-info.html">Laboratory</a></li>
+                    <li><a href="laboratory-information.html">Laboratory Information</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-bold"></i><span class="menu-title">Radiology</span></a>
+                <ul class="drop_menu">
+                    <li><a href="radiology-system.html">Radiology</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-credit-card"></i><span class="menu-title">Insurance</span></a>
+                <ul class="drop_menu">
+                    <li><a href="insurance-management.html">Insurance</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Forms</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Forms</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Billing</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Billing</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">OT Booking</span></a>
+                <ul class="drop_menu">
+                    <li><a href="ot-booking.html">OT Booking</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Procedure</span></a>
+                <ul class="drop_menu">
+                    <li><a href="providers.html">Providers</a></li>
+                    <li><a href="Configure.html">Configuration</a></li>
+                    <li><a href="load-compendium.html">Load Compendium</a></li>
+                    <li><a href="">Pending Review</a></li>
+                    <li><a href="">Patient Results</a></li>
+                    <li><a href="">Lab Overview</a></li>
+                    <li><a href="batch-results.html">Batch Results</a></li>
+                    <li><a href="electronic-reports.html">Electronic Reports</a></li>
+                    <li><a href="lab-documents.html">Lab Documents</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Administration</span></a>
+                <ul class="drop_menu">
+                    <li><a href="admin_global.html">Global</a></li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Clinic</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="holidays-management.html">Import Holidays</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Patients</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="patient-reminders.html">Patient Reminders</a></li>
+                            <li><a href="merge-patients.html">Merge Patients</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Practice</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="practice-settings.html">Practice Settings</a></li>
+                            <li><a href="rules-configuration.html">Rules</a></li>
+                            <li><a href="rules-alert-manager.html">Alerts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Coding</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="codes.html">Codes</a></li>
+                            <li><a href="Configure">Native Data Loads</a></li>
+                            <li><a href="Configure">External Data Loads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">System</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Address Book</a></li>
+                    <li><a href="#">ACL</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Report</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Report</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Users</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Users</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Data</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Data</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Marketing</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Marketing</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <a class="btn btn-danger btn-block btn-glow btn-upgrade-pro mx-1" href="#">Relier Health</a>
+    <div class="navigation-background"></div>
+    </div>
+
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row"></div>
+            <div class="common-gap"></div>
+            <div class="table-top d-flex align-items-center justify-content-between">
+                <div class="table-top">
+                    <h4>Forms Administration</h4>
+                    <h6 class="mt-2"><B>Registered</B></h6>
+                    <p>click here to update priority, category, nickname and access control settings</p>
+                </div>
+            </div>
+            <div class="content-body">
+                <form>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Sr. No</th>
+                                <th>Name</th>
+                                <th>Status</th>
+                                <th>PHP Extracteh</th>
+                                <th>DB installed</th>
+                                <th>Priority</th>
+                                <th>Category</th>
+                                <th>Nickname</th>
+                                <th>Access Control</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Care Plan</td>
+                                <td>Enabled</td>
+                                <td>PHP Extracted</td>
+                                <td>DB installed</td>
+                                <td><input type="text" value="0" class="form-control"></td>
+                                <td><input type="text" value="Clinical" class="form-control"></td>
+                                <td><input type="text" value="" class="form-control"></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=""></option>
+                                        <optgroup label="Accounting">
+                                            <option value="acct|bill">Billing (write optional)</option>
+                                            <option value="acct|disc">Price Discounting</option>
+                                            <option value="acct|eob">EOB Data Entry</option>
+                                            <option value="acct|rep">Financial Reporting - my encounters</option>
+                                            <option value="acct|rep_a">Financial Reporting - anything</option>
+                                        </optgroup>
+                                        <optgroup label="Administration">
+                                            <option value="admin|acl">ACL Administration</option>
+                                            <option value="admin|batchcom">Batch Communication Tool</option>
+                                            <option value="admin|calendar">Calendar Settings</option>
+                                            <option value="admin|database">Database Reporting</option>
+                                            <option value="admin|drugs">Pharmacy Dispensary</option>
+                                            <option value="admin|forms">Forms Administration</option>
+                                            <option value="admin|language">Language Interface Tool</option>
+                                            <option value="admin|manage_modules">Manage modules</option>
+                                            <option value="admin|menu">Menu</option>
+                                            <option value="admin|multipledb">Multipledb</option>
+                                            <option value="admin|practice">Practice Settings</option>
+                                            <option value="admin|super">Superuser</option>
+                                            <option value="admin|superbill">Superbill Codes Administration</option>
+                                            <option value="admin|users">Users/Groups/Logs Administration</option>
+                                        </optgroup>
+                                        <optgroup label="Encounters">
+                                            <option value="encounters|auth">Authorize - my encounters</option>
+                                            <option value="encounters|auth_a">Authorize - any encounters</option>
+                                            <option value="encounters|coding">Coding - my encounters (write,wsome optional)</option>
+                                            <option value="encounters|coding_a">Coding - any encounters (write,wsome optional)</option>
+                                            <option value="encounters|date_a">Fix encounter dates - any encounters</option>
+                                            <option value="encounters|notes" selected="">Notes - my encounters (write,addonly optional)</option>
+                                            <option value="encounters|notes_a">Notes - any encounters (write,addonly optional)</option>
+                                            <option value="encounters|relaxed">Less-private information (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Groups">
+                                            <option value="groups|gadd">View/Add/Update groups</option>
+                                            <option value="groups|gcalendar">View/Create/Update groups appointment in calendar</option>
+                                            <option value="groups|gdlog">Group detailed log of appointment in patient record</option>
+                                            <option value="groups|glog">Group encounter log</option>
+                                            <option value="groups|gm">Send message from the permanent group therapist to the personal therapist</option>
+                                        </optgroup>
+                                        <optgroup label="Lists">
+                                            <option value="lists|country">Country List (write,addonly optional)</option>
+                                            <option value="lists|default">Default List (write,addonly optional)</option>
+                                            <option value="lists|ethrace">Ethnicity-Race List (write,addonly optional)</option>
+                                            <option value="lists|language">Language List (write,addonly optional)</option>
+                                            <option value="lists|state">State List (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Menus">
+                                            <option value="menus|modle">Modules</option>
+                                        </optgroup>
+                                        <optgroup label="Nation Notes">
+                                            <option value="nationnotes|nn_configure">Nation Notes Configure</option>
+                                        </optgroup>
+                                        <optgroup label="Patient Portal">
+                                            <option value="patientportal|portal">Patient Portal</option>
+                                        </optgroup>
+                                        <optgroup label="Patients">
+                                            <option value="patients|alert">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                            <option value="patients|amendment">Amendments (write,addonly optional)</option>
+                                            <option value="patients|appt">Appointments (write,wsome optional)</option>
+                                            <option value="patients|demo">Demographics (write,addonly optional)</option>
+                                            <option value="patients|disclosure">Disclosures (write,addonly optional)</option>
+                                            <option value="patients|docs">Documents (write,addonly optional)</option>
+                                            <option value="patients|docs_rm">Documents Delete</option>
+                                            <option value="patients|lab">Lab Results (write,addonly optional)</option>
+                                            <option value="patients|med">Medical/History (write,addonly optional)</option>
+                                            <option value="patients|notes">Patient Notes (write,addonly optional)</option>
+                                            <option value="patients|pat_rep">Patient Report</option>
+                                            <option value="patients|reminder">Patient Reminders (write,addonly optional)</option>
+                                            <option value="patients|rx">Prescriptions (write,addonly optional)</option>
+                                            <option value="patients|sign">Sign Lab Results (write,addonly optional)</option>
+                                            <option value="patients|trans">Transactions (write optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Placeholder">
+                                            <option value="placeholder|filler">Placeholder (Maintains empty ACLs)</option>
+                                        </optgroup>
+                                        <optgroup label="Sensitivities">
+                                            <option value="sensitivities|high">High</option>
+                                            <option value="sensitivities|normal">Normal</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Care Plan</td>
+                                <td>Enabled</td>
+                                <td>PHP Extracted</td>
+                                <td>DB installed</td>
+                                <td><input type="text" value="0" class="form-control"></td>
+                                <td><input type="text" value="Clinical" class="form-control"></td>
+                                <td><input type="text" value="" class="form-control"></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=""></option>
+                                        <optgroup label="Accounting">
+                                            <option value="acct|bill">Billing (write optional)</option>
+                                            <option value="acct|disc">Price Discounting</option>
+                                            <option value="acct|eob">EOB Data Entry</option>
+                                            <option value="acct|rep">Financial Reporting - my encounters</option>
+                                            <option value="acct|rep_a">Financial Reporting - anything</option>
+                                        </optgroup>
+                                        <optgroup label="Administration">
+                                            <option value="admin|acl">ACL Administration</option>
+                                            <option value="admin|batchcom">Batch Communication Tool</option>
+                                            <option value="admin|calendar">Calendar Settings</option>
+                                            <option value="admin|database">Database Reporting</option>
+                                            <option value="admin|drugs">Pharmacy Dispensary</option>
+                                            <option value="admin|forms">Forms Administration</option>
+                                            <option value="admin|language">Language Interface Tool</option>
+                                            <option value="admin|manage_modules">Manage modules</option>
+                                            <option value="admin|menu">Menu</option>
+                                            <option value="admin|multipledb">Multipledb</option>
+                                            <option value="admin|practice">Practice Settings</option>
+                                            <option value="admin|super">Superuser</option>
+                                            <option value="admin|superbill">Superbill Codes Administration</option>
+                                            <option value="admin|users">Users/Groups/Logs Administration</option>
+                                        </optgroup>
+                                        <optgroup label="Encounters">
+                                            <option value="encounters|auth">Authorize - my encounters</option>
+                                            <option value="encounters|auth_a">Authorize - any encounters</option>
+                                            <option value="encounters|coding">Coding - my encounters (write,wsome optional)</option>
+                                            <option value="encounters|coding_a">Coding - any encounters (write,wsome optional)</option>
+                                            <option value="encounters|date_a">Fix encounter dates - any encounters</option>
+                                            <option value="encounters|notes" selected="">Notes - my encounters (write,addonly optional)</option>
+                                            <option value="encounters|notes_a">Notes - any encounters (write,addonly optional)</option>
+                                            <option value="encounters|relaxed">Less-private information (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Groups">
+                                            <option value="groups|gadd">View/Add/Update groups</option>
+                                            <option value="groups|gcalendar">View/Create/Update groups appointment in calendar</option>
+                                            <option value="groups|gdlog">Group detailed log of appointment in patient record</option>
+                                            <option value="groups|glog">Group encounter log</option>
+                                            <option value="groups|gm">Send message from the permanent group therapist to the personal therapist</option>
+                                        </optgroup>
+                                        <optgroup label="Lists">
+                                            <option value="lists|country">Country List (write,addonly optional)</option>
+                                            <option value="lists|default">Default List (write,addonly optional)</option>
+                                            <option value="lists|ethrace">Ethnicity-Race List (write,addonly optional)</option>
+                                            <option value="lists|language">Language List (write,addonly optional)</option>
+                                            <option value="lists|state">State List (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Menus">
+                                            <option value="menus|modle">Modules</option>
+                                        </optgroup>
+                                        <optgroup label="Nation Notes">
+                                            <option value="nationnotes|nn_configure">Nation Notes Configure</option>
+                                        </optgroup>
+                                        <optgroup label="Patient Portal">
+                                            <option value="patientportal|portal">Patient Portal</option>
+                                        </optgroup>
+                                        <optgroup label="Patients">
+                                            <option value="patients|alert">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                            <option value="patients|amendment">Amendments (write,addonly optional)</option>
+                                            <option value="patients|appt">Appointments (write,wsome optional)</option>
+                                            <option value="patients|demo">Demographics (write,addonly optional)</option>
+                                            <option value="patients|disclosure">Disclosures (write,addonly optional)</option>
+                                            <option value="patients|docs">Documents (write,addonly optional)</option>
+                                            <option value="patients|docs_rm">Documents Delete</option>
+                                            <option value="patients|lab">Lab Results (write,addonly optional)</option>
+                                            <option value="patients|med">Medical/History (write,addonly optional)</option>
+                                            <option value="patients|notes">Patient Notes (write,addonly optional)</option>
+                                            <option value="patients|pat_rep">Patient Report</option>
+                                            <option value="patients|reminder">Patient Reminders (write,addonly optional)</option>
+                                            <option value="patients|rx">Prescriptions (write,addonly optional)</option>
+                                            <option value="patients|sign">Sign Lab Results (write,addonly optional)</option>
+                                            <option value="patients|trans">Transactions (write optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Placeholder">
+                                            <option value="placeholder|filler">Placeholder (Maintains empty ACLs)</option>
+                                        </optgroup>
+                                        <optgroup label="Sensitivities">
+                                            <option value="sensitivities|high">High</option>
+                                            <option value="sensitivities|normal">Normal</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Care Plan</td>
+                                <td>Enabled</td>
+                                <td>PHP Extracted</td>
+                                <td>DB installed</td>
+                                <td><input type="text" value="0" class="form-control"></td>
+                                <td><input type="text" value="Clinical" class="form-control"></td>
+                                <td><input type="text" value="" class="form-control"></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=""></option>
+                                        <optgroup label="Accounting">
+                                            <option value="acct|bill">Billing (write optional)</option>
+                                            <option value="acct|disc">Price Discounting</option>
+                                            <option value="acct|eob">EOB Data Entry</option>
+                                            <option value="acct|rep">Financial Reporting - my encounters</option>
+                                            <option value="acct|rep_a">Financial Reporting - anything</option>
+                                        </optgroup>
+                                        <optgroup label="Administration">
+                                            <option value="admin|acl">ACL Administration</option>
+                                            <option value="admin|batchcom">Batch Communication Tool</option>
+                                            <option value="admin|calendar">Calendar Settings</option>
+                                            <option value="admin|database">Database Reporting</option>
+                                            <option value="admin|drugs">Pharmacy Dispensary</option>
+                                            <option value="admin|forms">Forms Administration</option>
+                                            <option value="admin|language">Language Interface Tool</option>
+                                            <option value="admin|manage_modules">Manage modules</option>
+                                            <option value="admin|menu">Menu</option>
+                                            <option value="admin|multipledb">Multipledb</option>
+                                            <option value="admin|practice">Practice Settings</option>
+                                            <option value="admin|super">Superuser</option>
+                                            <option value="admin|superbill">Superbill Codes Administration</option>
+                                            <option value="admin|users">Users/Groups/Logs Administration</option>
+                                        </optgroup>
+                                        <optgroup label="Encounters">
+                                            <option value="encounters|auth">Authorize - my encounters</option>
+                                            <option value="encounters|auth_a">Authorize - any encounters</option>
+                                            <option value="encounters|coding">Coding - my encounters (write,wsome optional)</option>
+                                            <option value="encounters|coding_a">Coding - any encounters (write,wsome optional)</option>
+                                            <option value="encounters|date_a">Fix encounter dates - any encounters</option>
+                                            <option value="encounters|notes" selected="">Notes - my encounters (write,addonly optional)</option>
+                                            <option value="encounters|notes_a">Notes - any encounters (write,addonly optional)</option>
+                                            <option value="encounters|relaxed">Less-private information (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Groups">
+                                            <option value="groups|gadd">View/Add/Update groups</option>
+                                            <option value="groups|gcalendar">View/Create/Update groups appointment in calendar</option>
+                                            <option value="groups|gdlog">Group detailed log of appointment in patient record</option>
+                                            <option value="groups|glog">Group encounter log</option>
+                                            <option value="groups|gm">Send message from the permanent group therapist to the personal therapist</option>
+                                        </optgroup>
+                                        <optgroup label="Lists">
+                                            <option value="lists|country">Country List (write,addonly optional)</option>
+                                            <option value="lists|default">Default List (write,addonly optional)</option>
+                                            <option value="lists|ethrace">Ethnicity-Race List (write,addonly optional)</option>
+                                            <option value="lists|language">Language List (write,addonly optional)</option>
+                                            <option value="lists|state">State List (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Menus">
+                                            <option value="menus|modle">Modules</option>
+                                        </optgroup>
+                                        <optgroup label="Nation Notes">
+                                            <option value="nationnotes|nn_configure">Nation Notes Configure</option>
+                                        </optgroup>
+                                        <optgroup label="Patient Portal">
+                                            <option value="patientportal|portal">Patient Portal</option>
+                                        </optgroup>
+                                        <optgroup label="Patients">
+                                            <option value="patients|alert">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                            <option value="patients|amendment">Amendments (write,addonly optional)</option>
+                                            <option value="patients|appt">Appointments (write,wsome optional)</option>
+                                            <option value="patients|demo">Demographics (write,addonly optional)</option>
+                                            <option value="patients|disclosure">Disclosures (write,addonly optional)</option>
+                                            <option value="patients|docs">Documents (write,addonly optional)</option>
+                                            <option value="patients|docs_rm">Documents Delete</option>
+                                            <option value="patients|lab">Lab Results (write,addonly optional)</option>
+                                            <option value="patients|med">Medical/History (write,addonly optional)</option>
+                                            <option value="patients|notes">Patient Notes (write,addonly optional)</option>
+                                            <option value="patients|pat_rep">Patient Report</option>
+                                            <option value="patients|reminder">Patient Reminders (write,addonly optional)</option>
+                                            <option value="patients|rx">Prescriptions (write,addonly optional)</option>
+                                            <option value="patients|sign">Sign Lab Results (write,addonly optional)</option>
+                                            <option value="patients|trans">Transactions (write optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Placeholder">
+                                            <option value="placeholder|filler">Placeholder (Maintains empty ACLs)</option>
+                                        </optgroup>
+                                        <optgroup label="Sensitivities">
+                                            <option value="sensitivities|high">High</option>
+                                            <option value="sensitivities|normal">Normal</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Care Plan</td>
+                                <td>Enabled</td>
+                                <td>PHP Extracted</td>
+                                <td>DB installed</td>
+                                <td><input type="text" value="0" class="form-control"></td>
+                                <td><input type="text" value="Clinical" class="form-control"></td>
+                                <td><input type="text" value="" class="form-control"></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=""></option>
+                                        <optgroup label="Accounting">
+                                            <option value="acct|bill">Billing (write optional)</option>
+                                            <option value="acct|disc">Price Discounting</option>
+                                            <option value="acct|eob">EOB Data Entry</option>
+                                            <option value="acct|rep">Financial Reporting - my encounters</option>
+                                            <option value="acct|rep_a">Financial Reporting - anything</option>
+                                        </optgroup>
+                                        <optgroup label="Administration">
+                                            <option value="admin|acl">ACL Administration</option>
+                                            <option value="admin|batchcom">Batch Communication Tool</option>
+                                            <option value="admin|calendar">Calendar Settings</option>
+                                            <option value="admin|database">Database Reporting</option>
+                                            <option value="admin|drugs">Pharmacy Dispensary</option>
+                                            <option value="admin|forms">Forms Administration</option>
+                                            <option value="admin|language">Language Interface Tool</option>
+                                            <option value="admin|manage_modules">Manage modules</option>
+                                            <option value="admin|menu">Menu</option>
+                                            <option value="admin|multipledb">Multipledb</option>
+                                            <option value="admin|practice">Practice Settings</option>
+                                            <option value="admin|super">Superuser</option>
+                                            <option value="admin|superbill">Superbill Codes Administration</option>
+                                            <option value="admin|users">Users/Groups/Logs Administration</option>
+                                        </optgroup>
+                                        <optgroup label="Encounters">
+                                            <option value="encounters|auth">Authorize - my encounters</option>
+                                            <option value="encounters|auth_a">Authorize - any encounters</option>
+                                            <option value="encounters|coding">Coding - my encounters (write,wsome optional)</option>
+                                            <option value="encounters|coding_a">Coding - any encounters (write,wsome optional)</option>
+                                            <option value="encounters|date_a">Fix encounter dates - any encounters</option>
+                                            <option value="encounters|notes" selected="">Notes - my encounters (write,addonly optional)</option>
+                                            <option value="encounters|notes_a">Notes - any encounters (write,addonly optional)</option>
+                                            <option value="encounters|relaxed">Less-private information (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Groups">
+                                            <option value="groups|gadd">View/Add/Update groups</option>
+                                            <option value="groups|gcalendar">View/Create/Update groups appointment in calendar</option>
+                                            <option value="groups|gdlog">Group detailed log of appointment in patient record</option>
+                                            <option value="groups|glog">Group encounter log</option>
+                                            <option value="groups|gm">Send message from the permanent group therapist to the personal therapist</option>
+                                        </optgroup>
+                                        <optgroup label="Lists">
+                                            <option value="lists|country">Country List (write,addonly optional)</option>
+                                            <option value="lists|default">Default List (write,addonly optional)</option>
+                                            <option value="lists|ethrace">Ethnicity-Race List (write,addonly optional)</option>
+                                            <option value="lists|language">Language List (write,addonly optional)</option>
+                                            <option value="lists|state">State List (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Menus">
+                                            <option value="menus|modle">Modules</option>
+                                        </optgroup>
+                                        <optgroup label="Nation Notes">
+                                            <option value="nationnotes|nn_configure">Nation Notes Configure</option>
+                                        </optgroup>
+                                        <optgroup label="Patient Portal">
+                                            <option value="patientportal|portal">Patient Portal</option>
+                                        </optgroup>
+                                        <optgroup label="Patients">
+                                            <option value="patients|alert">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                            <option value="patients|amendment">Amendments (write,addonly optional)</option>
+                                            <option value="patients|appt">Appointments (write,wsome optional)</option>
+                                            <option value="patients|demo">Demographics (write,addonly optional)</option>
+                                            <option value="patients|disclosure">Disclosures (write,addonly optional)</option>
+                                            <option value="patients|docs">Documents (write,addonly optional)</option>
+                                            <option value="patients|docs_rm">Documents Delete</option>
+                                            <option value="patients|lab">Lab Results (write,addonly optional)</option>
+                                            <option value="patients|med">Medical/History (write,addonly optional)</option>
+                                            <option value="patients|notes">Patient Notes (write,addonly optional)</option>
+                                            <option value="patients|pat_rep">Patient Report</option>
+                                            <option value="patients|reminder">Patient Reminders (write,addonly optional)</option>
+                                            <option value="patients|rx">Prescriptions (write,addonly optional)</option>
+                                            <option value="patients|sign">Sign Lab Results (write,addonly optional)</option>
+                                            <option value="patients|trans">Transactions (write optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Placeholder">
+                                            <option value="placeholder|filler">Placeholder (Maintains empty ACLs)</option>
+                                        </optgroup>
+                                        <optgroup label="Sensitivities">
+                                            <option value="sensitivities|high">High</option>
+                                            <option value="sensitivities|normal">Normal</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Care Plan</td>
+                                <td>Enabled</td>
+                                <td>PHP Extracted</td>
+                                <td>DB installed</td>
+                                <td><input type="text" value="0" class="form-control"></td>
+                                <td><input type="text" value="Clinical" class="form-control"></td>
+                                <td><input type="text" value="" class="form-control"></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=""></option>
+                                        <optgroup label="Accounting">
+                                            <option value="acct|bill">Billing (write optional)</option>
+                                            <option value="acct|disc">Price Discounting</option>
+                                            <option value="acct|eob">EOB Data Entry</option>
+                                            <option value="acct|rep">Financial Reporting - my encounters</option>
+                                            <option value="acct|rep_a">Financial Reporting - anything</option>
+                                        </optgroup>
+                                        <optgroup label="Administration">
+                                            <option value="admin|acl">ACL Administration</option>
+                                            <option value="admin|batchcom">Batch Communication Tool</option>
+                                            <option value="admin|calendar">Calendar Settings</option>
+                                            <option value="admin|database">Database Reporting</option>
+                                            <option value="admin|drugs">Pharmacy Dispensary</option>
+                                            <option value="admin|forms">Forms Administration</option>
+                                            <option value="admin|language">Language Interface Tool</option>
+                                            <option value="admin|manage_modules">Manage modules</option>
+                                            <option value="admin|menu">Menu</option>
+                                            <option value="admin|multipledb">Multipledb</option>
+                                            <option value="admin|practice">Practice Settings</option>
+                                            <option value="admin|super">Superuser</option>
+                                            <option value="admin|superbill">Superbill Codes Administration</option>
+                                            <option value="admin|users">Users/Groups/Logs Administration</option>
+                                        </optgroup>
+                                        <optgroup label="Encounters">
+                                            <option value="encounters|auth">Authorize - my encounters</option>
+                                            <option value="encounters|auth_a">Authorize - any encounters</option>
+                                            <option value="encounters|coding">Coding - my encounters (write,wsome optional)</option>
+                                            <option value="encounters|coding_a">Coding - any encounters (write,wsome optional)</option>
+                                            <option value="encounters|date_a">Fix encounter dates - any encounters</option>
+                                            <option value="encounters|notes" selected="">Notes - my encounters (write,addonly optional)</option>
+                                            <option value="encounters|notes_a">Notes - any encounters (write,addonly optional)</option>
+                                            <option value="encounters|relaxed">Less-private information (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Groups">
+                                            <option value="groups|gadd">View/Add/Update groups</option>
+                                            <option value="groups|gcalendar">View/Create/Update groups appointment in calendar</option>
+                                            <option value="groups|gdlog">Group detailed log of appointment in patient record</option>
+                                            <option value="groups|glog">Group encounter log</option>
+                                            <option value="groups|gm">Send message from the permanent group therapist to the personal therapist</option>
+                                        </optgroup>
+                                        <optgroup label="Lists">
+                                            <option value="lists|country">Country List (write,addonly optional)</option>
+                                            <option value="lists|default">Default List (write,addonly optional)</option>
+                                            <option value="lists|ethrace">Ethnicity-Race List (write,addonly optional)</option>
+                                            <option value="lists|language">Language List (write,addonly optional)</option>
+                                            <option value="lists|state">State List (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Menus">
+                                            <option value="menus|modle">Modules</option>
+                                        </optgroup>
+                                        <optgroup label="Nation Notes">
+                                            <option value="nationnotes|nn_configure">Nation Notes Configure</option>
+                                        </optgroup>
+                                        <optgroup label="Patient Portal">
+                                            <option value="patientportal|portal">Patient Portal</option>
+                                        </optgroup>
+                                        <optgroup label="Patients">
+                                            <option value="patients|alert">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                            <option value="patients|amendment">Amendments (write,addonly optional)</option>
+                                            <option value="patients|appt">Appointments (write,wsome optional)</option>
+                                            <option value="patients|demo">Demographics (write,addonly optional)</option>
+                                            <option value="patients|disclosure">Disclosures (write,addonly optional)</option>
+                                            <option value="patients|docs">Documents (write,addonly optional)</option>
+                                            <option value="patients|docs_rm">Documents Delete</option>
+                                            <option value="patients|lab">Lab Results (write,addonly optional)</option>
+                                            <option value="patients|med">Medical/History (write,addonly optional)</option>
+                                            <option value="patients|notes">Patient Notes (write,addonly optional)</option>
+                                            <option value="patients|pat_rep">Patient Report</option>
+                                            <option value="patients|reminder">Patient Reminders (write,addonly optional)</option>
+                                            <option value="patients|rx">Prescriptions (write,addonly optional)</option>
+                                            <option value="patients|sign">Sign Lab Results (write,addonly optional)</option>
+                                            <option value="patients|trans">Transactions (write optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Placeholder">
+                                            <option value="placeholder|filler">Placeholder (Maintains empty ACLs)</option>
+                                        </optgroup>
+                                        <optgroup label="Sensitivities">
+                                            <option value="sensitivities|high">High</option>
+                                            <option value="sensitivities|normal">Normal</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Care Plan</td>
+                                <td>Enabled</td>
+                                <td>PHP Extracted</td>
+                                <td>DB installed</td>
+                                <td><input type="text" value="0" class="form-control"></td>
+                                <td><input type="text" value="Clinical" class="form-control"></td>
+                                <td><input type="text" value="" class="form-control"></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=""></option>
+                                        <optgroup label="Accounting">
+                                            <option value="acct|bill">Billing (write optional)</option>
+                                            <option value="acct|disc">Price Discounting</option>
+                                            <option value="acct|eob">EOB Data Entry</option>
+                                            <option value="acct|rep">Financial Reporting - my encounters</option>
+                                            <option value="acct|rep_a">Financial Reporting - anything</option>
+                                        </optgroup>
+                                        <optgroup label="Administration">
+                                            <option value="admin|acl">ACL Administration</option>
+                                            <option value="admin|batchcom">Batch Communication Tool</option>
+                                            <option value="admin|calendar">Calendar Settings</option>
+                                            <option value="admin|database">Database Reporting</option>
+                                            <option value="admin|drugs">Pharmacy Dispensary</option>
+                                            <option value="admin|forms">Forms Administration</option>
+                                            <option value="admin|language">Language Interface Tool</option>
+                                            <option value="admin|manage_modules">Manage modules</option>
+                                            <option value="admin|menu">Menu</option>
+                                            <option value="admin|multipledb">Multipledb</option>
+                                            <option value="admin|practice">Practice Settings</option>
+                                            <option value="admin|super">Superuser</option>
+                                            <option value="admin|superbill">Superbill Codes Administration</option>
+                                            <option value="admin|users">Users/Groups/Logs Administration</option>
+                                        </optgroup>
+                                        <optgroup label="Encounters">
+                                            <option value="encounters|auth">Authorize - my encounters</option>
+                                            <option value="encounters|auth_a">Authorize - any encounters</option>
+                                            <option value="encounters|coding">Coding - my encounters (write,wsome optional)</option>
+                                            <option value="encounters|coding_a">Coding - any encounters (write,wsome optional)</option>
+                                            <option value="encounters|date_a">Fix encounter dates - any encounters</option>
+                                            <option value="encounters|notes" selected="">Notes - my encounters (write,addonly optional)</option>
+                                            <option value="encounters|notes_a">Notes - any encounters (write,addonly optional)</option>
+                                            <option value="encounters|relaxed">Less-private information (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Groups">
+                                            <option value="groups|gadd">View/Add/Update groups</option>
+                                            <option value="groups|gcalendar">View/Create/Update groups appointment in calendar</option>
+                                            <option value="groups|gdlog">Group detailed log of appointment in patient record</option>
+                                            <option value="groups|glog">Group encounter log</option>
+                                            <option value="groups|gm">Send message from the permanent group therapist to the personal therapist</option>
+                                        </optgroup>
+                                        <optgroup label="Lists">
+                                            <option value="lists|country">Country List (write,addonly optional)</option>
+                                            <option value="lists|default">Default List (write,addonly optional)</option>
+                                            <option value="lists|ethrace">Ethnicity-Race List (write,addonly optional)</option>
+                                            <option value="lists|language">Language List (write,addonly optional)</option>
+                                            <option value="lists|state">State List (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Menus">
+                                            <option value="menus|modle">Modules</option>
+                                        </optgroup>
+                                        <optgroup label="Nation Notes">
+                                            <option value="nationnotes|nn_configure">Nation Notes Configure</option>
+                                        </optgroup>
+                                        <optgroup label="Patient Portal">
+                                            <option value="patientportal|portal">Patient Portal</option>
+                                        </optgroup>
+                                        <optgroup label="Patients">
+                                            <option value="patients|alert">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                            <option value="patients|amendment">Amendments (write,addonly optional)</option>
+                                            <option value="patients|appt">Appointments (write,wsome optional)</option>
+                                            <option value="patients|demo">Demographics (write,addonly optional)</option>
+                                            <option value="patients|disclosure">Disclosures (write,addonly optional)</option>
+                                            <option value="patients|docs">Documents (write,addonly optional)</option>
+                                            <option value="patients|docs_rm">Documents Delete</option>
+                                            <option value="patients|lab">Lab Results (write,addonly optional)</option>
+                                            <option value="patients|med">Medical/History (write,addonly optional)</option>
+                                            <option value="patients|notes">Patient Notes (write,addonly optional)</option>
+                                            <option value="patients|pat_rep">Patient Report</option>
+                                            <option value="patients|reminder">Patient Reminders (write,addonly optional)</option>
+                                            <option value="patients|rx">Prescriptions (write,addonly optional)</option>
+                                            <option value="patients|sign">Sign Lab Results (write,addonly optional)</option>
+                                            <option value="patients|trans">Transactions (write optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Placeholder">
+                                            <option value="placeholder|filler">Placeholder (Maintains empty ACLs)</option>
+                                        </optgroup>
+                                        <optgroup label="Sensitivities">
+                                            <option value="sensitivities|high">High</option>
+                                            <option value="sensitivities|normal">Normal</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Care Plan</td>
+                                <td>Enabled</td>
+                                <td>PHP Extracted</td>
+                                <td>DB installed</td>
+                                <td><input type="text" value="0" class="form-control"></td>
+                                <td><input type="text" value="Clinical" class="form-control"></td>
+                                <td><input type="text" value="" class="form-control"></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=""></option>
+                                        <optgroup label="Accounting">
+                                            <option value="acct|bill">Billing (write optional)</option>
+                                            <option value="acct|disc">Price Discounting</option>
+                                            <option value="acct|eob">EOB Data Entry</option>
+                                            <option value="acct|rep">Financial Reporting - my encounters</option>
+                                            <option value="acct|rep_a">Financial Reporting - anything</option>
+                                        </optgroup>
+                                        <optgroup label="Administration">
+                                            <option value="admin|acl">ACL Administration</option>
+                                            <option value="admin|batchcom">Batch Communication Tool</option>
+                                            <option value="admin|calendar">Calendar Settings</option>
+                                            <option value="admin|database">Database Reporting</option>
+                                            <option value="admin|drugs">Pharmacy Dispensary</option>
+                                            <option value="admin|forms">Forms Administration</option>
+                                            <option value="admin|language">Language Interface Tool</option>
+                                            <option value="admin|manage_modules">Manage modules</option>
+                                            <option value="admin|menu">Menu</option>
+                                            <option value="admin|multipledb">Multipledb</option>
+                                            <option value="admin|practice">Practice Settings</option>
+                                            <option value="admin|super">Superuser</option>
+                                            <option value="admin|superbill">Superbill Codes Administration</option>
+                                            <option value="admin|users">Users/Groups/Logs Administration</option>
+                                        </optgroup>
+                                        <optgroup label="Encounters">
+                                            <option value="encounters|auth">Authorize - my encounters</option>
+                                            <option value="encounters|auth_a">Authorize - any encounters</option>
+                                            <option value="encounters|coding">Coding - my encounters (write,wsome optional)</option>
+                                            <option value="encounters|coding_a">Coding - any encounters (write,wsome optional)</option>
+                                            <option value="encounters|date_a">Fix encounter dates - any encounters</option>
+                                            <option value="encounters|notes" selected="">Notes - my encounters (write,addonly optional)</option>
+                                            <option value="encounters|notes_a">Notes - any encounters (write,addonly optional)</option>
+                                            <option value="encounters|relaxed">Less-private information (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Groups">
+                                            <option value="groups|gadd">View/Add/Update groups</option>
+                                            <option value="groups|gcalendar">View/Create/Update groups appointment in calendar</option>
+                                            <option value="groups|gdlog">Group detailed log of appointment in patient record</option>
+                                            <option value="groups|glog">Group encounter log</option>
+                                            <option value="groups|gm">Send message from the permanent group therapist to the personal therapist</option>
+                                        </optgroup>
+                                        <optgroup label="Lists">
+                                            <option value="lists|country">Country List (write,addonly optional)</option>
+                                            <option value="lists|default">Default List (write,addonly optional)</option>
+                                            <option value="lists|ethrace">Ethnicity-Race List (write,addonly optional)</option>
+                                            <option value="lists|language">Language List (write,addonly optional)</option>
+                                            <option value="lists|state">State List (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Menus">
+                                            <option value="menus|modle">Modules</option>
+                                        </optgroup>
+                                        <optgroup label="Nation Notes">
+                                            <option value="nationnotes|nn_configure">Nation Notes Configure</option>
+                                        </optgroup>
+                                        <optgroup label="Patient Portal">
+                                            <option value="patientportal|portal">Patient Portal</option>
+                                        </optgroup>
+                                        <optgroup label="Patients">
+                                            <option value="patients|alert">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                            <option value="patients|amendment">Amendments (write,addonly optional)</option>
+                                            <option value="patients|appt">Appointments (write,wsome optional)</option>
+                                            <option value="patients|demo">Demographics (write,addonly optional)</option>
+                                            <option value="patients|disclosure">Disclosures (write,addonly optional)</option>
+                                            <option value="patients|docs">Documents (write,addonly optional)</option>
+                                            <option value="patients|docs_rm">Documents Delete</option>
+                                            <option value="patients|lab">Lab Results (write,addonly optional)</option>
+                                            <option value="patients|med">Medical/History (write,addonly optional)</option>
+                                            <option value="patients|notes">Patient Notes (write,addonly optional)</option>
+                                            <option value="patients|pat_rep">Patient Report</option>
+                                            <option value="patients|reminder">Patient Reminders (write,addonly optional)</option>
+                                            <option value="patients|rx">Prescriptions (write,addonly optional)</option>
+                                            <option value="patients|sign">Sign Lab Results (write,addonly optional)</option>
+                                            <option value="patients|trans">Transactions (write optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Placeholder">
+                                            <option value="placeholder|filler">Placeholder (Maintains empty ACLs)</option>
+                                        </optgroup>
+                                        <optgroup label="Sensitivities">
+                                            <option value="sensitivities|high">High</option>
+                                            <option value="sensitivities|normal">Normal</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Care Plan</td>
+                                <td>Enabled</td>
+                                <td>PHP Extracted</td>
+                                <td>DB installed</td>
+                                <td><input type="text" value="0" class="form-control"></td>
+                                <td><input type="text" value="Clinical" class="form-control"></td>
+                                <td><input type="text" value="" class="form-control"></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=""></option>
+                                        <optgroup label="Accounting">
+                                            <option value="acct|bill">Billing (write optional)</option>
+                                            <option value="acct|disc">Price Discounting</option>
+                                            <option value="acct|eob">EOB Data Entry</option>
+                                            <option value="acct|rep">Financial Reporting - my encounters</option>
+                                            <option value="acct|rep_a">Financial Reporting - anything</option>
+                                        </optgroup>
+                                        <optgroup label="Administration">
+                                            <option value="admin|acl">ACL Administration</option>
+                                            <option value="admin|batchcom">Batch Communication Tool</option>
+                                            <option value="admin|calendar">Calendar Settings</option>
+                                            <option value="admin|database">Database Reporting</option>
+                                            <option value="admin|drugs">Pharmacy Dispensary</option>
+                                            <option value="admin|forms">Forms Administration</option>
+                                            <option value="admin|language">Language Interface Tool</option>
+                                            <option value="admin|manage_modules">Manage modules</option>
+                                            <option value="admin|menu">Menu</option>
+                                            <option value="admin|multipledb">Multipledb</option>
+                                            <option value="admin|practice">Practice Settings</option>
+                                            <option value="admin|super">Superuser</option>
+                                            <option value="admin|superbill">Superbill Codes Administration</option>
+                                            <option value="admin|users">Users/Groups/Logs Administration</option>
+                                        </optgroup>
+                                        <optgroup label="Encounters">
+                                            <option value="encounters|auth">Authorize - my encounters</option>
+                                            <option value="encounters|auth_a">Authorize - any encounters</option>
+                                            <option value="encounters|coding">Coding - my encounters (write,wsome optional)</option>
+                                            <option value="encounters|coding_a">Coding - any encounters (write,wsome optional)</option>
+                                            <option value="encounters|date_a">Fix encounter dates - any encounters</option>
+                                            <option value="encounters|notes" selected="">Notes - my encounters (write,addonly optional)</option>
+                                            <option value="encounters|notes_a">Notes - any encounters (write,addonly optional)</option>
+                                            <option value="encounters|relaxed">Less-private information (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Groups">
+                                            <option value="groups|gadd">View/Add/Update groups</option>
+                                            <option value="groups|gcalendar">View/Create/Update groups appointment in calendar</option>
+                                            <option value="groups|gdlog">Group detailed log of appointment in patient record</option>
+                                            <option value="groups|glog">Group encounter log</option>
+                                            <option value="groups|gm">Send message from the permanent group therapist to the personal therapist</option>
+                                        </optgroup>
+                                        <optgroup label="Lists">
+                                            <option value="lists|country">Country List (write,addonly optional)</option>
+                                            <option value="lists|default">Default List (write,addonly optional)</option>
+                                            <option value="lists|ethrace">Ethnicity-Race List (write,addonly optional)</option>
+                                            <option value="lists|language">Language List (write,addonly optional)</option>
+                                            <option value="lists|state">State List (write,addonly optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Menus">
+                                            <option value="menus|modle">Modules</option>
+                                        </optgroup>
+                                        <optgroup label="Nation Notes">
+                                            <option value="nationnotes|nn_configure">Nation Notes Configure</option>
+                                        </optgroup>
+                                        <optgroup label="Patient Portal">
+                                            <option value="patientportal|portal">Patient Portal</option>
+                                        </optgroup>
+                                        <optgroup label="Patients">
+                                            <option value="patients|alert">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                            <option value="patients|amendment">Amendments (write,addonly optional)</option>
+                                            <option value="patients|appt">Appointments (write,wsome optional)</option>
+                                            <option value="patients|demo">Demographics (write,addonly optional)</option>
+                                            <option value="patients|disclosure">Disclosures (write,addonly optional)</option>
+                                            <option value="patients|docs">Documents (write,addonly optional)</option>
+                                            <option value="patients|docs_rm">Documents Delete</option>
+                                            <option value="patients|lab">Lab Results (write,addonly optional)</option>
+                                            <option value="patients|med">Medical/History (write,addonly optional)</option>
+                                            <option value="patients|notes">Patient Notes (write,addonly optional)</option>
+                                            <option value="patients|pat_rep">Patient Report</option>
+                                            <option value="patients|reminder">Patient Reminders (write,addonly optional)</option>
+                                            <option value="patients|rx">Prescriptions (write,addonly optional)</option>
+                                            <option value="patients|sign">Sign Lab Results (write,addonly optional)</option>
+                                            <option value="patients|trans">Transactions (write optional)</option>
+                                        </optgroup>
+                                        <optgroup label="Placeholder">
+                                            <option value="placeholder|filler">Placeholder (Maintains empty ACLs)</option>
+                                        </optgroup>
+                                        <optgroup label="Sensitivities">
+                                            <option value="sensitivities|high">High</option>
+                                            <option value="sensitivities|normal">Normal</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form-group text-right">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+            <span class="float-md-left d-block d-md-inline-block">2021 &copy; Copyright <a
+                    class="text-bold-800 grey darken-2" href="#" target="_blank">Relier Health</a></span>
+            <ul class="list-inline float-md-right d-block d-md-inline-blockd-none d-lg-block mb-0">
+                <li class="list-inline-item"><a class="my-1" href="#" target="_blank"> Term & Condition</a></li>
+                <li class="list-inline-item"><a class="my-1" href="#" target="_blank"> Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+   <!-- BEGIN VENDOR JS-->
+   <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+   <!-- BEGIN VENDOR JS-->
+
+   <!-- BEGIN PAGE VENDOR JS-->
+   <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
+   <!-- END PAGE VENDOR JS-->
+
+   <!-- BEGIN Relier Website  JS-->
+   <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
+   <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
+   <!-- END Relier Website  JS-->
+
+   <!-- BEGIN PAGE LEVEL JS-->
+   <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
+   <!-- END PAGE LEVEL JS-->
+</body>
+
+</html>

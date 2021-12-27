@@ -1,0 +1,681 @@
+
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Relier Health</title>
+    <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/vendors/css/charts/chartist.css" />
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN Relier Website  CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css" />
+    <!-- END Relier Website  CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/pages/dashboard-ecommerce.css" />
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <!-- END Custom CSS-->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
+</head>
+<style>
+    .content-body {
+        overflow-x: auto;
+    }
+
+    .content-body table {
+        background-color: #fff;
+    }
+
+    .table_icons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .table_icons span {
+        height: 28px;
+        width: 28px;
+        font-size: 12px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .table_icons .icn1 {
+        background-color: #11cf89;
+    }
+
+    .table_icons .icn2 {
+        background-color: #fbbf3a;
+    }
+
+    .table_icons .icn3 {
+        background-color: #e54934;
+    }
+</style>
+
+<body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
+    data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
+    <!-- fixed-top-->
+    <nav
+        class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse show" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-block d-md-none">
+                            <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a>
+                        </li>
+                        <li class="nav-item dropdown navbar-search">
+                            <a class="nav-link dropdown-toggle hide" data-toggle="dropdown" href="#"><i
+                                    class="ficon ft-search"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="arrow_box">
+                                    <form>
+                                        <div class="input-group search-box">
+                                            <div class="position-relative has-icon-right full-width">
+                                                <input class="form-control" id="search" type="text"
+                                                    placeholder="Search here..." />
+                                                <div class="form-control-position navbar-search-close"><i class="ft-x">
+                                                    </i></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-language nav-item">
+                            <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="flag-icon flag-icon-us"></i><span class="selected-language"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+                                <div class="arrow_box">
+                                    <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-us"></i>English</a>
+                                    <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-es"></i>Arabic</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-notification nav-item">
+                            <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-mail">
+                                </i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="arrow_box_right">
+                                    <a class="dropdown-item" href="#"><i class="ft-book"></i> Read Mail</a><a
+                                        class="dropdown-item" href="#"><i class="ft-bookmark"></i> Read Later</a>
+                                    <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Mark all Read </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <span class="avatar avatar-online">
+                                    <img src="theme-assets/images/user.webp" alt="avatar" /><i></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="arrow_box_right">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="avatar avatar-online"><img
+                                                src="theme-assets/images/portrait/small/avatar-s-19.png"
+                                                alt="avatar" /><span class="user-name text-bold-700 ml-1">Dr.
+                                                Praveen</span></span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
+                                    
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar-Code-Star-->
+
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true"
+    data-img="theme-assets/images/backgrounds/02.jpg">
+    <div class="navbar-header">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="index.html">
+                    <img class="brand-logo" alt="Relier Website admin logo"
+                    src="theme-assets/images/logo/logo.svg"/>
+                    <!-- <h3 class="brand-text">Relier Health</h3> -->
+                </a>
+            </li>
+            <li class="nav-item d-md-none">
+                <a class="nav-link close-navbar"><i class="ft-x"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+            <li class="nav-item">
+                <a><i class="ft-calendar"></i><span class="menu-title">Appointment</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Appointment</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-user-plus"></i><span class="menu-title">Patient Register</span></a>
+                <ul class="drop_menu">
+                    <li><a href="patient-registration.html">Patient Register</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-droplet"></i><span class="menu-title">In-Patient</span></a>
+                <ul class="drop_menu">
+                    <li><a href="patient-in.html">In-Patient</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layers"></i><span class="menu-title">Out-Patient</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Out-Patient</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-box"></i><span class="menu-title">Laboratory</span></a>
+                <ul class="drop_menu">
+                    <li><a href="lab-info.html">Laboratory</a></li>
+                    <li><a href="laboratory-information.html">Laboratory Information</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-bold"></i><span class="menu-title">Radiology</span></a>
+                <ul class="drop_menu">
+                    <li><a href="radiology-system.html">Radiology</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-credit-card"></i><span class="menu-title">Insurance</span></a>
+                <ul class="drop_menu">
+                    <li><a href="insurance-management.html">Insurance</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Forms</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Forms</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Billing</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Billing</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">OT Booking</span></a>
+                <ul class="drop_menu">
+                    <li><a href="ot-booking.html">OT Booking</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Procedure</span></a>
+                <ul class="drop_menu">
+                    <li><a href="providers.html">Providers</a></li>
+                    <li><a href="Configure.html">Configuration</a></li>
+                    <li><a href="load-compendium.html">Load Compendium</a></li>
+                    <li><a href="">Pending Review</a></li>
+                    <li><a href="">Patient Results</a></li>
+                    <li><a href="">Lab Overview</a></li>
+                    <li><a href="batch-results.html">Batch Results</a></li>
+                    <li><a href="electronic-reports.html">Electronic Reports</a></li>
+                    <li><a href="lab-documents.html">Lab Documents</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Administration</span></a>
+                <ul class="drop_menu">
+                    <li><a href="admin_global.html">Global</a></li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Clinic</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="holidays-management.html">Import Holidays</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Patients</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="patient-reminders.html">Patient Reminders</a></li>
+                            <li><a href="merge-patients.html">Merge Patients</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Practice</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="practice-settings.html">Practice Settings</a></li>
+                            <li><a href="rules-configuration.html">Rules</a></li>
+                            <li><a href="rules-alert-manager.html">Alerts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Coding</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="codes.html">Codes</a></li>
+                            <li><a href="Configure">Native Data Loads</a></li>
+                            <li><a href="Configure">External Data Loads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">System</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Address Book</a></li>
+                    <li><a href="#">ACL</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Report</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Report</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Users</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Users</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Data</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Data</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Marketing</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Marketing</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <a class="btn btn-danger btn-block btn-glow btn-upgrade-pro mx-1" href="#">Relier Health</a>
+    <div class="navigation-background"></div>
+    </div>
+
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row"></div>
+            <div class="common-gap"></div>
+            <div class="table-top d-flex align-items-center justify-content-between">
+                <div class="table-top">
+                    <h4>Manage Lists</h4>
+                </div>
+                <div class="show-entry d-flex align-items-center">
+                    <label>Show Entries</label>
+                    <input type="text" class="custom-field" value="1">
+                </div>
+                <div class="show-entry d-flex align-items-center">
+                    <input list="brow" class="form-control" placeholder="Address Book Types">
+                    <datalist id="brow">
+                        <option>Address Book Types</option>
+                        <option>Adjustment Reasons</option>
+                        <option>Allergy Issue List</option>
+                        <option>AllergyIntolerance Verification Status Codes</option>
+                        <option>Amendment From</option>
+                        <option>Amendment Status</option>
+                        <option>Appointment Statuses</option>
+                        <option>Apps</option>
+                        <option>Boolean</option>
+                        <option>Chart Storage Locations</option>
+                        <option>Clinical Plans</option>
+                        <option>Clinical Rule Action Category</option>
+                        <option>Clinical Rule Action Item</option>
+                        <option>Clinical Rule Filter Methods</option>
+                        <option>Clinical Rule Target Methods</option>
+                        <option>Clinical Rules</option>
+                        <option>Clinical Rules Age Intervals</option>
+                        <option>Clinical Rules Comparisons</option>
+                        <option>Clinical Rules Encounter Types</option>
+                        <option>Clinical Rules Reminder Due Options</option>
+                        <option>Clinical Rules Reminder Inactivation Options</option>
+                        <option>Clinical Rules Reminder Intervals</option>
+                        <option>Clinical Rules Reminder Methods</option>
+                        <option>Clinical Rules Target Intervals</option>
+                        <option>Code Types</option>
+                        <option>Condition Verification Status Codes</option>
+                        <option>County</option>
+                        <option>County</option>
+                        <option>Date Master Criteria</option>
+                        <option>Dental Issue List</option>
+                        <option>Disclosure Type</option>
+                        <option>Document Template Categories</option>
+                        <option>Drug Forms</option>
+                        <option>Drug Intervals</option>
+                        <option>Drug Routes</option>
+                        <option>Drug Units</option>
+                        <option>Eligibility</option>
+                        <option>Ethnicity</option>
+                        <option>Exams/Tests</option>
+                        <option>Eye Coding Fields</option>
+                        <option>Eye Coding Terms</option>
+                        <option>Eye Contact Lens Brand list</option>
+                        <option>Eye Contact Lens Manufacturer list</option>
+                        <option>Eye Contact Lens Supplier list</option>
+                        <option>Eye Exam Default Values for New Providers</option>
+                        <option>Eye Lens Material</option>
+                        <option>Eye Lens Treatments</option>
+                        <option>Eye Orders Defaults</option>
+                        <option>Eye QP List ANTSEG for New Providers</option>
+                        <option>Eye QP List EXT for New Providers</option>
+                        <option>Eye QP List RETINA for New Providers</option>
+                        <option>Fee Sheet</option>
+                        <option>Files type white list</option>
+                        <option>Form Keys</option>
+                        <option>General Issue List</option>
+                        <option>Group Attendance Statuses</option>
+                        <option>Group Statuses</option>
+                        <option>Immunization Administered Site</option>
+                        <option>Immunization Completion Status</option>
+                        <option>Immunization Information Source</option>
+                        <option>Immunization Manufacturer</option>
+                        <option>Immunization Observation Criteria</option>
+                        <option>Immunization Refusal Reason</option>
+                        <option>Immunization Registry Status</option>
+                        <option>Immunization Vaccine Eligibility Results</option>
+                        <option>Immunizations</option>
+                        <option>Industry</option>
+                        <option>Insurance Types</option>
+                        <option>Invoice Reference Number Pools</option>
+                        <option>Issue Subtypes</option>
+                        <option>Issue Types</option>
+                        <option>Language</option>
+                        <option>LBF_Validations</option>
+                        <option>Marital Status</option>
+                        <option>Medical Problem Issue List</option>
+                        <option>Medication Issue List</option>
+                        <option>Message Status</option>
+                        <option>MSP Remit Codes</option>
+                        <option>Nation Notes Replace Buttons</option>
+                        <option>NewCrop eRx Role</option>
+                        <option>NewCrop eRx Role</option>
+                        <option>Next of Kin Relationship</option>
+                        <option>Occupation</option>
+                        <option>Occurrence</option>
+                        <option>Order Priorities</option>
+                        <option>Order Statuses</option>
+                        <option>Order Types</option>
+                        <option>Outcome</option>
+                        <option>Page Validation</option>
+                        <option>Patient Flow Board Rooms</option>
+                        <option>Patient List Columns</option>
+                        <option>Patient Note Types</option>
+                        <option>Payment Adjustment Code</option>
+                        <option>Payment Date</option>
+                        <option>Payment Gateways</option>
+                        <option>Payment Ins</option>
+                        <option>Payment Method</option>
+                        <option>Payment Sort By</option>
+                        <option>Payment Status</option>
+                        <option>Payment Type</option>
+                        <option>Physician Type</option>
+                        <option>Plan of Care Type</option>
+                        <option>Price Level</option>
+                        <option>Procedure Body Sites</option>
+                        <option>Procedure Boolean Results</option>
+                        <option>Procedure Lateralities</option>
+                        <option>Procedure Report Statuses</option>
+                        <option>Procedure Result Abnormal</option>
+                        <option>Procedure Result Statuses</option>
+                        <option>Procedure Routes</option>
+                        <option>Procedure Specimen Types</option>
+                        <option>Procedure Types</option>
+                        <option>Procedure Units</option>
+                        <option>Provider Qualifier Code</option>
+                        <option>Publicity Code</option>
+                        <option>Race</option>
+                        <option>Race/Ethnicity</option>
+                        <option>Reaction</option>
+                        <option>Referral Source</option>
+                        <option>Relationship</option>
+                        <option>Religious Affiliation</option>
+                        <option>Risk Factors</option>
+                        <option>Risk Level</option>
+                        <option>Service Category</option>
+                        <option>Severity</option>
+                        <option>Sex</option>
+                        <option>Smoking Status</option>
+                        <option>Sort Direction</option>
+                        <option>State</option>
+                        <option>Subscriber Relationship</option>
+                        <option>Surgery Issue List</option>
+                        <option>Tax Rate</option>
+                        <option>Titles</option>
+                        <option>US Core Provider Role</option>
+                        <option>US Core Provider Specialty</option>
+                        <option>User Defined List 1</option>
+                        <option>User Defined List 2</option>
+                        <option>User Defined List 3</option>
+                        <option>User Defined List 4</option>
+                        <option>User Defined List 5</option>
+                        <option>User Defined List 6</option>
+                        <option>User Defined List 7</option>
+                        <option>Value Set ActEncounterCode</option>
+                        <option>Warehouses</option>
+                        <option>Yes/No</option>
+                    </datalist>  
+                </div>
+                <div class="show-entry d-flex align-items-center">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-new-provider"><i class="ft-plus"></i>New List</button>
+                    <button type="button" class="btn btn-danger ml-1"><i class="ft-trash"></i>Delete List</button>
+                </div>
+            </div>
+            <div class="content-body">
+                <form>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Order</th>
+                                <th>Default</th>
+                                <th>Active</th>
+                                <th>Type</th>
+                                <th>Notes</th>
+                                <th>Code(s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form-group text-right">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!-- Modal Add New Provider Code  -->
+
+    <!-- The Modal -->
+    <div class="modal" id="add-new-provider">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">New List</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row align-items-end">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                <label for="name">List Name:</label>
+                                <input type="text" class="form-control" placeholder="Enter List Name">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-info">Save</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+            <span class="float-md-left d-block d-md-inline-block">2021 &copy; Copyright <a
+                    class="text-bold-800 grey darken-2" href="#" target="_blank">Relier Health</a></span>
+            <ul class="list-inline float-md-right d-block d-md-inline-blockd-none d-lg-block mb-0">
+                <li class="list-inline-item"><a class="my-1" href="#" target="_blank"> Term & Condition</a></li>
+                <li class="list-inline-item"><a class="my-1" href="#" target="_blank"> Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+   <!-- BEGIN VENDOR JS-->
+   <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+   <!-- BEGIN VENDOR JS-->
+
+   <!-- BEGIN PAGE VENDOR JS-->
+   <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
+   <!-- END PAGE VENDOR JS-->
+
+   <!-- BEGIN Relier Website  JS-->
+   <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
+   <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
+   <!-- END Relier Website  JS-->
+
+   <!-- BEGIN PAGE LEVEL JS-->
+   <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
+   <!-- END PAGE LEVEL JS-->
+</body>
+
+</html>

@@ -384,7 +384,7 @@ button:focus {
 }
 
 .content-body {
-    padding: 10px 10px;
+    padding: 10px 0px;
 }
 .external-database-single-section {
     padding: 20px;
@@ -404,4 +404,7 @@ span.msg {
     border-radius: 8px;
     text-align: center;
     position: relative;
+}
+.card-header {
+    background: #e5e5e5;
 }

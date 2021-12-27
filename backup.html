@@ -1,5 +1,7 @@
 
 
+
+
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 
@@ -327,43 +329,31 @@
     <div class="navigation-background"></div>
     </div>
 
-    <div class="app-content content">
+    <div class="app-content content Holidays-management">
         <div class="content-wrapper">
             <div class="content-header row"></div>
             <div class="common-gap"></div>
             <div class="table-top d-flex align-items-center justify-content-between mb-2">
                 <div class="table-top">
-                    <h4>Facilities</h4>
-                </div>
-                <div class="show-entry d-flex align-items-center">
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-facilities"><i class="ft-plus"></i>Add New</button>
+                    <h4>Backup</h4>
                 </div>
             </div>
             <div class="content-body">
                 <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Tax ID</th>
-                            <th>NPI</th>
-                            <th>Billing Address</th>
-                            <th>Mailing Address</th>
-                            <th>Phone</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         <tr>
-                            <td>Great Clinic </td>
-                            <td>123456897</td>
-                            <td>NPI Data</td>
-                            <td>665 Roadsby Road,Longview,FL,USA 333222 </td>
-                            <td>Malling Address </td>
-                            <td>000-000-0000</td>
+                            <td><Button class="btn btn-info">Create Backup</Button></td>
+                            <td>Create and download a full backup</td>
+                        </tr>
+                        <tr>
+                            <td><Button class="btn btn-info">Create Eventlog Backup</Button></td>
+                            <td>Create Eventlog Backup <br>Note that the Eventlog Backup is currently set to save in the following folder: /tmp . Recommend setting the Path for Event Log Backup in Globals settings in the Miscellaneous section to something other than your tmp/temp directory. Please refer to README-Log-Backup.txt file in the Documentation directory to learn how to automate the process of creating log backups.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+    </div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 
@@ -533,112 +523,6 @@
                                 <div class="form-group">
                                     <label for="odid">ODID:</label>
                                     <input type="text" class="form-control" placeholder="Enter ODID" id="odid">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="Usage">POS Code:</label>
-                                    <select class="form-control" name="pos_code">
-                                        <option value="01">01: Pharmacy **</option>
-                                        <option value="02">02: Telehealth</option>
-                                        <option value="03">03: School</option>
-                                        <option value="04">04: Homeless Shelter</option>
-                                        <option value="05">05: Indian Health Service Free-standing Facility</option>
-                                        <option value="06">06: Indian Health Service Provider-based Facility</option>
-                                        <option value="07">07: Tribal 638 Free-standing Facility</option>
-                                        <option value="08">08: Tribal 638 Provider-based Facility</option>
-                                        <option value="09">09: Prison Correctional Facility</option>
-                                        <option value="10">10: Unassigned</option>
-                                        <option value="11">11: Office</option>
-                                        <option value="12">12: Home</option>
-                                        <option value="13">13: Assisted Living Facility</option>
-                                        <option value="14">14: Group Home *</option>
-                                        <option value="15">15: Mobile Unit</option>
-                                        <option value="16">16: Temporary Lodging</option>
-                                        <option value="17">17: Walk-in Retail Health Clinic</option>
-                                        <option value="18">18: Place of Employment-Worksite</option>
-                                        <option value="19">19: Off Campus-Outpatient Hospital</option>
-                                        <option value="20">20: Urgent Care Facility</option>
-                                        <option value="21">21: Inpatient Hospital</option>
-                                        <option value="22">22: Outpatient Hospital</option>
-                                        <option value="23">23: Emergency Room - Hospital</option>
-                                        <option value="24">24: Ambulatory Surgical Center</option>
-                                        <option value="25">25: Birthing Center</option>
-                                        <option value="26">26: Military Treatment Facility</option>
-                                        <option value="27">27: Unassigned</option>
-                                        <option value="28">28: Unassigned</option>
-                                        <option value="29">29: Unassigned</option>
-                                        <option value="30">30: Unassigned</option>
-                                        <option value="31">31: Skilled Nursing Facility</option>
-                                        <option value="32">32: Nursing Facility</option>
-                                        <option value="33">33: Custodial Care Facility</option>
-                                        <option value="34">34: Hospice</option>
-                                        <option value="35">35: Unassigned</option>
-                                        <option value="36">36: Unassigned</option>
-                                        <option value="37">37: Unassigned</option>
-                                        <option value="38">38: Unassigned</option>
-                                        <option value="39">39: Unassigned</option>
-                                        <option value="40">40: Unassigned</option>
-                                        <option value="41">41: Ambulance - Land</option>
-                                        <option value="42">42: Ambulance - Air or Water</option>
-                                        <option value="43">43: Unassigned</option>
-                                        <option value="44">44: Unassigned</option>
-                                        <option value="45">45: Unassigned</option>
-                                        <option value="46">46: Unassigned</option>
-                                        <option value="47">47: Unassigned</option>
-                                        <option value="48">48: Unassigned</option>
-                                        <option value="49">49: Independent Clinic</option>
-                                        <option value="50">50: Federally Qualified Health Center</option>
-                                        <option value="51">51: Inpatient Psychiatric Facility</option>
-                                        <option value="52">52: Psychiatric Facility-Partial Hospitalization</option>
-                                        <option value="53">53: Community Mental Health Center</option>
-                                        <option value="54">54: Intermediate Care Facility/Mentally Retarded</option>
-                                        <option value="55">55: Residential Substance Abuse Treatment Facility</option>
-                                        <option value="56">56: Psychiatric Residential Treatment Center</option>
-                                        <option value="57">57: Non-residential Substance Abuse Treatment Facility</option>
-                                        <option value="58">58: Unassigned</option>
-                                        <option value="59">59: Unassigned</option>
-                                        <option value="60">60: Mass Immunization Center</option>
-                                        <option value="61">61: Comprehensive Inpatient Rehabilitation Facility</option>
-                                        <option value="62">62: Comprehensive Outpatient Rehabilitation Facility</option>
-                                        <option value="63">63: Unassigned</option>
-                                        <option value="64">64: Unassigned</option>
-                                        <option value="65">65: End-Stage Renal Disease Treatment Facility</option>
-                                        <option value="66">66: Unassigned</option>
-                                        <option value="67">67: Unassigned</option>
-                                        <option value="68">68: Unassigned</option>
-                                        <option value="69">69: Unassigned</option>
-                                        <option value="70">70: Unassigned</option>
-                                        <option value="71">71: Public Health Clinic</option>
-                                        <option value="72">72: Rural Health Clinic</option>
-                                        <option value="73">73: Unassigned</option>
-                                        <option value="74">74: Unassigned</option>
-                                        <option value="75">75: Unassigned</option>
-                                        <option value="76">76: Unassigned</option>
-                                        <option value="77">77: Unassigned</option>
-                                        <option value="78">78: Unassigned</option>
-                                        <option value="79">79: Unassigned</option>
-                                        <option value="80">80: Unassigned</option>
-                                        <option value="81">81: Independent Laboratory</option>
-                                        <option value="82">82: Unassigned</option>
-                                        <option value="83">83: Unassigned</option>
-                                        <option value="84">84: Unassigned</option>
-                                        <option value="85">85: Unassigned</option>
-                                        <option value="86">86: Unassigned</option>
-                                        <option value="87">87: Unassigned</option>
-                                        <option value="88">88: Unassigned</option>
-                                        <option value="89">89: Unassigned</option>
-                                        <option value="90">90: Unassigned</option>
-                                        <option value="91">91: Unassigned</option>
-                                        <option value="92">92: Unassigned</option>
-                                        <option value="93">93: Unassigned</option>
-                                        <option value="94">94: Unassigned</option>
-                                        <option value="95">95: Unassigned</option>
-                                        <option value="96">96: Unassigned</option>
-                                        <option value="97">97: Unassigned</option>
-                                        <option value="98">98: Unassigned</option>
-                                        <option value="99">99: Other Place of Service</option>
-                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
