@@ -292,115 +292,36 @@
             <div class="common-gap"></div>
             <div class="table-top d-flex align-items-center justify-content-between mb-2">
                 <div class="table-top">
-                    <h4>Audit Log Tamper Report</h4>
+                    <h4>Client Registrations</h4>
                 </div>
             </div> 
             <div class="multi-language">
-                <div class="load-lab-compendium mt-2">
-                    <div class="row align-items-end">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Start Date:</label>
-                                <input type="date" name="" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>End Date:</label>
-                                <input type="date" name="" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Patient</label>
-                                <button class="btn btn-primary d-block w-100" data-toggle="modal" data-target="#click-select-patient">Click To Select</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group d-flex align-items-center">
-                                <label>Include Checksum:</label>
-                                <input type="checkbox" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group text-right">
-                                <button type="submit" class="btn btn-primary">Refresh</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="content-body">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>Log Types</th>
-                                <th>ID</th>
-                                <th>Date</th>
-                                <th>User</th>
-                                <th>PatientID</th>
-                                <th>Comments</th>
+                                <th>Edit</th>
+                                <th>Client Name/Client ID</th>
+                                <th>Enabled</th>
+                                <th>Client Type</th>
+                                <th>Scopes Requested</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Maib</td>
-                                <td>3087</td>
-                                <td>2021-12-29 11:59:36</td>
-                                <td>Phil1</td>
-                                <td>0</td>
-                                <td>Phil1:invalid email</td>
+                                <td colspan="5" class="text-center">There are no clients registered in the system</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Add New Provider Code  -->
-
-    <!-- The Modal -->
-    <div class="modal" id="click-select-patient">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Enter your search criteria above</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <form action="#">
-                        <div class="row align-items-end">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="notes">Search by</label>
-                                    <select class="form-control">
-                                        <option value="Last">Name</option>
-                                        <option value="Phone">Phone</option>
-                                        <option value="ID">ID</option>
-                                        <option value="SSN">SSN</option>
-                                        <option value="DOB">DOB</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="notes">For</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-info">Search</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="jumbotron">
+                    <p>This administration page is for managing the list of OAUTH2 registered applications that are authorized to use the APIs.</p>
+                    <p>SMART apps that display on the patient summary page can be enabled or disabled from this screen. Any OAUTH2 client requesting the `launch` scope will allow Relier users to launch an app from within the EHR.</p>
+                    <p>Note it is recommended to avoid approving SMART apps that do not register as a confidential client. These apps are less secure and should be highly restricted in the OAUTH2 scopes you allow them to access.</p>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 

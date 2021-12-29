@@ -292,63 +292,82 @@
             <div class="common-gap"></div>
             <div class="table-top d-flex align-items-center justify-content-between mb-2">
                 <div class="table-top">
-                    <h4>Audit Log Tamper Report</h4>
+                    <h4>Diagnostics</h4>
                 </div>
             </div> 
             <div class="multi-language">
-                <div class="load-lab-compendium mt-2">
-                    <div class="row align-items-end">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Start Date:</label>
-                                <input type="date" name="" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>End Date:</label>
-                                <input type="date" name="" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Patient</label>
-                                <button class="btn btn-primary d-block w-100" data-toggle="modal" data-target="#click-select-patient">Click To Select</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group d-flex align-items-center">
-                                <label>Include Checksum:</label>
-                                <input type="checkbox" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group text-right">
-                                <button type="submit" class="btn btn-primary">Refresh</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="content-body">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>Log Types</th>
-                                <th>ID</th>
-                                <th>Date</th>
-                                <th>User</th>
-                                <th>PatientID</th>
-                                <th>Comments</th>
+                                <th>Name</th>
+                                <th>Value</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Maib</td>
-                                <td>3087</td>
-                                <td>2021-12-29 11:59:36</td>
-                                <td>Phil1</td>
-                                <td>0</td>
-                                <td>Phil1:invalid email</td>
+                                <td><b>Version</b></td>
+                                <td>0.7.2.6-Phoenix</td>
+                            </tr>
+                            <tr>
+                                <td><b>Sitename</b></td>
+                                <td>0.7.2.6-Phoenix</td>
+                            </tr>
+                            <tr>
+                                <td><b>url</b></td>
+                                <td>/openemr/interface/main/calendar/</td>
+                            </tr>
+                            <tr>
+                                <td><b>PHP Version</b></td>	
+                                <td>7.4.3</td>
+                            </tr>
+                            <tr>
+                                <td><b>PHP safe_mode</b></td>	
+                                <td>Off</td>
+                            </tr>
+                            <tr>
+                                <td><b>PHP safe_mode_gid</b></td>	
+                                <td>Off</td>
+                            </tr>
+                            <tr>
+                                <td><b>PHP open_basedir</b></td>	
+                                <td>NULL</td>
+                            </tr>
+                            <tr>
+                                <td><b>SAPI</b></td>
+                                <td>apache2handler</td>
+                            </tr>
+                            <tr>
+                                <td><b>OS</b></td>
+                                <td>Linux fae35c9f0afc 4.14.33-51.34.amzn1.x86_64 #1 SMP Fri Apr 13 18:18:26 UTC 2018 x86_64</td>
+                            </tr>
+                            <tr>
+                                <td><b>WebServer</b></td>
+                                <td>Apache/2.4.41 (Ubuntu)</td>
+                            </tr>
+                            <tr>
+                                <td><b>Module dir</b></td>	
+                                <td>modules/PostCalendar</td>
+                            </tr>
+                            <tr>
+                                <td><b>Module version</b></td>	
+                                <td>4.0.0</td>
+                            </tr>
+                            <tr>
+                                <td><b>smarty version</b></td>	
+                                <td>2.6.31</td>
+                            </tr>
+                            <tr>
+                                <td><b>smarty location</b></td>	
+                                <td>/var/www/html/Relier Health/vendor/ (File Src)</td>
+                            </tr>
+                            <tr>
+                                <td><b>smarty template dir</b></td>	
+                                <td>modules/PostCalendar/pntemplates</td>
+                            </tr>
+                            <tr>
+                                <td><b>smarty compile dir</b></td>	
+                                <td>/var/www/html/Relier Health/vendor/ (File Src)</td>
                             </tr>
                         </tbody>
                     </table>
@@ -356,51 +375,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Modal Add New Provider Code  -->
-
-    <!-- The Modal -->
-    <div class="modal" id="click-select-patient">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Enter your search criteria above</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <form action="#">
-                        <div class="row align-items-end">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="notes">Search by</label>
-                                    <select class="form-control">
-                                        <option value="Last">Name</option>
-                                        <option value="Phone">Phone</option>
-                                        <option value="ID">ID</option>
-                                        <option value="SSN">SSN</option>
-                                        <option value="DOB">DOB</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="notes">For</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-info">Search</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 

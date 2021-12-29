@@ -408,3 +408,6 @@ span.msg {
 .card-header {
     background: #e5e5e5;
 }
+table.table.table-bordered tr th,table.table.table-bordered tr td {
+    font-size: 16px !important;
+}

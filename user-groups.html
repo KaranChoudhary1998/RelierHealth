@@ -1,0 +1,659 @@
+
+
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Relier Health</title>
+    <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/vendors/css/charts/chartist.css" />
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN Relier Website  CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css" />
+    <!-- END Relier Website  CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css" />
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/pages/dashboard-ecommerce.css" />
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <!-- END Custom CSS-->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
+    data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
+    <!-- fixed-top-->
+    <nav
+        class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse show" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-block d-md-none">
+                            <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a>
+                        </li>
+                        <li class="nav-item dropdown navbar-search">
+                            <a class="nav-link dropdown-toggle hide" data-toggle="dropdown" href="#"><i
+                                    class="ficon ft-search"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="arrow_box">
+                                    <form>
+                                        <div class="input-group search-box">
+                                            <div class="position-relative has-icon-right full-width">
+                                                <input class="form-control" id="search" type="text"
+                                                    placeholder="Search here..." />
+                                                <div class="form-control-position navbar-search-close"><i class="ft-x">
+                                                    </i></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-language nav-item">
+                            <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="flag-icon flag-icon-us"></i><span class="selected-language"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+                                <div class="arrow_box">
+                                    <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-us"></i>English</a>
+                                    <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-es"></i>Arabic</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-notification nav-item">
+                            <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-mail">
+                                </i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="arrow_box_right">
+                                    <a class="dropdown-item" href="#"><i class="ft-book"></i> Read Mail</a><a
+                                        class="dropdown-item" href="#"><i class="ft-bookmark"></i> Read Later</a>
+                                    <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Mark all Read </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <span class="avatar avatar-online">
+                                    <img src="theme-assets/images/user.webp" alt="avatar" /><i></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="arrow_box_right">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="avatar avatar-online"><img
+                                                src="theme-assets/images/portrait/small/avatar-s-19.png"
+                                                alt="avatar" /><span class="user-name text-bold-700 ml-1">Dr.
+                                                Praveen</span></span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
+                                    
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar-Code-Star-->
+
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true"
+    data-img="theme-assets/images/backgrounds/02.jpg">
+    <div class="navbar-header">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="index.html">
+                    <img class="brand-logo" alt="Relier Website admin logo"
+                    src="theme-assets/images/logo/logo.svg"/>
+                    <!-- <h3 class="brand-text">Relier Health</h3> -->
+                </a>
+            </li>
+            <li class="nav-item d-md-none">
+                <a class="nav-link close-navbar"><i class="ft-x"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+            <li class="nav-item">
+                <a><i class="ft-calendar"></i><span class="menu-title">Appointment</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Appointment</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-user-plus"></i><span class="menu-title">Patient Register</span></a>
+                <ul class="drop_menu">
+                    <li><a href="patient-registration.html">Patient Register</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-droplet"></i><span class="menu-title">In-Patient</span></a>
+                <ul class="drop_menu">
+                    <li><a href="patient-in.html">In-Patient</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layers"></i><span class="menu-title">Out-Patient</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Out-Patient</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-box"></i><span class="menu-title">Laboratory</span></a>
+                <ul class="drop_menu">
+                    <li><a href="lab-info.html">Laboratory</a></li>
+                    <li><a href="laboratory-information.html">Laboratory Information</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-bold"></i><span class="menu-title">Radiology</span></a>
+                <ul class="drop_menu">
+                    <li><a href="radiology-system.html">Radiology</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-credit-card"></i><span class="menu-title">Insurance</span></a>
+                <ul class="drop_menu">
+                    <li><a href="insurance-management.html">Insurance</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Forms</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Forms</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Billing</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Billing</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">OT Booking</span></a>
+                <ul class="drop_menu">
+                    <li><a href="ot-booking.html">OT Booking</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Procedure</span></a>
+                <ul class="drop_menu">
+                    <li><a href="providers.html">Providers</a></li>
+                    <li><a href="Configure.html">Configuration</a></li>
+                    <li><a href="load-compendium.html">Load Compendium</a></li>
+                    <li><a href="">Pending Review</a></li>
+                    <li><a href="">Patient Results</a></li>
+                    <li><a href="">Lab Overview</a></li>
+                    <li><a href="batch-results.html">Batch Results</a></li>
+                    <li><a href="electronic-reports.html">Electronic Reports</a></li>
+                    <li><a href="lab-documents.html">Lab Documents</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Administration</span></a>
+                <ul class="drop_menu">
+                    <li><a href="admin_global.html">Global</a></li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Clinic</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="holidays-management.html">Import Holidays</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Patients</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="patient-reminders.html">Patient Reminders</a></li>
+                            <li><a href="merge-patients.html">Merge Patients</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Practice</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="practice-settings.html">Practice Settings</a></li>
+                            <li><a href="rules-configuration.html">Rules</a></li>
+                            <li><a href="rules-alert-manager.html">Alerts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><span class="menu-title">Coding</span></a>
+                        <ul class="drop_menu">
+                            <li><a href="codes.html">Codes</a></li>
+                            <li><a href="Configure">Native Data Loads</a></li>
+                            <li><a href="Configure">External Data Loads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">System</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Address Book</a></li>
+                    <li><a href="#">ACL</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Report</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Report</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Users</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Users</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Data</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Data</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a><i class="ft-layout"></i><span class="menu-title">Marketing</span></a>
+                <ul class="drop_menu">
+                    <li><a href="index.html">Marketing</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <a class="btn btn-danger btn-block btn-glow btn-upgrade-pro mx-1" href="#">Relier Health</a>
+    <div class="navigation-background"></div>
+    </div>
+
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row"></div>
+            <div class="common-gap"></div>
+            <div class="table-top d-flex align-items-center justify-content-between">
+                <div class="table-top">
+                    <h4>User / Groups</h4>
+                </div>
+                <div class="show-entry d-flex align-items-center">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-user"><i class="ft-plus"></i>Add User</button>
+                    <button type="button" class="btn btn-primary ml-1"><i class="ft-edit mr-1"></i>View Facility Specific User Information</button>
+                </div>
+            </div>
+            <div class="content-body">
+                <form>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Real Name</th>
+                                <th>Additional Info</th>
+                                <th>Authorized</th>
+                                <th>MFA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Accountant</td>
+                                <td>Ernie Stent</td>
+                                <td>Additional Info</td>
+                                <td>no</td>
+                                <td>no</td>
+                            </tr>
+                            <tr>
+                                <td>Admin</td>
+                                <td>Karan Choudhary</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Admin</td>
+                                <td>Karan Choudhary</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>clinician </td>
+                                <td>Varun</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>physician</td>
+                                <td>Rishab</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>receptionist</td>
+                                <td>Abhishek</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>zhportal</td>
+                                <td>Rajat</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <div class="form-group text-right">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div> -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!-- Modal Add New Provider Code  -->
+
+    <!-- The Modal -->
+    <div class="modal" id="add-user">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add User</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row align-items-end">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Username:</label>
+                                    <input type="text" class="form-control" placeholder="admin">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Password:</label>
+                                    <input type="pass" class="form-control" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Your Password:</label>
+                                    <input type="pass" class="form-control" placeholder="Your Password">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">First Name:</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Middle Name:</label>
+                                    <input type="text" class="form-control" placeholder="Middle Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Last Name:</label>
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Default Facility:</label>
+                                    <select name="facility_id" class="form-control">
+                                        <option value="3">Great Clinic</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Federal Tax ID:</label>
+                                    <input type="text" class="form-control" placeholder="Federal Tax ID:">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">DEA Number</label>
+                                    <input type="text" class="form-control" placeholder="DEA Number:">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">UPIN:</label>
+                                    <input type="text" class="form-control" placeholder="UPIN:">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">See Authorizations:</label>
+                                    <select name="see_auth" class="form-control">
+                                        <option value="1">None</option>
+                                        <option value="2">Only Mine</option>
+                                        <option value="3">All</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">NPI:</label>
+                                    <input type="text" class="form-control" placeholder="NPI:">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Job Description:</label>
+                                    <input type="text" class="form-control" placeholder="Job Description:">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Provider Type:</label>
+                                    <select id="physician_type" class="form-control physician_type_class" title="">
+                                        <option value="">Select Type</option>
+                                        <option value="attending_physician">Attending physician</option>
+                                        <option value="audiological_physician">Audiological physician</option>
+                                        <option value="chest_physician">Chest physician</option>
+                                        <option value="community_health_physician">Community health physician</option>
+                                        <option value="consultant_physician">Consultant physician</option>
+                                        <option value="general_physician">General physician</option>
+                                        <option value="genitourinarymedicinephysician">Genitourinary medicine physician</option>
+                                        <option value="occupational_physician">Occupational physician</option>
+                                        <option value="palliative_care_physician">Palliative care physician</option>
+                                        <option value="physician">Physician</option>
+                                        <option value="public_health_physician">Public health physician</option>
+                                        <option value="rehabilitation_physician">Rehabilitation physician</option>
+                                        <option value="resident_physician">Resident physician</option>
+                                        <option value="specialized_physician">Specialized physician</option>
+                                        <option value="thoracic_physician">Thoracic physician</option>
+                                   </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Main Menu Role:</label>
+                                    <select name="main_menu_role" id="main_menu_role" class="form-control">
+                                        <option value="standard">Standard</option>
+                                        <option value="answering_service">Answering Service</option>
+                                        <option value="front_office">Front Office</option>
+                                        <option value="Custom.json">Custom</option>
+                                   </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Patient Menu Role:</label>
+                                    <select name="main_menu_role" id="main_menu_role" class="form-control">
+                                        <option value="standard">Standard</option>
+                                        <option value="custom">Custom</option>
+                                   </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Taxonomy:</label>
+                                    <input type="text" placeholder="207Q00000X" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Supervisor:</label>
+                                    <select name="supervisor_id" class="form-control">
+                                        <option value="">Select Supervisor</option>
+                                        <option value="6">Lee Donna </option>
+                                        <option value="1">Smith Billy </option>
+                                        <option value="5">Stone Fred </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">State License Number:</label>
+                                    <input type="text" placeholder=""  class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">NewCrop eRX Role:</label>
+                                    <select name="erxrole" id="erxrole" class="form-control" title="">
+                                        <option value="">--Select Role--</option><option value="erxadmin">NewCrop Admin</option>
+                                        <option value="erxnurse">NewCrop Nurse</option>
+                                        <option value="erxmanager">NewCrop Manager</option>
+                                        <option value="erxdoctor">NewCrop Doctor</option>
+                                        <option value="erxmidlevelPrescriber">NewCrop Midlevel Prescriber</option>
+                                        <option value="erxsupervisingDoctor">NewCrop Supervising Doctor</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Weno Provider ID:</label>
+                                    <input type="text" placeholder=""  class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Access Control:</label>
+                                <fieldset class="form-group">
+                                    <select name="access_group" multiple="" class="form-control">
+                                        <option value="Accounting">Accounting</option>
+                                        <option value="Administrators" selected="">Administrators</option>
+                                        <option value="Clinicians">Clinicians</option>
+                                        <option value="Emergency Login">Emergency Login</option>
+                                        <option value="Front Office">Front Office</option>
+                                        <option value="Physicians">Physicians</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Additional Info:</label>
+                                    <textarea class="form-control" id="placeTextarea" rows="3" placeholder="Additional Info"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-info">Save</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+            <span class="float-md-left d-block d-md-inline-block">2021 &copy; Copyright <a
+                    class="text-bold-800 grey darken-2" href="#" target="_blank">Relier Health</a></span>
+            <ul class="list-inline float-md-right d-block d-md-inline-blockd-none d-lg-block mb-0">
+                <li class="list-inline-item"><a class="my-1" href="#" target="_blank"> Term & Condition</a></li>
+                <li class="list-inline-item"><a class="my-1" href="#" target="_blank"> Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+   <!-- BEGIN VENDOR JS-->
+   <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+   <!-- BEGIN VENDOR JS-->
+
+   <!-- BEGIN PAGE VENDOR JS-->
+   <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
+   <!-- END PAGE VENDOR JS-->
+
+   <!-- BEGIN Relier Website  JS-->
+   <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
+   <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
+   <!-- END Relier Website  JS-->
+
+   <!-- BEGIN PAGE LEVEL JS-->
+   <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
+   <!-- END PAGE LEVEL JS-->
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
