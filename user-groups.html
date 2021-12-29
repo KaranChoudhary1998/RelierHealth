@@ -298,7 +298,7 @@
                 </div>
                 <div class="show-entry d-flex align-items-center">
                     <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-user"><i class="ft-plus"></i>Add User</button>
-                    <button type="button" class="btn btn-primary ml-1"><i class="ft-edit mr-1"></i>View Facility Specific User Information</button>
+                    <button type="button" class="btn btn-primary ml-1" data-toggle="modal" data-target="#view-user"><i class="ft-edit mr-1"></i>View Facility Specific User Information</button>
                 </div>
             </div>
             <div class="content-body">
@@ -584,6 +584,58 @@
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="view-user">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Facility Specific User Information</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="content-body">
+                        <form>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>Full Name</th>
+                                        <th>Facility</th>
+                                        <th>Provider ID</th>
+                                        <th>Provider Role</th>
+                                        <th>Provider Specialty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Accountant</td>
+                                        <td>Ernie Stent</td>
+                                        <td>Karan</td>
+                                        <td>#</td>
+                                        <td><i class="la la-exclamation-circle"></i></td>
+                                        <td><i class="la la-exclamation-circle"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Accountant</td>
+                                        <td>Ernie Stent</td>
+                                        <td>Karan</td>
+                                        <td>#</td>
+                                        <td><i class="la la-exclamation-circle"></i></td>
+                                        <td><i class="la la-exclamation-circle"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <div class="form-group text-right">
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </div> -->
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

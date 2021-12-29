@@ -411,3 +411,6 @@ span.msg {
 table.table.table-bordered tr th,table.table.table-bordered tr td {
     font-size: 16px !important;
 }
+.card-body fieldset select.form-control {
+    padding: 10px 10px !important;
+}
