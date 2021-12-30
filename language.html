@@ -1,75 +1,33 @@
 
-
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <title>Relier Health</title>
+    <title>Relier Medical</title>
     <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- BEGIN VENDOR CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
+    rel="stylesheet" />
+    <!-- Start VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/vendors/css/charts/chartist.css" />
     <!-- END VENDOR CSS-->
-    <!-- BEGIN Relier Website  CSS-->
+    
+    <!-- Start Relier Website  CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css" />
     <!-- END Relier Website  CSS-->
-    <!-- BEGIN Page Level CSS-->
+
+    <!-- Start Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/css/pages/dashboard-ecommerce.css" />
     <!-- END Page Level CSS-->
-    <!-- BEGIN Custom CSS-->
-    <!-- END Custom CSS-->
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
 </head>
-<style>
-    .content-body {
-        overflow-x: auto;
-    }
-
-    .content-body table {
-        background-color: #fff;
-    }
-
-    .table_icons {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .table_icons span {
-        height: 28px;
-        width: 28px;
-        font-size: 12px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .table_icons .icn1 {
-        background-color: #11cf89;
-    }
-
-    .table_icons .icn2 {
-        background-color: #fbbf3a;
-    }
-
-    .table_icons .icn3 {
-        background-color: #e54934;
-    }
-</style>
 
 <body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
     data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
@@ -147,9 +105,9 @@
                                     </a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
-                                    <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Task</a>
+                                    
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
+                                    <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Logout</a>
                                 </div>
                             </div>
                         </li>
@@ -350,196 +308,186 @@
     <div class="navigation-background"></div>
     </div>
 
+
+
     <div class="app-content content">
         <div class="content-wrapper">
             <div class="content-header row"></div>
             <div class="common-gap"></div>
             <div class="table-top d-flex align-items-center justify-content-between mb-2">
                 <div class="table-top">
-                    <h4>Rules Configuration</h4>
-                </div>
-                <div class="show-entry d-flex align-items-center">
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-new-rules"><i class="ft-plus"></i>Add New</button>
+                    <h4>Multi Language Tool</h4>
                 </div>
             </div>
-            <div class="content-body">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">Type</th>
-                            <th scope="col">Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Adult Weight Screening and Follow-Up</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Assess Penicillin Allergy</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Colon Cancer Screening</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Mammogram</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Pap Smear</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Prostate Cancer Screening</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Coumadin Management - INR Monitoring</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Data Entry - Social Security Number</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Eye Exam</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Foot Exam</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Hemoglobin A1C</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Urine Microalbumin</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Hypertension: Blood Pressure Measurement</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Influenza Immunization for Patients &gt;= 50 Years Old</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Measure Blood Pressure</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Measure INR</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Pneumonia Vaccination Status for Older Adults</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Tobacco Cessation Intervention</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Tobacco Use Assessment</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Weight Assessment and Counseling for Children and Adolescents</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <!-- ////////////////////////////////////////////////////////////////////////////-->
-
-
-    <!-- Modal Add New Provider Code  -->
-
-    <!-- The Modal -->
-    <div class="modal" id="add-new-rules">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title"><i class="ft-plus"></i>Rule Add</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <h6>Summary</h6>
-                    <form action="/action_page.php">
-                        <div class="row align-items-end">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Title:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Title" id="name">
+            <div class="multi-language">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#edit-definitions">Edit Definitions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#add-language">Add Language</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#add-constant">Add Constant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#manage-translations">Manage Translations</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="edit-definitions">
+                        <div class="load-lab-compendium mt-2">
+                            <div class="row align-items-end">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Filter for Constants:</label>
+                                        <input type="text" name="" class="form-control">
+                                        <small>(% matches any string, _ matches any character)</small>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <h6>Type</h6>
-                                <div class="form-group single-line-field">  
-                                    <label for="name">* Active Alert:<input type="checkbox" class="form-control"></label>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Filter for Definitions</label>
+                                        <input type="text" name="" class="form-control">
+                                        <small>(% matches any string, _ matches any character)</small>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group single-line-field">
-                                    <label for="name">* Passive Alert:<input type="checkbox" class="form-control"></label>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Select Language:</label>
+                                        <select class="form-control" name="language_select">
+                                            <option value="31">Albanian</option>
+                                            <option value="25">Amharic</option>
+                                            <option value="21">Arabic</option>
+                                            <option value="14">Armenian</option>
+                                            <option value="16">Bahasa Indonesia</option>
+                                            <option value="34">Bengali</option>
+                                            <option value="43">Bosnian</option>
+                                            <option value="11">Chinese (Simplified)</option>
+                                            <option value="12">Chinese (Traditional)</option>
+                                            <option value="44">Croatian</option>
+                                            <option value="32">Czech</option>
+                                            <option value="22">Danish</option>
+                                            <option value="52">dummy</option>
+                                            <option value="6">Dutch</option>
+                                            <option value="18">English (Indian)</option>
+                                            <option value="1" selected="">English (Standard)</option>
+                                            <option value="35">Estonian</option>
+                                            <option value="40">Finnish</option>
+                                            <option value="9">French (Canadian)</option>
+                                            <option value="8">French (Standard)</option>
+                                            <option value="42">Georgian</option>
+                                            <option value="5">German</option>
+                                            <option value="17">Greek</option>
+                                            <option value="7">Hebrew</option>
+                                            <option value="27">Hindi</option>
+                                            <option value="30">Hungarian</option>
+                                            <option value="26">Italian</option>
+                                            <option value="39">Japanese</option>
+                                            <option value="41">Korean</option>
+                                            <option value="37">Lithuanian</option>
+                                            <option value="46">Marathi</option>
+                                            <option value="48">Mongolian</option>
+                                            <option value="10">Norwegian</option>
+                                            <option value="36">Persian</option>
+                                            <option value="24">Polish</option>
+                                            <option value="20">Portuguese (Brazilian)</option>
+                                            <option value="19">Portuguese (European)</option>
+                                            <option value="28">Romanian</option>
+                                            <option value="13">Russian</option>
+                                            <option value="45">Serbian</option>
+                                            <option value="38">Sinhala</option>
+                                            <option value="15">Slovak</option>
+                                            <option value="47">Somali</option>
+                                            <option value="4">Spanish (Latin American)</option>
+                                            <option value="3">Spanish (Spain)</option>
+                                            <option value="2">Swedish</option>
+                                            <option value="49">Tamil</option>
+                                            <option value="51">Thai</option>
+                                            <option value="23">Turkish</option>
+                                            <option value="33">Ukrainian</option>
+                                            <option value="50">Urdu</option>
+                                            <option value="29">Vietnamese</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group single-line-field">
-                                    <label for="name">* Patient Reminder:<input type="checkbox" class="form-control"></label>
+                                <div class="col-md-12">
+                                    <div class="form-group text-right">
+                                        <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Developer:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Developer" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Funding Source:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Funding Source" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Release:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Release" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Web Reference:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Web Reference" id="name">
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <p>* Required fields</p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-info">Save</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                             </div>
                         </div>
-                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="add-language">
+                        <div class="load-lab-compendium mt-2">
+                            <div class="row align-items-end">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Language Code:</label>
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Language Name:</label>
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group text-right">
+                                        <button type="submit" class="btn btn-primary">Add</button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="add-constant">
+                        <div class="load-lab-compendium mt-2">
+                            <div class="row align-items-end">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Constant Name:</label>
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group text-right">
+                                        <button type="submit" class="btn btn-primary">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <small>Please Note: constants are case sensitive and any string is allowed.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="manage-translations">
+                        <div class="content-body manage-translations mt-1">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td><button class="btn btn-info">Check</button></td>
+                                        <td>(Check for differences of translations with custom language table.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-info">Synchronize</button></td>
+                                        <td>(Synchronize translations with custom language table.)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-        
-                <!-- Modal footer -->
-                
             </div>
         </div>
     </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
 
     <footer class="footer footer-static footer-light navbar-border navbar-shadow">
         <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
@@ -552,60 +500,50 @@
         </div>
     </footer>
 
-   <!-- BEGIN VENDOR JS-->
-   <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
-   <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN VENDOR JS-->
+    <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+    <!-- BEGIN VENDOR JS-->
 
-   <!-- BEGIN PAGE VENDOR JS-->
-   <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
-   <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
+    <!-- END PAGE VENDOR JS-->
 
-   <!-- BEGIN Relier Website  JS-->
-   <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
-   <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
-   <!-- END Relier Website  JS-->
+    <!-- BEGIN Relier Website  JS-->
+    <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
+    <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
+    <!-- END Relier Website  JS-->
 
-   <!-- BEGIN PAGE LEVEL JS-->
-   <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
-   <!-- END PAGE LEVEL JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
+    <!-- END PAGE LEVEL JS-->
+
+    <script>
+        var btnUpload = $("#upload_file"),
+        btnOuter = $(".button_outer");
+        btnUpload.on("change", function(e){
+            var ext = btnUpload.val().split('.').pop().toLowerCase();
+            if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+                $(".error_msg").text("Not an Image...");
+            } else {
+                $(".error_msg").text("");
+                btnOuter.addClass("file_uploading");
+                setTimeout(function(){
+                    btnOuter.addClass("file_uploaded");
+                },3000);
+                var uploadedFile = URL.createObjectURL(e.target.files[0]);
+                setTimeout(function(){
+                    $("#uploaded_view").append('<img src="'+uploadedFile+'" />').addClass("show");
+                },3500);
+            }
+        });
+        $(".file_remove").on("click", function(e){
+            $("#uploaded_view").removeClass("show");
+            $("#uploaded_view").find("img").remove();
+            btnOuter.removeClass("file_uploading");
+            btnOuter.removeClass("file_uploaded");
+        });
+    </script>
 <!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script><!-- Code injected by live-server -->
 <script type="text/javascript">
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {

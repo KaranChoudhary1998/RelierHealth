@@ -3,74 +3,33 @@
 
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <title>Relier Health</title>
+    <title>Relier Medical</title>
     <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- BEGIN VENDOR CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
+    rel="stylesheet" />
+    <!-- Start VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/vendors/css/charts/chartist.css" />
     <!-- END VENDOR CSS-->
-    <!-- BEGIN Relier Website  CSS-->
+    
+    <!-- Start Relier Website  CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css" />
     <!-- END Relier Website  CSS-->
-    <!-- BEGIN Page Level CSS-->
+
+    <!-- Start Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/css/pages/dashboard-ecommerce.css" />
     <!-- END Page Level CSS-->
-    <!-- BEGIN Custom CSS-->
-    <!-- END Custom CSS-->
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
 </head>
-<style>
-    .content-body {
-        overflow-x: auto;
-    }
-
-    .content-body table {
-        background-color: #fff;
-    }
-
-    .table_icons {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .table_icons span {
-        height: 28px;
-        width: 28px;
-        font-size: 12px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .table_icons .icn1 {
-        background-color: #11cf89;
-    }
-
-    .table_icons .icn2 {
-        background-color: #fbbf3a;
-    }
-
-    .table_icons .icn3 {
-        background-color: #e54934;
-    }
-</style>
 
 <body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
     data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
@@ -148,9 +107,9 @@
                                     </a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
-                                    <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Task</a>
+                                    
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
+                                    <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Logout</a>
                                 </div>
                             </div>
                         </li>
@@ -351,393 +310,399 @@
     <div class="navigation-background"></div>
     </div>
 
-    <div class="app-content content Holidays-management">
+    <div class="app-content content">
         <div class="content-wrapper">
             <div class="content-header row"></div>
             <div class="common-gap"></div>
             <div class="table-top d-flex align-items-center justify-content-between mb-2">
                 <div class="table-top">
-                    <h4>Holidays management</h4>
+                    <h4>Address Book</h4>
                 </div>
-            </div>
-            <div class="content-body">
-                <form>
+            </div> 
+            <div class="multi-language">
+                <div class="load-lab-compendium mt-2">
+                    <div class="row align-items-end">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Organization:</label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>First Name:</label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Last Name:</label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Specialty:</label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Specialty:</label>
+                                <select name="" id="form_abook_type" class="form-control" title="">
+                                    <option value="">All</option>
+                                    <option value="ord_img">Imaging Service</option>
+                                    <option value="ord_imm">Immunization Service</option>
+                                    <option value="ord_lab">Lab Service</option>
+                                    <option value="spe">Specialist</option>
+                                    <option value="vendor">Vendor</option>
+                                    <option value="dist">Distributor</option>
+                                    <option value="ccda">Care Coordination</option>
+                                    <option value="oth">Other</option>
+                                    <option value="oth">Other</option>
+                                    <option value="oth">Other</option>
+                                    <option value="emr_direct">EMR Direct</option>
+                                    <option value="external_provider">External Provider</option>
+                                    <option value="external_org">External Organization</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group d-flex align-items-center">
+                                <label>External Only :</label>
+                                <input type="checkbox" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary mr-2" data-toggle="modal" data-target="#add-book">Add New</button>
+                                <button type="submit" class="btn btn-info">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-body">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th colspan="2">CSV</th>
+                                <th>Organization</th>
+                                <th>Name</th>	
+                                <th>Local</th>	
+                                <th>Type</th>
+                                <th>Specialty</th>
+                                <th>Phone(W)</th>
+                                <th>Mobile</th>
+                                <th>Fax</th>
+                                <th>Email</th>
+                                <th>Street</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Postal</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th>CSV File</th>
-                                <td>
-                                    <div class="form-group">
-                                        <input type="file" placeholder="Enter Name" id="name">
-                                    </div>
-                                </td>
+                                <td></td>
+                                <td>Karan</td>
+                                <td>*</td>
+                                <td><i class="la la-exclamation-circle"></i></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <th>File on server (modification date)</th>
-                                <td>File not found</td>
+                                <td></td>
+                                <td>Karan</td>
+                                <td>*</td>
+                                <td><i class="la la-exclamation-circle"></i></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Karan</td>
+                                <td>*</td>
+                                <td><i class="la la-exclamation-circle"></i></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Labtest</td>
+                                <td>varun</td>
+                                <td>*</td>
+                                <td>Lab Services</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Test</td>
+                                <td>Karnal</td>
+                                <td></td>
+                                <td>12345</td>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="form-group text-right">
-                        <button type="submit" class="btn btn-info">Upload/Save</button>
-                    </div>
-                </form>
-                <table class="table table-bordered">
-                    <tbody>
-                        <tr>
-                            <td><Button class="btn btn-info">Import holiday events</Button></td>
-                            <td>CSV to calendar_external table If the csv file has been uploaded, then click on the `Import holiday events` button. NOTE that clicking on the button will remove all the existing rows in the calendar_external table</td>
-                        </tr>
-                        <tr>
-                            <td><Button class="btn btn-info">Synchronize</Button></td>
-                            <td>calendar_external to events
-                                If you have already filled the calendar_external table, then click on `Synchronize` button to have the holidays in the calendar view. NOTE that clicking on the button will remove all the existing items in the calendar view related to holidays</td>
-                        </tr>
-                    </tbody>
-                </table>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    <!-- ////////////////////////////////////////////////////////////////////////////-->
-
 
     <!-- Modal Add New Provider Code  -->
 
     <!-- The Modal -->
-    <div class="modal" id="add-facilities">
+    <div class="modal" id="add-book">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title"><i class="ft-plus"></i>Add Facility</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form action="/action_page.php">
+                    <form action="#">
                         <div class="row align-items-end">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                <label for="name">Name:</label>
-                                <input type="text" class="form-control" placeholder="Enter Name" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="phone">Phone:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Phone Number" id="phone">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="address">Address:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Address" id="address">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="fax">Fax:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Fax" id="fax">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="city">City:</label>
-                                    <input type="text" class="form-control" placeholder="Enter City" id="city">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="zip code">Zip Code:</label>
-                                    <input type="text" class="form-control" placeholder="Enter zip code" id="zip code">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="state">State:</label>
-                                    <input type="text" class="form-control" placeholder="Enter State" id="login">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row align-items-end">
-                                    <div class="form-group col-md-4">
-                                        <label>Tax ID:</label>
-                                        <select class="form-control">
-                                            <option value="EI">EIN</option>
-                                            <option value="SY">SSN</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-8">
-                                        <input type="text" class="form-control" placeholder="Enter Password" id="enter-pwd">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="country">Country:</label>
-                                    <input type="text" class="form-control" placeholder="Enter country" id="country">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="facility npi">Facility NPI:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Facility NPI" id="facility npi">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="Website">Website:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Website" id="Website">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="facility taxonomy">Facility Taxonomy:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Facility taxonomy" id="facility taxonomy">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="iban">IBAN:</label>
-                                    <input type="text" class="form-control" placeholder="Enter IBAN" id="iban">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="email">Email:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Email" id="email">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group d-flex align-items-center">
-                                    <label class="switch mr-2">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                    <span>Billing Location</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group d-flex align-items-center">
-                                    <label class="switch mr-2">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                    <span>Accepts Assignment <br><small>(only if billing location)</small></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group d-flex align-items-center">
-                                    <label class="switch mr-2">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                    <span>Service Location</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group d-flex align-items-center">
-                                    <label class="switch mr-2">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                    <span>Primary Business Entity</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="billing-attn">Billing Attn:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Billing Attn" id="billing-attn">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="facility-id">Facility ID:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Facility ID" id="facility-id">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="color">Color:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Color" id="color">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="odid">ODID:</label>
-                                    <input type="text" class="form-control" placeholder="Enter ODID" id="odid">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="Usage">POS Code:</label>
-                                    <select class="form-control" name="pos_code">
-                                        <option value="01">01: Pharmacy **</option>
-                                        <option value="02">02: Telehealth</option>
-                                        <option value="03">03: School</option>
-                                        <option value="04">04: Homeless Shelter</option>
-                                        <option value="05">05: Indian Health Service Free-standing Facility</option>
-                                        <option value="06">06: Indian Health Service Provider-based Facility</option>
-                                        <option value="07">07: Tribal 638 Free-standing Facility</option>
-                                        <option value="08">08: Tribal 638 Provider-based Facility</option>
-                                        <option value="09">09: Prison Correctional Facility</option>
-                                        <option value="10">10: Unassigned</option>
-                                        <option value="11">11: Office</option>
-                                        <option value="12">12: Home</option>
-                                        <option value="13">13: Assisted Living Facility</option>
-                                        <option value="14">14: Group Home *</option>
-                                        <option value="15">15: Mobile Unit</option>
-                                        <option value="16">16: Temporary Lodging</option>
-                                        <option value="17">17: Walk-in Retail Health Clinic</option>
-                                        <option value="18">18: Place of Employment-Worksite</option>
-                                        <option value="19">19: Off Campus-Outpatient Hospital</option>
-                                        <option value="20">20: Urgent Care Facility</option>
-                                        <option value="21">21: Inpatient Hospital</option>
-                                        <option value="22">22: Outpatient Hospital</option>
-                                        <option value="23">23: Emergency Room - Hospital</option>
-                                        <option value="24">24: Ambulatory Surgical Center</option>
-                                        <option value="25">25: Birthing Center</option>
-                                        <option value="26">26: Military Treatment Facility</option>
-                                        <option value="27">27: Unassigned</option>
-                                        <option value="28">28: Unassigned</option>
-                                        <option value="29">29: Unassigned</option>
-                                        <option value="30">30: Unassigned</option>
-                                        <option value="31">31: Skilled Nursing Facility</option>
-                                        <option value="32">32: Nursing Facility</option>
-                                        <option value="33">33: Custodial Care Facility</option>
-                                        <option value="34">34: Hospice</option>
-                                        <option value="35">35: Unassigned</option>
-                                        <option value="36">36: Unassigned</option>
-                                        <option value="37">37: Unassigned</option>
-                                        <option value="38">38: Unassigned</option>
-                                        <option value="39">39: Unassigned</option>
-                                        <option value="40">40: Unassigned</option>
-                                        <option value="41">41: Ambulance - Land</option>
-                                        <option value="42">42: Ambulance - Air or Water</option>
-                                        <option value="43">43: Unassigned</option>
-                                        <option value="44">44: Unassigned</option>
-                                        <option value="45">45: Unassigned</option>
-                                        <option value="46">46: Unassigned</option>
-                                        <option value="47">47: Unassigned</option>
-                                        <option value="48">48: Unassigned</option>
-                                        <option value="49">49: Independent Clinic</option>
-                                        <option value="50">50: Federally Qualified Health Center</option>
-                                        <option value="51">51: Inpatient Psychiatric Facility</option>
-                                        <option value="52">52: Psychiatric Facility-Partial Hospitalization</option>
-                                        <option value="53">53: Community Mental Health Center</option>
-                                        <option value="54">54: Intermediate Care Facility/Mentally Retarded</option>
-                                        <option value="55">55: Residential Substance Abuse Treatment Facility</option>
-                                        <option value="56">56: Psychiatric Residential Treatment Center</option>
-                                        <option value="57">57: Non-residential Substance Abuse Treatment Facility</option>
-                                        <option value="58">58: Unassigned</option>
-                                        <option value="59">59: Unassigned</option>
-                                        <option value="60">60: Mass Immunization Center</option>
-                                        <option value="61">61: Comprehensive Inpatient Rehabilitation Facility</option>
-                                        <option value="62">62: Comprehensive Outpatient Rehabilitation Facility</option>
-                                        <option value="63">63: Unassigned</option>
-                                        <option value="64">64: Unassigned</option>
-                                        <option value="65">65: End-Stage Renal Disease Treatment Facility</option>
-                                        <option value="66">66: Unassigned</option>
-                                        <option value="67">67: Unassigned</option>
-                                        <option value="68">68: Unassigned</option>
-                                        <option value="69">69: Unassigned</option>
-                                        <option value="70">70: Unassigned</option>
-                                        <option value="71">71: Public Health Clinic</option>
-                                        <option value="72">72: Rural Health Clinic</option>
-                                        <option value="73">73: Unassigned</option>
-                                        <option value="74">74: Unassigned</option>
-                                        <option value="75">75: Unassigned</option>
-                                        <option value="76">76: Unassigned</option>
-                                        <option value="77">77: Unassigned</option>
-                                        <option value="78">78: Unassigned</option>
-                                        <option value="79">79: Unassigned</option>
-                                        <option value="80">80: Unassigned</option>
-                                        <option value="81">81: Independent Laboratory</option>
-                                        <option value="82">82: Unassigned</option>
-                                        <option value="83">83: Unassigned</option>
-                                        <option value="84">84: Unassigned</option>
-                                        <option value="85">85: Unassigned</option>
-                                        <option value="86">86: Unassigned</option>
-                                        <option value="87">87: Unassigned</option>
-                                        <option value="88">88: Unassigned</option>
-                                        <option value="89">89: Unassigned</option>
-                                        <option value="90">90: Unassigned</option>
-                                        <option value="91">91: Unassigned</option>
-                                        <option value="92">92: Unassigned</option>
-                                        <option value="93">93: Unassigned</option>
-                                        <option value="94">94: Unassigned</option>
-                                        <option value="95">95: Unassigned</option>
-                                        <option value="96">96: Unassigned</option>
-                                        <option value="97">97: Unassigned</option>
-                                        <option value="98">98: Unassigned</option>
-                                        <option value="99">99: Other Place of Service</option>
+                                    <label for="notes">Type</label>
+                                    <select name="form_abook_type" class="form-control" title="">
+                                        <option value="">Unassigned</option><option value="ord_img">Imaging Service</option>
+                                        <option value="ord_imm">Immunization Service</option>
+                                        <option value="ord_lab">Lab Service</option>
+                                        <option value="spe">Specialist</option>
+                                        <option value="vendor">Vendor</option>
+                                        <option value="dist">Distributor</option>
+                                        <option value="ccda">Care Coordination</option>
+                                        <option value="oth">Other</option>
+                                        <option value="oth">Other</option>
+                                        <option value="oth">Other</option>
+                                        <option value="emr_direct">EMR Direct</option>
+                                        <option value="external_provider">External Provider</option>
+                                        <option value="external_org">External Organization</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="clia-number">CLIA Number:</label>
-                                    <input type="text" class="form-control" placeholder="Enter clia-number" id="clia-number">
+                                    <label>Name:</label>
+                                    <select class="form-control">
+                                        <option value=""></option>
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                        <option value="Ms.">Ms.</option>
+                                        <option value="Dr.">Dr.</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="mailing-address">Mailing Address:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Mailing Address" id="mailing-address">
+                                    <label>Last Name:</label>
+                                    <input type="text" class="form-control" placeholder="Last Name">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="dept">Dept:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Dept" id="dept">
+                                    <label>First Name:</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="city">City:</label>
-                                    <input type="text" class="form-control" placeholder="Enter City" id="city">
+                                    <label>Middle Name:</label>
+                                    <input type="text" class="form-control" placeholder="Middle Name">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="state">State:</label>
-                                    <input type="text" class="form-control" placeholder="Enter State" id="state">
+                                    <label>Suffix:</label>
+                                    <input type="text" class="form-control" placeholder="Suffix">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="zip">ZIP:</label>
-                                    <input type="text" class="form-control" placeholder="Enter ZIP" id="zip">
+                                    <label>Specialty:</label>
+                                    <input type="text" class="form-control" placeholder="Specialty">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Organization:</label>
+                                    <input type="text" class="form-control" placeholder="Organization">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Valedictory:</label>
+                                    <input type="text" class="form-control" placeholder="Valedictory">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Home Phone:</label>
+                                    <input type="text" class="form-control" placeholder="Home Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Mobile:</label>
+                                    <input type="text" class="form-control" placeholder="Mobile">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Work Phone:</label>
+                                    <input type="text" class="form-control" placeholder="Work Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>2nd:</label>
+                                    <input type="text" class="form-control" placeholder="2nd">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Fax</label>
+                                    <input type="text" class="form-control" placeholder="Fax">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Assistant</label>
+                                    <input type="text" class="form-control" placeholder="Assistant">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Email:</label>
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Trusted Email:</label>
+                                    <input type="email" class="form-control" placeholder="Trusted Email">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Website:</label>
+                                    <input type="text" class="form-control" placeholder="Website">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="Info:">Info:</label>
-                                    <textarea name="" cols="30" rows="6" id="Info:" class="form-control"></textarea>
-                                    <span>* Required</span>
+                                    <label>Main Address:</label>
+                                    <input type="text" class="form-control mb-1" placeholder="Address Line 1">
+                                    <input type="text" class="form-control" placeholder="Address Line 2">
                                 </div>
                             </div>
-                            
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>City:</label>
+                                    <input type="text" class="form-control" placeholder="City">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>State/county:</label>
+                                    <input type="text" class="form-control" placeholder="State/county">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Postal Code:</label>
+                                    <input type="text" class="form-control" placeholder="Postal Code">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Alt Address:</label>
+                                    <input type="text" class="form-control mb-1" placeholder="Address Line 1">
+                                    <input type="text" class="form-control" placeholder="Address Line 2">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Alt City:</label>
+                                    <input type="text" class="form-control" placeholder="Alt City">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Alt State/county:</label>
+                                    <input type="text" class="form-control" placeholder="Alt State/county">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Alt Postal Code:</label>
+                                    <input type="text" class="form-control" placeholder="Alt Postal Code">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>UPIN:</label>
+                                    <input type="text" class="form-control" placeholder="UPIN">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>NPI:</label>
+                                    <input type="text" class="form-control" placeholder="UPIN">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>TIN:</label>
+                                    <input type="text" class="form-control" placeholder="UPIN">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Taxonomy:</label>
+                                    <input type="text" class="form-control" placeholder="Taxonomy">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Notes:</label>
+                                    <textarea class="form-control" rows="3" placeholder="Notes"></textarea>
+                                </div>
+                            </div>
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="submit" class="btn btn-info">Search</button>
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                             </div>
-                            
                         </div>
-                      </form>
+                    </form>
                 </div>
-        
-                <!-- Modal footer -->
-                
             </div>
         </div>
     </div>
+
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
 
     <footer class="footer footer-static footer-light navbar-border navbar-shadow">
         <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
@@ -750,23 +715,87 @@
         </div>
     </footer>
 
-   <!-- BEGIN VENDOR JS-->
-   <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
-   <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN VENDOR JS-->
+    <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+    <!-- BEGIN VENDOR JS-->
 
-   <!-- BEGIN PAGE VENDOR JS-->
-   <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
-   <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
+    <!-- END PAGE VENDOR JS-->
 
-   <!-- BEGIN Relier Website  JS-->
-   <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
-   <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
-   <!-- END Relier Website  JS-->
+    <!-- BEGIN Relier Website  JS-->
+    <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
+    <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
+    <!-- END Relier Website  JS-->
 
-   <!-- BEGIN PAGE LEVEL JS-->
-   <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
-   <!-- END PAGE LEVEL JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
+    <!-- END PAGE LEVEL JS-->
+
+    <script>
+        var btnUpload = $("#upload_file"),
+        btnOuter = $(".button_outer");
+        btnUpload.on("change", function(e){
+            var ext = btnUpload.val().split('.').pop().toLowerCase();
+            if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+                $(".error_msg").text("Not an Image...");
+            } else {
+                $(".error_msg").text("");
+                btnOuter.addClass("file_uploading");
+                setTimeout(function(){
+                    btnOuter.addClass("file_uploaded");
+                },3000);
+                var uploadedFile = URL.createObjectURL(e.target.files[0]);
+                setTimeout(function(){
+                    $("#uploaded_view").append('<img src="'+uploadedFile+'" />').addClass("show");
+                },3500);
+            }
+        });
+        $(".file_remove").on("click", function(e){
+            $("#uploaded_view").removeClass("show");
+            $("#uploaded_view").find("img").remove();
+            btnOuter.removeClass("file_uploading");
+            btnOuter.removeClass("file_uploaded");
+        });
+    </script>
 <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script><!-- Code injected by live-server -->
 <script type="text/javascript">
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {

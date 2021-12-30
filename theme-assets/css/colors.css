@@ -5701,29 +5701,6 @@ body.horizontal-layout[data-color=bg-danger] .content-wrapper-before
 .btn-danger
 {
     color: #fff; 
-    background-color: #0d7b3e;
-}
-.btn-danger:hover
-{
-    color: #fff; 
-    border-color: #0e793e;
-    background-color: #0e793e;
-}
-.btn-danger:focus,
-.btn-danger:active
-{
-    color: #fff; 
-    border-color: #0e793e;
-    background-color: #0e793e;
-}
-.btn-danger.btn-glow {
-    color: #fff;
-    border-color: #0d7b3e;
-}
-.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle {
-    color: #fff;
-    border-color: #0d7b3e;
-    background-color: #0d7b3e;
 }  
 .btn-outline-danger
 {

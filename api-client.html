@@ -2,74 +2,33 @@
 
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <title>Relier Health</title>
+    <title>Relier Medical</title>
     <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- BEGIN VENDOR CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
+    rel="stylesheet" />
+    <!-- Start VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/vendors/css/charts/chartist.css" />
     <!-- END VENDOR CSS-->
-    <!-- BEGIN Relier Website  CSS-->
+    
+    <!-- Start Relier Website  CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css" />
     <!-- END Relier Website  CSS-->
-    <!-- BEGIN Page Level CSS-->
+
+    <!-- Start Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css" />
     <link rel="stylesheet" type="text/css" href="theme-assets/css/pages/dashboard-ecommerce.css" />
     <!-- END Page Level CSS-->
-    <!-- BEGIN Custom CSS-->
-    <!-- END Custom CSS-->
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
 </head>
-<style>
-    .content-body {
-        overflow-x: auto;
-    }
-
-    .content-body table {
-        background-color: #fff;
-    }
-
-    .table_icons {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .table_icons span {
-        height: 28px;
-        width: 28px;
-        font-size: 12px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .table_icons .icn1 {
-        background-color: #11cf89;
-    }
-
-    .table_icons .icn2 {
-        background-color: #fbbf3a;
-    }
-
-    .table_icons .icn3 {
-        background-color: #e54934;
-    }
-</style>
 
 <body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
     data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
@@ -147,9 +106,9 @@
                                     </a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
-                                    <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Task</a>
+                                    
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
+                                    <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Logout</a>
                                 </div>
                             </div>
                         </li>
@@ -356,190 +315,38 @@
             <div class="common-gap"></div>
             <div class="table-top d-flex align-items-center justify-content-between mb-2">
                 <div class="table-top">
-                    <h4>Rules Configuration</h4>
+                    <h4>Client Registrations</h4>
                 </div>
-                <div class="show-entry d-flex align-items-center">
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-new-rules"><i class="ft-plus"></i>Add New</button>
+            </div> 
+            <div class="multi-language">
+                <div class="content-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Edit</th>
+                                <th>Client Name/Client ID</th>
+                                <th>Enabled</th>
+                                <th>Client Type</th>
+                                <th>Scopes Requested</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="5" class="text-center">There are no clients registered in the system</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-            <div class="content-body">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">Type</th>
-                            <th scope="col">Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Adult Weight Screening and Follow-Up</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Assess Penicillin Allergy</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Colon Cancer Screening</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Mammogram</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Pap Smear</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Prostate Cancer Screening</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Coumadin Management - INR Monitoring</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Data Entry - Social Security Number</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Eye Exam</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Foot Exam</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Hemoglobin A1C</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Urine Microalbumin</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Hypertension: Blood Pressure Measurement</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Influenza Immunization for Patients &gt;= 50 Years Old</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Measure Blood Pressure</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Measure INR</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Pneumonia Vaccination Status for Older Adults</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Tobacco Cessation Intervention</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Tobacco Use Assessment</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Weight Assessment and Counseling for Children and Adolescents</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="jumbotron">
+                    <p>This administration page is for managing the list of OAUTH2 registered applications that are authorized to use the APIs.</p>
+                    <p>SMART apps that display on the patient summary page can be enabled or disabled from this screen. Any OAUTH2 client requesting the `launch` scope will allow Relier users to launch an app from within the EHR.</p>
+                    <p>Note it is recommended to avoid approving SMART apps that do not register as a confidential client. These apps are less secure and should be highly restricted in the OAUTH2 scopes you allow them to access.</p>
+                </div>
             </div>
         </div>
     </div>
+
     <!-- ////////////////////////////////////////////////////////////////////////////-->
-
-
-    <!-- Modal Add New Provider Code  -->
-
-    <!-- The Modal -->
-    <div class="modal" id="add-new-rules">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title"><i class="ft-plus"></i>Rule Add</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <h6>Summary</h6>
-                    <form action="/action_page.php">
-                        <div class="row align-items-end">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Title:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Title" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <h6>Type</h6>
-                                <div class="form-group single-line-field">  
-                                    <label for="name">* Active Alert:<input type="checkbox" class="form-control"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group single-line-field">
-                                    <label for="name">* Passive Alert:<input type="checkbox" class="form-control"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group single-line-field">
-                                    <label for="name">* Patient Reminder:<input type="checkbox" class="form-control"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Developer:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Developer" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Funding Source:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Funding Source" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Release:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Release" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Web Reference:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Web Reference" id="name">
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <p>* Required fields</p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-info">Save</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                      </form>
-                </div>
-        
-                <!-- Modal footer -->
-                
-            </div>
-        </div>
-    </div>
 
     <footer class="footer footer-static footer-light navbar-border navbar-shadow">
         <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
@@ -552,22 +359,49 @@
         </div>
     </footer>
 
-   <!-- BEGIN VENDOR JS-->
-   <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
-   <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN VENDOR JS-->
+    <script src="theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+    <!-- BEGIN VENDOR JS-->
 
-   <!-- BEGIN PAGE VENDOR JS-->
-   <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
-   <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <!-- <script src="theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
+    <!-- END PAGE VENDOR JS-->
 
-   <!-- BEGIN Relier Website  JS-->
-   <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
-   <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
-   <!-- END Relier Website  JS-->
+    <!-- BEGIN Relier Website  JS-->
+    <script src="theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
+    <script src="theme-assets/js/core/app-lite.js" type="text/javascript"></script>
+    <!-- END Relier Website  JS-->
 
-   <!-- BEGIN PAGE LEVEL JS-->
-   <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
-   <!-- END PAGE LEVEL JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
+    <!-- END PAGE LEVEL JS-->
+
+    <script>
+        var btnUpload = $("#upload_file"),
+        btnOuter = $(".button_outer");
+        btnUpload.on("change", function(e){
+            var ext = btnUpload.val().split('.').pop().toLowerCase();
+            if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+                $(".error_msg").text("Not an Image...");
+            } else {
+                $(".error_msg").text("");
+                btnOuter.addClass("file_uploading");
+                setTimeout(function(){
+                    btnOuter.addClass("file_uploaded");
+                },3000);
+                var uploadedFile = URL.createObjectURL(e.target.files[0]);
+                setTimeout(function(){
+                    $("#uploaded_view").append('<img src="'+uploadedFile+'" />').addClass("show");
+                },3500);
+            }
+        });
+        $(".file_remove").on("click", function(e){
+            $("#uploaded_view").removeClass("show");
+            $("#uploaded_view").find("img").remove();
+            btnOuter.removeClass("file_uploading");
+            btnOuter.removeClass("file_uploaded");
+        });
+    </script>
 <!-- Code injected by live-server -->
 <script type="text/javascript">
 	// <![CDATA[  <-- For SVG support

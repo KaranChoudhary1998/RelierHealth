@@ -384,7 +384,7 @@ button:focus {
 }
 
 .content-body {
-    padding: 10px 10px;
+    padding: 10px 0px;
 }
 .external-database-single-section {
     padding: 20px;
@@ -404,4 +404,17 @@ span.msg {
     border-radius: 8px;
     text-align: center;
     position: relative;
+}
+.card-header {
+    background: #e5e5e5;
+}
+table.table.table-bordered tr th,table.table.table-bordered tr td {
+    font-size: 16px !important;
+}
+.card-body fieldset select.form-control {
+    padding: 10px 10px !important;
+}
+.nav.nav-tabs .nav-item .nav-link.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }

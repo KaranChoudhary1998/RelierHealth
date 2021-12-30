@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 
@@ -147,7 +146,7 @@
                                     </a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
-                                    <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Task</a>
+                                    
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
                                 </div>
@@ -354,105 +353,287 @@
         <div class="content-wrapper">
             <div class="content-header row"></div>
             <div class="common-gap"></div>
-            <div class="table-top d-flex align-items-center justify-content-between mb-2">
+            <div class="table-top d-flex align-items-center justify-content-between">
                 <div class="table-top">
-                    <h4>Rules Configuration</h4>
+                    <h4>Manage Lists</h4>
                 </div>
                 <div class="show-entry d-flex align-items-center">
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-new-rules"><i class="ft-plus"></i>Add New</button>
+                    <label>Show Entries</label>
+                    <input type="text" class="custom-field" value="1">
+                </div>
+                <div class="show-entry d-flex align-items-center">
+                    <input list="brow" class="form-control" placeholder="Address Book Types">
+                    <datalist id="brow">
+                        <option>Address Book Types</option>
+                        <option>Adjustment Reasons</option>
+                        <option>Allergy Issue List</option>
+                        <option>AllergyIntolerance Verification Status Codes</option>
+                        <option>Amendment From</option>
+                        <option>Amendment Status</option>
+                        <option>Appointment Statuses</option>
+                        <option>Apps</option>
+                        <option>Boolean</option>
+                        <option>Chart Storage Locations</option>
+                        <option>Clinical Plans</option>
+                        <option>Clinical Rule Action Category</option>
+                        <option>Clinical Rule Action Item</option>
+                        <option>Clinical Rule Filter Methods</option>
+                        <option>Clinical Rule Target Methods</option>
+                        <option>Clinical Rules</option>
+                        <option>Clinical Rules Age Intervals</option>
+                        <option>Clinical Rules Comparisons</option>
+                        <option>Clinical Rules Encounter Types</option>
+                        <option>Clinical Rules Reminder Due Options</option>
+                        <option>Clinical Rules Reminder Inactivation Options</option>
+                        <option>Clinical Rules Reminder Intervals</option>
+                        <option>Clinical Rules Reminder Methods</option>
+                        <option>Clinical Rules Target Intervals</option>
+                        <option>Code Types</option>
+                        <option>Condition Verification Status Codes</option>
+                        <option>County</option>
+                        <option>County</option>
+                        <option>Date Master Criteria</option>
+                        <option>Dental Issue List</option>
+                        <option>Disclosure Type</option>
+                        <option>Document Template Categories</option>
+                        <option>Drug Forms</option>
+                        <option>Drug Intervals</option>
+                        <option>Drug Routes</option>
+                        <option>Drug Units</option>
+                        <option>Eligibility</option>
+                        <option>Ethnicity</option>
+                        <option>Exams/Tests</option>
+                        <option>Eye Coding Fields</option>
+                        <option>Eye Coding Terms</option>
+                        <option>Eye Contact Lens Brand list</option>
+                        <option>Eye Contact Lens Manufacturer list</option>
+                        <option>Eye Contact Lens Supplier list</option>
+                        <option>Eye Exam Default Values for New Providers</option>
+                        <option>Eye Lens Material</option>
+                        <option>Eye Lens Treatments</option>
+                        <option>Eye Orders Defaults</option>
+                        <option>Eye QP List ANTSEG for New Providers</option>
+                        <option>Eye QP List EXT for New Providers</option>
+                        <option>Eye QP List RETINA for New Providers</option>
+                        <option>Fee Sheet</option>
+                        <option>Files type white list</option>
+                        <option>Form Keys</option>
+                        <option>General Issue List</option>
+                        <option>Group Attendance Statuses</option>
+                        <option>Group Statuses</option>
+                        <option>Immunization Administered Site</option>
+                        <option>Immunization Completion Status</option>
+                        <option>Immunization Information Source</option>
+                        <option>Immunization Manufacturer</option>
+                        <option>Immunization Observation Criteria</option>
+                        <option>Immunization Refusal Reason</option>
+                        <option>Immunization Registry Status</option>
+                        <option>Immunization Vaccine Eligibility Results</option>
+                        <option>Immunizations</option>
+                        <option>Industry</option>
+                        <option>Insurance Types</option>
+                        <option>Invoice Reference Number Pools</option>
+                        <option>Issue Subtypes</option>
+                        <option>Issue Types</option>
+                        <option>Language</option>
+                        <option>LBF_Validations</option>
+                        <option>Marital Status</option>
+                        <option>Medical Problem Issue List</option>
+                        <option>Medication Issue List</option>
+                        <option>Message Status</option>
+                        <option>MSP Remit Codes</option>
+                        <option>Nation Notes Replace Buttons</option>
+                        <option>NewCrop eRx Role</option>
+                        <option>NewCrop eRx Role</option>
+                        <option>Next of Kin Relationship</option>
+                        <option>Occupation</option>
+                        <option>Occurrence</option>
+                        <option>Order Priorities</option>
+                        <option>Order Statuses</option>
+                        <option>Order Types</option>
+                        <option>Outcome</option>
+                        <option>Page Validation</option>
+                        <option>Patient Flow Board Rooms</option>
+                        <option>Patient List Columns</option>
+                        <option>Patient Note Types</option>
+                        <option>Payment Adjustment Code</option>
+                        <option>Payment Date</option>
+                        <option>Payment Gateways</option>
+                        <option>Payment Ins</option>
+                        <option>Payment Method</option>
+                        <option>Payment Sort By</option>
+                        <option>Payment Status</option>
+                        <option>Payment Type</option>
+                        <option>Physician Type</option>
+                        <option>Plan of Care Type</option>
+                        <option>Price Level</option>
+                        <option>Procedure Body Sites</option>
+                        <option>Procedure Boolean Results</option>
+                        <option>Procedure Lateralities</option>
+                        <option>Procedure Report Statuses</option>
+                        <option>Procedure Result Abnormal</option>
+                        <option>Procedure Result Statuses</option>
+                        <option>Procedure Routes</option>
+                        <option>Procedure Specimen Types</option>
+                        <option>Procedure Types</option>
+                        <option>Procedure Units</option>
+                        <option>Provider Qualifier Code</option>
+                        <option>Publicity Code</option>
+                        <option>Race</option>
+                        <option>Race/Ethnicity</option>
+                        <option>Reaction</option>
+                        <option>Referral Source</option>
+                        <option>Relationship</option>
+                        <option>Religious Affiliation</option>
+                        <option>Risk Factors</option>
+                        <option>Risk Level</option>
+                        <option>Service Category</option>
+                        <option>Severity</option>
+                        <option>Sex</option>
+                        <option>Smoking Status</option>
+                        <option>Sort Direction</option>
+                        <option>State</option>
+                        <option>Subscriber Relationship</option>
+                        <option>Surgery Issue List</option>
+                        <option>Tax Rate</option>
+                        <option>Titles</option>
+                        <option>US Core Provider Role</option>
+                        <option>US Core Provider Specialty</option>
+                        <option>User Defined List 1</option>
+                        <option>User Defined List 2</option>
+                        <option>User Defined List 3</option>
+                        <option>User Defined List 4</option>
+                        <option>User Defined List 5</option>
+                        <option>User Defined List 6</option>
+                        <option>User Defined List 7</option>
+                        <option>Value Set ActEncounterCode</option>
+                        <option>Warehouses</option>
+                        <option>Yes/No</option>
+                    </datalist>  
+                </div>
+                <div class="show-entry d-flex align-items-center">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-new-provider"><i class="ft-plus"></i>New List</button>
+                    <button type="button" class="btn btn-danger ml-1"><i class="ft-trash"></i>Delete List</button>
                 </div>
             </div>
             <div class="content-body">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">Type</th>
-                            <th scope="col">Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Adult Weight Screening and Follow-Up</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Assess Penicillin Allergy</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Colon Cancer Screening</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Mammogram</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Pap Smear</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Prostate Cancer Screening</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Coumadin Management - INR Monitoring</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Data Entry - Social Security Number</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Eye Exam</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Foot Exam</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Hemoglobin A1C</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Urine Microalbumin</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Hypertension: Blood Pressure Measurement</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Influenza Immunization for Patients &gt;= 50 Years Old</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Measure Blood Pressure</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Measure INR</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Pneumonia Vaccination Status for Older Adults</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Tobacco Cessation Intervention</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Tobacco Use Assessment</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Weight Assessment and Counseling for Children and Adolescents</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <form>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Order</th>
+                                <th>Default</th>
+                                <th>Active</th>
+                                <th>Type</th>
+                                <th>Notes</th>
+                                <th>Code(s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value="ord_img"></td>
+                                <td><input type="text" class="form-control" value="Imaging Service"></td>
+                                <td><input type="text" class="form-control" value="5"></td>
+                                <td><input type="checkbox" class="form-control"></td>
+                                <td><input type="checkbox" class="form-control" checked></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="1">Unassigned</option>
+                                        <option value="2">Person</option>
+                                        <option value="3" selected="">Company</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form-group text-right">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -462,69 +643,22 @@
     <!-- Modal Add New Provider Code  -->
 
     <!-- The Modal -->
-    <div class="modal" id="add-new-rules">
+    <div class="modal" id="add-new-provider">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title"><i class="ft-plus"></i>Rule Add</h4>
+                    <h4 class="modal-title">New List</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <h6>Summary</h6>
-                    <form action="/action_page.php">
+                    <form action="#">
                         <div class="row align-items-end">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="name">* Title:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Title" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <h6>Type</h6>
-                                <div class="form-group single-line-field">  
-                                    <label for="name">* Active Alert:<input type="checkbox" class="form-control"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group single-line-field">
-                                    <label for="name">* Passive Alert:<input type="checkbox" class="form-control"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group single-line-field">
-                                    <label for="name">* Patient Reminder:<input type="checkbox" class="form-control"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Developer:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Developer" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Funding Source:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Funding Source" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Release:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Release" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Web Reference:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Web Reference" id="name">
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <p>* Required fields</p>
+                                <label for="name">List Name:</label>
+                                <input type="text" class="form-control" placeholder="Enter List Name">
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -532,11 +666,8 @@
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                             </div>
                         </div>
-                      </form>
+                    </form>
                 </div>
-        
-                <!-- Modal footer -->
-                
             </div>
         </div>
     </div>
@@ -568,80 +699,6 @@
    <!-- BEGIN PAGE LEVEL JS-->
    <!-- <script src="theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script> -->
    <!-- END PAGE LEVEL JS-->
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script><!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script></body>
+</body>
 
 </html>

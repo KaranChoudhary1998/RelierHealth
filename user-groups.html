@@ -31,45 +31,6 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/programing.css" />
 </head>
-<style>
-    .content-body {
-        overflow-x: auto;
-    }
-
-    .content-body table {
-        background-color: #fff;
-    }
-
-    .table_icons {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .table_icons span {
-        height: 28px;
-        width: 28px;
-        font-size: 12px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .table_icons .icn1 {
-        background-color: #11cf89;
-    }
-
-    .table_icons .icn2 {
-        background-color: #fbbf3a;
-    }
-
-    .table_icons .icn3 {
-        background-color: #e54934;
-    }
-</style>
 
 <body class="vertical-layout vertical-menu 2-columns menu-expanded fixed-navbar" data-open="click"
     data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
@@ -147,7 +108,7 @@
                                     </a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
-                                    <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Task</a>
+                                    
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
                                 </div>
@@ -354,105 +315,83 @@
         <div class="content-wrapper">
             <div class="content-header row"></div>
             <div class="common-gap"></div>
-            <div class="table-top d-flex align-items-center justify-content-between mb-2">
+            <div class="table-top d-flex align-items-center justify-content-between">
                 <div class="table-top">
-                    <h4>Rules Configuration</h4>
+                    <h4>User / Groups</h4>
                 </div>
                 <div class="show-entry d-flex align-items-center">
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-new-rules"><i class="ft-plus"></i>Add New</button>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-user"><i class="ft-plus"></i>Add User</button>
+                    <button type="button" class="btn btn-primary ml-1" data-toggle="modal" data-target="#view-user"><i class="ft-edit mr-1"></i>View Facility Specific User Information</button>
                 </div>
             </div>
             <div class="content-body">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">Type</th>
-                            <th scope="col">Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Adult Weight Screening and Follow-Up</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Assess Penicillin Allergy</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Colon Cancer Screening</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Mammogram</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Pap Smear</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Prostate Cancer Screening</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Coumadin Management - INR Monitoring</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Data Entry - Social Security Number</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Eye Exam</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Foot Exam</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Hemoglobin A1C</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Urine Microalbumin</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Hypertension: Blood Pressure Measurement</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Influenza Immunization for Patients &gt;= 50 Years Old</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Measure Blood Pressure</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Measure INR</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Pneumonia Vaccination Status for Older Adults</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Tobacco Cessation Intervention</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Tobacco Use Assessment</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Weight Assessment and Counseling for Children and Adolescents</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <form>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Real Name</th>
+                                <th>Additional Info</th>
+                                <th>Authorized</th>
+                                <th>MFA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Accountant</td>
+                                <td>Ernie Stent</td>
+                                <td>Additional Info</td>
+                                <td>no</td>
+                                <td>no</td>
+                            </tr>
+                            <tr>
+                                <td>Admin</td>
+                                <td>Karan Choudhary</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Admin</td>
+                                <td>Karan Choudhary</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>clinician </td>
+                                <td>Varun</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>physician</td>
+                                <td>Rishab</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>receptionist</td>
+                                <td>Abhishek</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>zhportal</td>
+                                <td>Rajat</td>
+                                <td>Additional Info</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <div class="form-group text-right">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div> -->
+                </form>
             </div>
         </div>
     </div>
@@ -462,69 +401,204 @@
     <!-- Modal Add New Provider Code  -->
 
     <!-- The Modal -->
-    <div class="modal" id="add-new-rules">
+    <div class="modal" id="add-user">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title"><i class="ft-plus"></i>Rule Add</h4>
+                    <h4 class="modal-title">Add User</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <h6>Summary</h6>
-                    <form action="/action_page.php">
+                    <form action="#">
                         <div class="row align-items-end">
-                            <div class="col-md-12">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="name">* Title:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Title" id="name">
+                                    <label for="name">Username:</label>
+                                    <input type="text" class="form-control" placeholder="admin">
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <h6>Type</h6>
-                                <div class="form-group single-line-field">  
-                                    <label for="name">* Active Alert:<input type="checkbox" class="form-control"></label>
+                                <div class="form-group">
+                                    <label for="name">Password:</label>
+                                    <input type="pass" class="form-control" placeholder="Password">
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="form-group single-line-field">
-                                    <label for="name">* Passive Alert:<input type="checkbox" class="form-control"></label>
+                                <div class="form-group">
+                                    <label for="name">Your Password:</label>
+                                    <input type="pass" class="form-control" placeholder="Your Password">
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="form-group single-line-field">
-                                    <label for="name">* Patient Reminder:<input type="checkbox" class="form-control"></label>
+                                <div class="form-group">
+                                    <label for="name">First Name:</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Middle Name:</label>
+                                    <input type="text" class="form-control" placeholder="Middle Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Last Name:</label>
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Default Facility:</label>
+                                    <select name="facility_id" class="form-control">
+                                        <option value="3">Great Clinic</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Federal Tax ID:</label>
+                                    <input type="text" class="form-control" placeholder="Federal Tax ID:">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">DEA Number</label>
+                                    <input type="text" class="form-control" placeholder="DEA Number:">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">UPIN:</label>
+                                    <input type="text" class="form-control" placeholder="UPIN:">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">See Authorizations:</label>
+                                    <select name="see_auth" class="form-control">
+                                        <option value="1">None</option>
+                                        <option value="2">Only Mine</option>
+                                        <option value="3">All</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">NPI:</label>
+                                    <input type="text" class="form-control" placeholder="NPI:">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Job Description:</label>
+                                    <input type="text" class="form-control" placeholder="Job Description:">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Provider Type:</label>
+                                    <select id="physician_type" class="form-control physician_type_class" title="">
+                                        <option value="">Select Type</option>
+                                        <option value="attending_physician">Attending physician</option>
+                                        <option value="audiological_physician">Audiological physician</option>
+                                        <option value="chest_physician">Chest physician</option>
+                                        <option value="community_health_physician">Community health physician</option>
+                                        <option value="consultant_physician">Consultant physician</option>
+                                        <option value="general_physician">General physician</option>
+                                        <option value="genitourinarymedicinephysician">Genitourinary medicine physician</option>
+                                        <option value="occupational_physician">Occupational physician</option>
+                                        <option value="palliative_care_physician">Palliative care physician</option>
+                                        <option value="physician">Physician</option>
+                                        <option value="public_health_physician">Public health physician</option>
+                                        <option value="rehabilitation_physician">Rehabilitation physician</option>
+                                        <option value="resident_physician">Resident physician</option>
+                                        <option value="specialized_physician">Specialized physician</option>
+                                        <option value="thoracic_physician">Thoracic physician</option>
+                                   </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Main Menu Role:</label>
+                                    <select name="main_menu_role" id="main_menu_role" class="form-control">
+                                        <option value="standard">Standard</option>
+                                        <option value="answering_service">Answering Service</option>
+                                        <option value="front_office">Front Office</option>
+                                        <option value="Custom.json">Custom</option>
+                                   </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Patient Menu Role:</label>
+                                    <select name="main_menu_role" id="main_menu_role" class="form-control">
+                                        <option value="standard">Standard</option>
+                                        <option value="custom">Custom</option>
+                                   </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Taxonomy:</label>
+                                    <input type="text" placeholder="207Q00000X" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Supervisor:</label>
+                                    <select name="supervisor_id" class="form-control">
+                                        <option value="">Select Supervisor</option>
+                                        <option value="6">Lee Donna </option>
+                                        <option value="1">Smith Billy </option>
+                                        <option value="5">Stone Fred </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">State License Number:</label>
+                                    <input type="text" placeholder=""  class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">NewCrop eRX Role:</label>
+                                    <select name="erxrole" id="erxrole" class="form-control" title="">
+                                        <option value="">--Select Role--</option><option value="erxadmin">NewCrop Admin</option>
+                                        <option value="erxnurse">NewCrop Nurse</option>
+                                        <option value="erxmanager">NewCrop Manager</option>
+                                        <option value="erxdoctor">NewCrop Doctor</option>
+                                        <option value="erxmidlevelPrescriber">NewCrop Midlevel Prescriber</option>
+                                        <option value="erxsupervisingDoctor">NewCrop Supervising Doctor</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Weno Provider ID:</label>
+                                    <input type="text" placeholder=""  class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Developer:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Developer" id="name">
-                                </div>
+                                <label>Access Control:</label>
+                                <fieldset class="form-group">
+                                    <select name="access_group" multiple="" class="form-control">
+                                        <option value="Accounting">Accounting</option>
+                                        <option value="Administrators" selected="">Administrators</option>
+                                        <option value="Clinicians">Clinicians</option>
+                                        <option value="Emergency Login">Emergency Login</option>
+                                        <option value="Front Office">Front Office</option>
+                                        <option value="Physicians">Physicians</option>
+                                    </select>
+                                </fieldset>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="name">* Funding Source:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Funding Source" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Release:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Release" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Web Reference:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Web Reference" id="name">
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <p>* Required fields</p>
+                                    <label>Additional Info:</label>
+                                    <textarea class="form-control" id="placeTextarea" rows="3" placeholder="Additional Info"></textarea>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -532,11 +606,60 @@
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                             </div>
                         </div>
-                      </form>
+                    </form>
                 </div>
-        
-                <!-- Modal footer -->
-                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="view-user">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Facility Specific User Information</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="content-body">
+                        <form>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>Full Name</th>
+                                        <th>Facility</th>
+                                        <th>Provider ID</th>
+                                        <th>Provider Role</th>
+                                        <th>Provider Specialty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Accountant</td>
+                                        <td>Ernie Stent</td>
+                                        <td>Karan</td>
+                                        <td>#</td>
+                                        <td><i class="la la-exclamation-circle"></i></td>
+                                        <td><i class="la la-exclamation-circle"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Accountant</td>
+                                        <td>Ernie Stent</td>
+                                        <td>Karan</td>
+                                        <td>#</td>
+                                        <td><i class="la la-exclamation-circle"></i></td>
+                                        <td><i class="la la-exclamation-circle"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <div class="form-group text-right">
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -605,43 +728,7 @@
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// ]]>
-</script><!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script></body>
+</script>
+</body>
 
 </html>

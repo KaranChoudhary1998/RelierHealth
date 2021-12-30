@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 
@@ -356,190 +357,53 @@
             <div class="common-gap"></div>
             <div class="table-top d-flex align-items-center justify-content-between mb-2">
                 <div class="table-top">
-                    <h4>Rules Configuration</h4>
-                </div>
-                <div class="show-entry d-flex align-items-center">
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-new-rules"><i class="ft-plus"></i>Add New</button>
+                    <h4>Document Template Management</h4>
                 </div>
             </div>
-            <div class="content-body">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">Type</th>
-                            <th scope="col">Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Adult Weight Screening and Follow-Up</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Assess Penicillin Allergy</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Colon Cancer Screening</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Mammogram</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Pap Smear</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Cancer Screening: Prostate Cancer Screening</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Coumadin Management - INR Monitoring</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Data Entry - Social Security Number</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Eye Exam</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Foot Exam</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Hemoglobin A1C</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Diabetes: Urine Microalbumin</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Hypertension: Blood Pressure Measurement</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Influenza Immunization for Patients &gt;= 50 Years Old</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Measure Blood Pressure</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Measure INR</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Pneumonia Vaccination Status for Older Adults</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Tobacco Cessation Intervention</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Tobacco Use Assessment</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Reminder</a></td>
-                            <td><a href="#">Weight Assessment and Counseling for Children and Adolescents</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="load-lab-compendium">
+                <div class="row">
+                    <div class="col-md-6">
+                       <div class="mx-auto mt-1">
+                            <div class="card">
+                                <h5 class="card-header">Upload a Template</h5>
+                                <div class="card-body">
+                                    <div class="custom-file">
+                                        <input type="hidden" name="MAX_FILE_SIZE" value="250000000">
+                                        <input type="file" name="form_file" size="40" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                    </div>
+                                    <div class="input-group mt-2 d-flex align-items-center">
+                                        <label for="form_dest_filename">Destination Filename:</label>
+                                        <input type="text" class="form-control ml-1" name="form_dest_filename" id="form_dest_filename" size="30">
+                                        <div class="input-group-append">
+                                            <input type="submit" class="btn btn-primary" name="bn_upload" value="Upload">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="mx-auto mt-1">
+                          <div class="card">
+                             <h5 class="card-header">Download or Delete a Template</h5>
+                             <div class="card-body">
+                                <select class="form-control" name="form_filename">
+                                    <option></option>
+                                </select>
+                                <div class="mt-2">
+                                   <input type="submit" class="btn btn-success" name="bn_download" value="Download">
+                                   <input type="submit" class="btn btn-danger" name="bn_delete" value="Delete">
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////-->
-
-
-    <!-- Modal Add New Provider Code  -->
-
-    <!-- The Modal -->
-    <div class="modal" id="add-new-rules">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title"><i class="ft-plus"></i>Rule Add</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <h6>Summary</h6>
-                    <form action="/action_page.php">
-                        <div class="row align-items-end">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Title:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Title" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <h6>Type</h6>
-                                <div class="form-group single-line-field">  
-                                    <label for="name">* Active Alert:<input type="checkbox" class="form-control"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group single-line-field">
-                                    <label for="name">* Passive Alert:<input type="checkbox" class="form-control"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group single-line-field">
-                                    <label for="name">* Patient Reminder:<input type="checkbox" class="form-control"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Developer:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Developer" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Funding Source:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Funding Source" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Release:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Release" id="name">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="name">* Web Reference:</label>
-                                    <input type="text" class="form-control" placeholder="Enter Web Reference" id="name">
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <p>* Required fields</p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-info">Save</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                      </form>
-                </div>
-        
-                <!-- Modal footer -->
-                
-            </div>
-        </div>
-    </div>
 
     <footer class="footer footer-static footer-light navbar-border navbar-shadow">
         <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
