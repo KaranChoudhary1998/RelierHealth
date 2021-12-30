@@ -414,3 +414,7 @@ table.table.table-bordered tr th,table.table.table-bordered tr td {
 .card-body fieldset select.form-control {
     padding: 10px 10px !important;
 }
+.nav.nav-tabs .nav-item .nav-link.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

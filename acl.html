@@ -315,15 +315,15 @@
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#addPatient">Add Patient</a>
+                            <a class="nav-link active" data-toggle="tab" href="#user-memberships">User Memberships</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#managePatient">Manage Patient</a>
+                            <a class="nav-link" data-toggle="tab" href="#groups_access_controls">Groups and Access Controls</a>
                         </li>
                     </ul>
                     <!-- Tab panes -->
                     <div class="tab-content">
-                        <div class="tab-pane active" id="addPatient">
+                        <div class="tab-pane active" id="user-memberships">
                             <div class="mt-md-2 mt-1">
                                 <div id="accordion">
                                     <div class="card">
@@ -552,16 +552,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="managePatient">
+                        <div class="tab-pane fade" id="groups_access_controls">
+                            <div class="show-entry d-flex justify-content-end">
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-group"><i class="ft-plus"></i>Add New Group</button>
+                                <button type="button" class="btn btn-danger ml-1" data-toggle="modal" data-target="#view-user"><i class="ft-trash mr-1"></i>Remove Group</button>
+                            </div>
                             <div class="mt-md-2 mt-1">
-                                <div id="accordion">
+                                <div id="accordion2">
                                     <div class="card">
                                         <div class="card-header">
-                                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                            <a class="card-link" data-toggle="collapse" href="#collapse1">
                                                 Accounting-view
                                             </a>
                                         </div>
-                                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div id="collapse1" class="collapse show" data-parent="#accordion2">
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-6">
@@ -655,103 +659,980 @@
                                     </div>
                                     <div class="card">
                                         <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse2">
                                             Accounting-addonly
                                         </a>
                                         </div>
-                                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                            <div class="card-body"></div>
+                                        <div id="collapse2" class="collapse" data-parent="#accordion2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Active</label>
+                                                            <fieldset class="form-group">
+                                                                <select name="active[]" size="5" multiple="" class="form-control">
+                                                                    <optgroup label="Patients"></optgroup>
+                                                                    <option value="53">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                                                    <option value="67">Patient Report</option><optgroup label="Placeholder"></optgroup>
+                                                                    <option value="49">Placeholder (Maintains empty ACLs)</option>
+                                                                </select>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Inactive</label>
+                                                            <select name="inactive[]" size="6" multiple="" class="form-control">
+                                                                <optgroup label="Accounting"></optgroup>
+                                                                <option value="10">Billing (write optional)</option>
+                                                                <option value="11">Price Discounting</option>
+                                                                <option value="12">EOB Data Entry</option>
+                                                                <option value="13">Financial Reporting - my encounters</option>
+                                                                <option value="14">Financial Reporting - anything</option>
+                                                                <optgroup label="Administration"></optgroup>
+                                                                <option value="25">ACL Administration</option>
+                                                                <option value="22">Batch Communication Tool</option>
+                                                                <option value="16">Calendar Settings</option>
+                                                                <option value="17">Database Reporting</option>
+                                                                <option value="24">Pharmacy Dispensary</option>
+                                                                <option value="18">Forms Administration</option>
+                                                                <option value="23">Language Interface Tool</option>
+                                                                <option value="65">Manage modules</option>
+                                                                <option value="64">Menu</option>
+                                                                <option value="58">Multipledb</option>
+                                                                <option value="19">Practice Settings</option>
+                                                                <option value="15">Superuser</option>
+                                                                <option value="20">Superbill Codes Administration</option>
+                                                                <option value="21">Users/Groups/Logs Administration</option>
+                                                                <optgroup label="Encounters"></optgroup>
+                                                                <option value="26">Authorize - my encounters</option>
+                                                                <option value="27">Authorize - any encounters</option>
+                                                                <option value="28">Coding - my encounters (write,wsome optional)</option>
+                                                                <option value="29">Coding - any encounters (write,wsome optional)</option>
+                                                                <option value="32">Fix encounter dates - any encounters</option>
+                                                                <option value="30">Notes - my encounters (write,addonly optional)</option>
+                                                                <option value="31">Notes - any encounters (write,addonly optional)</option>
+                                                                <option value="33">Less-private information (write,addonly optional)</option>
+                                                                <optgroup label="Lists"></optgroup>
+                                                                <option value="36">Country List (write,addonly optional)</option>
+                                                                <option value="34">Default List (write,addonly optional)</option>
+                                                                <option value="38">Ethnicity-Race List (write,addonly optional)</option>
+                                                                <option value="37">Language List (write,addonly optional)</option>
+                                                                <option value="35">State List (write,addonly optional)</option>
+                                                                <optgroup label="Patient Portal"></optgroup>
+                                                                <option value="39">Patient Portal</option>
+                                                                <optgroup label="Patients"></optgroup>
+                                                                <option value="56">Amendments (write,addonly optional)</option>
+                                                                <option value="40">Appointments (write,wsome optional)</option>
+                                                                <option value="41">Demographics (write,addonly optional)</option>
+                                                                <option value="54">Disclosures (write,addonly optional)</option>
+                                                                <option value="44">Documents (write,addonly optional)</option>
+                                                                <option value="66">Documents Delete</option>
+                                                                <option value="57">Lab Results (write,addonly optional)</option>
+                                                                <option value="42">Medical/History (write,addonly optional)</option>
+                                                                <option value="45">Patient Notes (write,addonly optional)</option>
+                                                                <option value="52">Patient Reminders (write,addonly optional)</option>
+                                                                <option value="55">Prescriptions (write,addonly optional)</option>
+                                                                <option value="46">Sign Lab Results (write,addonly optional)</option>
+                                                                <option value="43">Transactions (write optional)</option>
+                                                                <optgroup label="Sensitivities"></optgroup>
+                                                                <option value="48">High</option>
+                                                                <option value="47">Normal</option>
+                                                                <optgroup label="Nation Notes"></optgroup>
+                                                                <option value="50">Nation Notes Configure</option>
+                                                                <optgroup label="Menus"></optgroup>
+                                                                <option value="51">Modules</option>
+                                                                <optgroup label="Groups"></optgroup>
+                                                                <option value="59">View/Add/Update groups</option>
+                                                                <option value="60">View/Create/Update groups appointment in calendar</option>
+                                                                <option value="62">Group detailed log of appointment in patient record</option>
+                                                                <option value="61">Group encounter log</option>
+                                                                <option value="63">Send message from the permanent group therapist to the personal therapist</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    
                                     <div class="card">
                                         <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse3">
                                             Accounting-wsome
                                         </a>
                                         </div>
-                                        <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                            <div class="card-body"></div>
+                                        <div id="collapse3" class="collapse" data-parent="#accordion2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Active</label>
+                                                            <fieldset class="form-group">
+                                                                <select name="active[]" size="5" multiple="" class="form-control">
+                                                                    <optgroup label="Patients"></optgroup>
+                                                                    <option value="53">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                                                    <option value="67">Patient Report</option><optgroup label="Placeholder"></optgroup>
+                                                                    <option value="49">Placeholder (Maintains empty ACLs)</option>
+                                                                </select>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Inactive</label>
+                                                            <select name="inactive[]" size="6" multiple="" class="form-control">
+                                                                <optgroup label="Accounting"></optgroup>
+                                                                <option value="10">Billing (write optional)</option>
+                                                                <option value="11">Price Discounting</option>
+                                                                <option value="12">EOB Data Entry</option>
+                                                                <option value="13">Financial Reporting - my encounters</option>
+                                                                <option value="14">Financial Reporting - anything</option>
+                                                                <optgroup label="Administration"></optgroup>
+                                                                <option value="25">ACL Administration</option>
+                                                                <option value="22">Batch Communication Tool</option>
+                                                                <option value="16">Calendar Settings</option>
+                                                                <option value="17">Database Reporting</option>
+                                                                <option value="24">Pharmacy Dispensary</option>
+                                                                <option value="18">Forms Administration</option>
+                                                                <option value="23">Language Interface Tool</option>
+                                                                <option value="65">Manage modules</option>
+                                                                <option value="64">Menu</option>
+                                                                <option value="58">Multipledb</option>
+                                                                <option value="19">Practice Settings</option>
+                                                                <option value="15">Superuser</option>
+                                                                <option value="20">Superbill Codes Administration</option>
+                                                                <option value="21">Users/Groups/Logs Administration</option>
+                                                                <optgroup label="Encounters"></optgroup>
+                                                                <option value="26">Authorize - my encounters</option>
+                                                                <option value="27">Authorize - any encounters</option>
+                                                                <option value="28">Coding - my encounters (write,wsome optional)</option>
+                                                                <option value="29">Coding - any encounters (write,wsome optional)</option>
+                                                                <option value="32">Fix encounter dates - any encounters</option>
+                                                                <option value="30">Notes - my encounters (write,addonly optional)</option>
+                                                                <option value="31">Notes - any encounters (write,addonly optional)</option>
+                                                                <option value="33">Less-private information (write,addonly optional)</option>
+                                                                <optgroup label="Lists"></optgroup>
+                                                                <option value="36">Country List (write,addonly optional)</option>
+                                                                <option value="34">Default List (write,addonly optional)</option>
+                                                                <option value="38">Ethnicity-Race List (write,addonly optional)</option>
+                                                                <option value="37">Language List (write,addonly optional)</option>
+                                                                <option value="35">State List (write,addonly optional)</option>
+                                                                <optgroup label="Patient Portal"></optgroup>
+                                                                <option value="39">Patient Portal</option>
+                                                                <optgroup label="Patients"></optgroup>
+                                                                <option value="56">Amendments (write,addonly optional)</option>
+                                                                <option value="40">Appointments (write,wsome optional)</option>
+                                                                <option value="41">Demographics (write,addonly optional)</option>
+                                                                <option value="54">Disclosures (write,addonly optional)</option>
+                                                                <option value="44">Documents (write,addonly optional)</option>
+                                                                <option value="66">Documents Delete</option>
+                                                                <option value="57">Lab Results (write,addonly optional)</option>
+                                                                <option value="42">Medical/History (write,addonly optional)</option>
+                                                                <option value="45">Patient Notes (write,addonly optional)</option>
+                                                                <option value="52">Patient Reminders (write,addonly optional)</option>
+                                                                <option value="55">Prescriptions (write,addonly optional)</option>
+                                                                <option value="46">Sign Lab Results (write,addonly optional)</option>
+                                                                <option value="43">Transactions (write optional)</option>
+                                                                <optgroup label="Sensitivities"></optgroup>
+                                                                <option value="48">High</option>
+                                                                <option value="47">Normal</option>
+                                                                <optgroup label="Nation Notes"></optgroup>
+                                                                <option value="50">Nation Notes Configure</option>
+                                                                <optgroup label="Menus"></optgroup>
+                                                                <option value="51">Modules</option>
+                                                                <optgroup label="Groups"></optgroup>
+                                                                <option value="59">View/Add/Update groups</option>
+                                                                <option value="60">View/Create/Update groups appointment in calendar</option>
+                                                                <option value="62">Group detailed log of appointment in patient record</option>
+                                                                <option value="61">Group encounter log</option>
+                                                                <option value="63">Send message from the permanent group therapist to the personal therapist</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapsefour">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse4">
                                             Accounting-write
                                         </a>
                                         </div>
-                                        <div id="collapsefour" class="collapse" data-parent="#accordion">
-                                            <div class="card-body"></div>
+                                        <div id="collapse4" class="collapse" data-parent="#accordion2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Active</label>
+                                                            <fieldset class="form-group">
+                                                                <select name="active[]" size="5" multiple="" class="form-control">
+                                                                    <optgroup label="Patients"></optgroup>
+                                                                    <option value="53">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                                                    <option value="67">Patient Report</option><optgroup label="Placeholder"></optgroup>
+                                                                    <option value="49">Placeholder (Maintains empty ACLs)</option>
+                                                                </select>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Inactive</label>
+                                                            <select name="inactive[]" size="6" multiple="" class="form-control">
+                                                                <optgroup label="Accounting"></optgroup>
+                                                                <option value="10">Billing (write optional)</option>
+                                                                <option value="11">Price Discounting</option>
+                                                                <option value="12">EOB Data Entry</option>
+                                                                <option value="13">Financial Reporting - my encounters</option>
+                                                                <option value="14">Financial Reporting - anything</option>
+                                                                <optgroup label="Administration"></optgroup>
+                                                                <option value="25">ACL Administration</option>
+                                                                <option value="22">Batch Communication Tool</option>
+                                                                <option value="16">Calendar Settings</option>
+                                                                <option value="17">Database Reporting</option>
+                                                                <option value="24">Pharmacy Dispensary</option>
+                                                                <option value="18">Forms Administration</option>
+                                                                <option value="23">Language Interface Tool</option>
+                                                                <option value="65">Manage modules</option>
+                                                                <option value="64">Menu</option>
+                                                                <option value="58">Multipledb</option>
+                                                                <option value="19">Practice Settings</option>
+                                                                <option value="15">Superuser</option>
+                                                                <option value="20">Superbill Codes Administration</option>
+                                                                <option value="21">Users/Groups/Logs Administration</option>
+                                                                <optgroup label="Encounters"></optgroup>
+                                                                <option value="26">Authorize - my encounters</option>
+                                                                <option value="27">Authorize - any encounters</option>
+                                                                <option value="28">Coding - my encounters (write,wsome optional)</option>
+                                                                <option value="29">Coding - any encounters (write,wsome optional)</option>
+                                                                <option value="32">Fix encounter dates - any encounters</option>
+                                                                <option value="30">Notes - my encounters (write,addonly optional)</option>
+                                                                <option value="31">Notes - any encounters (write,addonly optional)</option>
+                                                                <option value="33">Less-private information (write,addonly optional)</option>
+                                                                <optgroup label="Lists"></optgroup>
+                                                                <option value="36">Country List (write,addonly optional)</option>
+                                                                <option value="34">Default List (write,addonly optional)</option>
+                                                                <option value="38">Ethnicity-Race List (write,addonly optional)</option>
+                                                                <option value="37">Language List (write,addonly optional)</option>
+                                                                <option value="35">State List (write,addonly optional)</option>
+                                                                <optgroup label="Patient Portal"></optgroup>
+                                                                <option value="39">Patient Portal</option>
+                                                                <optgroup label="Patients"></optgroup>
+                                                                <option value="56">Amendments (write,addonly optional)</option>
+                                                                <option value="40">Appointments (write,wsome optional)</option>
+                                                                <option value="41">Demographics (write,addonly optional)</option>
+                                                                <option value="54">Disclosures (write,addonly optional)</option>
+                                                                <option value="44">Documents (write,addonly optional)</option>
+                                                                <option value="66">Documents Delete</option>
+                                                                <option value="57">Lab Results (write,addonly optional)</option>
+                                                                <option value="42">Medical/History (write,addonly optional)</option>
+                                                                <option value="45">Patient Notes (write,addonly optional)</option>
+                                                                <option value="52">Patient Reminders (write,addonly optional)</option>
+                                                                <option value="55">Prescriptions (write,addonly optional)</option>
+                                                                <option value="46">Sign Lab Results (write,addonly optional)</option>
+                                                                <option value="43">Transactions (write optional)</option>
+                                                                <optgroup label="Sensitivities"></optgroup>
+                                                                <option value="48">High</option>
+                                                                <option value="47">Normal</option>
+                                                                <optgroup label="Nation Notes"></optgroup>
+                                                                <option value="50">Nation Notes Configure</option>
+                                                                <optgroup label="Menus"></optgroup>
+                                                                <option value="51">Modules</option>
+                                                                <optgroup label="Groups"></optgroup>
+                                                                <option value="59">View/Add/Update groups</option>
+                                                                <option value="60">View/Create/Update groups appointment in calendar</option>
+                                                                <option value="62">Group detailed log of appointment in patient record</option>
+                                                                <option value="61">Group encounter log</option>
+                                                                <option value="63">Send message from the permanent group therapist to the personal therapist</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapsefive">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse5">
                                             Administrators-write
                                         </a>
                                         </div>
-                                        <div id="collapsefive" class="collapse" data-parent="#accordion">
-                                            <div class="card-body"></div>
+                                        <div id="collapse5" class="collapse" data-parent="#accordion2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Active</label>
+                                                            <fieldset class="form-group">
+                                                                <select name="active[]" size="5" multiple="" class="form-control">
+                                                                    <optgroup label="Patients"></optgroup>
+                                                                    <option value="53">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                                                    <option value="67">Patient Report</option><optgroup label="Placeholder"></optgroup>
+                                                                    <option value="49">Placeholder (Maintains empty ACLs)</option>
+                                                                </select>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Inactive</label>
+                                                            <select name="inactive[]" size="6" multiple="" class="form-control">
+                                                                <optgroup label="Accounting"></optgroup>
+                                                                <option value="10">Billing (write optional)</option>
+                                                                <option value="11">Price Discounting</option>
+                                                                <option value="12">EOB Data Entry</option>
+                                                                <option value="13">Financial Reporting - my encounters</option>
+                                                                <option value="14">Financial Reporting - anything</option>
+                                                                <optgroup label="Administration"></optgroup>
+                                                                <option value="25">ACL Administration</option>
+                                                                <option value="22">Batch Communication Tool</option>
+                                                                <option value="16">Calendar Settings</option>
+                                                                <option value="17">Database Reporting</option>
+                                                                <option value="24">Pharmacy Dispensary</option>
+                                                                <option value="18">Forms Administration</option>
+                                                                <option value="23">Language Interface Tool</option>
+                                                                <option value="65">Manage modules</option>
+                                                                <option value="64">Menu</option>
+                                                                <option value="58">Multipledb</option>
+                                                                <option value="19">Practice Settings</option>
+                                                                <option value="15">Superuser</option>
+                                                                <option value="20">Superbill Codes Administration</option>
+                                                                <option value="21">Users/Groups/Logs Administration</option>
+                                                                <optgroup label="Encounters"></optgroup>
+                                                                <option value="26">Authorize - my encounters</option>
+                                                                <option value="27">Authorize - any encounters</option>
+                                                                <option value="28">Coding - my encounters (write,wsome optional)</option>
+                                                                <option value="29">Coding - any encounters (write,wsome optional)</option>
+                                                                <option value="32">Fix encounter dates - any encounters</option>
+                                                                <option value="30">Notes - my encounters (write,addonly optional)</option>
+                                                                <option value="31">Notes - any encounters (write,addonly optional)</option>
+                                                                <option value="33">Less-private information (write,addonly optional)</option>
+                                                                <optgroup label="Lists"></optgroup>
+                                                                <option value="36">Country List (write,addonly optional)</option>
+                                                                <option value="34">Default List (write,addonly optional)</option>
+                                                                <option value="38">Ethnicity-Race List (write,addonly optional)</option>
+                                                                <option value="37">Language List (write,addonly optional)</option>
+                                                                <option value="35">State List (write,addonly optional)</option>
+                                                                <optgroup label="Patient Portal"></optgroup>
+                                                                <option value="39">Patient Portal</option>
+                                                                <optgroup label="Patients"></optgroup>
+                                                                <option value="56">Amendments (write,addonly optional)</option>
+                                                                <option value="40">Appointments (write,wsome optional)</option>
+                                                                <option value="41">Demographics (write,addonly optional)</option>
+                                                                <option value="54">Disclosures (write,addonly optional)</option>
+                                                                <option value="44">Documents (write,addonly optional)</option>
+                                                                <option value="66">Documents Delete</option>
+                                                                <option value="57">Lab Results (write,addonly optional)</option>
+                                                                <option value="42">Medical/History (write,addonly optional)</option>
+                                                                <option value="45">Patient Notes (write,addonly optional)</option>
+                                                                <option value="52">Patient Reminders (write,addonly optional)</option>
+                                                                <option value="55">Prescriptions (write,addonly optional)</option>
+                                                                <option value="46">Sign Lab Results (write,addonly optional)</option>
+                                                                <option value="43">Transactions (write optional)</option>
+                                                                <optgroup label="Sensitivities"></optgroup>
+                                                                <option value="48">High</option>
+                                                                <option value="47">Normal</option>
+                                                                <optgroup label="Nation Notes"></optgroup>
+                                                                <option value="50">Nation Notes Configure</option>
+                                                                <optgroup label="Menus"></optgroup>
+                                                                <option value="51">Modules</option>
+                                                                <optgroup label="Groups"></optgroup>
+                                                                <option value="59">View/Add/Update groups</option>
+                                                                <option value="60">View/Create/Update groups appointment in calendar</option>
+                                                                <option value="62">Group detailed log of appointment in patient record</option>
+                                                                <option value="61">Group encounter log</option>
+                                                                <option value="63">Send message from the permanent group therapist to the personal therapist</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapsesix">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse6">
                                             Clinicians-view
                                         </a>
                                         </div>
-                                        <div id="collapsesix" class="collapse" data-parent="#accordion">
-                                            <div class="card-body"></div>
+                                        <div id="collapse6" class="collapse" data-parent="#accordion2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Active</label>
+                                                            <fieldset class="form-group">
+                                                                <select name="active[]" size="5" multiple="" class="form-control">
+                                                                    <optgroup label="Patients"></optgroup>
+                                                                    <option value="53">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                                                    <option value="67">Patient Report</option><optgroup label="Placeholder"></optgroup>
+                                                                    <option value="49">Placeholder (Maintains empty ACLs)</option>
+                                                                </select>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Inactive</label>
+                                                            <select name="inactive[]" size="6" multiple="" class="form-control">
+                                                                <optgroup label="Accounting"></optgroup>
+                                                                <option value="10">Billing (write optional)</option>
+                                                                <option value="11">Price Discounting</option>
+                                                                <option value="12">EOB Data Entry</option>
+                                                                <option value="13">Financial Reporting - my encounters</option>
+                                                                <option value="14">Financial Reporting - anything</option>
+                                                                <optgroup label="Administration"></optgroup>
+                                                                <option value="25">ACL Administration</option>
+                                                                <option value="22">Batch Communication Tool</option>
+                                                                <option value="16">Calendar Settings</option>
+                                                                <option value="17">Database Reporting</option>
+                                                                <option value="24">Pharmacy Dispensary</option>
+                                                                <option value="18">Forms Administration</option>
+                                                                <option value="23">Language Interface Tool</option>
+                                                                <option value="65">Manage modules</option>
+                                                                <option value="64">Menu</option>
+                                                                <option value="58">Multipledb</option>
+                                                                <option value="19">Practice Settings</option>
+                                                                <option value="15">Superuser</option>
+                                                                <option value="20">Superbill Codes Administration</option>
+                                                                <option value="21">Users/Groups/Logs Administration</option>
+                                                                <optgroup label="Encounters"></optgroup>
+                                                                <option value="26">Authorize - my encounters</option>
+                                                                <option value="27">Authorize - any encounters</option>
+                                                                <option value="28">Coding - my encounters (write,wsome optional)</option>
+                                                                <option value="29">Coding - any encounters (write,wsome optional)</option>
+                                                                <option value="32">Fix encounter dates - any encounters</option>
+                                                                <option value="30">Notes - my encounters (write,addonly optional)</option>
+                                                                <option value="31">Notes - any encounters (write,addonly optional)</option>
+                                                                <option value="33">Less-private information (write,addonly optional)</option>
+                                                                <optgroup label="Lists"></optgroup>
+                                                                <option value="36">Country List (write,addonly optional)</option>
+                                                                <option value="34">Default List (write,addonly optional)</option>
+                                                                <option value="38">Ethnicity-Race List (write,addonly optional)</option>
+                                                                <option value="37">Language List (write,addonly optional)</option>
+                                                                <option value="35">State List (write,addonly optional)</option>
+                                                                <optgroup label="Patient Portal"></optgroup>
+                                                                <option value="39">Patient Portal</option>
+                                                                <optgroup label="Patients"></optgroup>
+                                                                <option value="56">Amendments (write,addonly optional)</option>
+                                                                <option value="40">Appointments (write,wsome optional)</option>
+                                                                <option value="41">Demographics (write,addonly optional)</option>
+                                                                <option value="54">Disclosures (write,addonly optional)</option>
+                                                                <option value="44">Documents (write,addonly optional)</option>
+                                                                <option value="66">Documents Delete</option>
+                                                                <option value="57">Lab Results (write,addonly optional)</option>
+                                                                <option value="42">Medical/History (write,addonly optional)</option>
+                                                                <option value="45">Patient Notes (write,addonly optional)</option>
+                                                                <option value="52">Patient Reminders (write,addonly optional)</option>
+                                                                <option value="55">Prescriptions (write,addonly optional)</option>
+                                                                <option value="46">Sign Lab Results (write,addonly optional)</option>
+                                                                <option value="43">Transactions (write optional)</option>
+                                                                <optgroup label="Sensitivities"></optgroup>
+                                                                <option value="48">High</option>
+                                                                <option value="47">Normal</option>
+                                                                <optgroup label="Nation Notes"></optgroup>
+                                                                <option value="50">Nation Notes Configure</option>
+                                                                <optgroup label="Menus"></optgroup>
+                                                                <option value="51">Modules</option>
+                                                                <optgroup label="Groups"></optgroup>
+                                                                <option value="59">View/Add/Update groups</option>
+                                                                <option value="60">View/Create/Update groups appointment in calendar</option>
+                                                                <option value="62">Group detailed log of appointment in patient record</option>
+                                                                <option value="61">Group encounter log</option>
+                                                                <option value="63">Send message from the permanent group therapist to the personal therapist</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapsesix">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse7">
                                             Clinicians-addonly
                                         </a>
                                         </div>
-                                        <div id="collapsesix" class="collapse" data-parent="#accordion">
-                                            <div class="card-body"></div>
+                                        <div id="collapse7" class="collapse" data-parent="#accordion2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Active</label>
+                                                            <fieldset class="form-group">
+                                                                <select name="active[]" size="5" multiple="" class="form-control">
+                                                                    <optgroup label="Patients"></optgroup>
+                                                                    <option value="53">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                                                    <option value="67">Patient Report</option><optgroup label="Placeholder"></optgroup>
+                                                                    <option value="49">Placeholder (Maintains empty ACLs)</option>
+                                                                </select>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Inactive</label>
+                                                            <select name="inactive[]" size="6" multiple="" class="form-control">
+                                                                <optgroup label="Accounting"></optgroup>
+                                                                <option value="10">Billing (write optional)</option>
+                                                                <option value="11">Price Discounting</option>
+                                                                <option value="12">EOB Data Entry</option>
+                                                                <option value="13">Financial Reporting - my encounters</option>
+                                                                <option value="14">Financial Reporting - anything</option>
+                                                                <optgroup label="Administration"></optgroup>
+                                                                <option value="25">ACL Administration</option>
+                                                                <option value="22">Batch Communication Tool</option>
+                                                                <option value="16">Calendar Settings</option>
+                                                                <option value="17">Database Reporting</option>
+                                                                <option value="24">Pharmacy Dispensary</option>
+                                                                <option value="18">Forms Administration</option>
+                                                                <option value="23">Language Interface Tool</option>
+                                                                <option value="65">Manage modules</option>
+                                                                <option value="64">Menu</option>
+                                                                <option value="58">Multipledb</option>
+                                                                <option value="19">Practice Settings</option>
+                                                                <option value="15">Superuser</option>
+                                                                <option value="20">Superbill Codes Administration</option>
+                                                                <option value="21">Users/Groups/Logs Administration</option>
+                                                                <optgroup label="Encounters"></optgroup>
+                                                                <option value="26">Authorize - my encounters</option>
+                                                                <option value="27">Authorize - any encounters</option>
+                                                                <option value="28">Coding - my encounters (write,wsome optional)</option>
+                                                                <option value="29">Coding - any encounters (write,wsome optional)</option>
+                                                                <option value="32">Fix encounter dates - any encounters</option>
+                                                                <option value="30">Notes - my encounters (write,addonly optional)</option>
+                                                                <option value="31">Notes - any encounters (write,addonly optional)</option>
+                                                                <option value="33">Less-private information (write,addonly optional)</option>
+                                                                <optgroup label="Lists"></optgroup>
+                                                                <option value="36">Country List (write,addonly optional)</option>
+                                                                <option value="34">Default List (write,addonly optional)</option>
+                                                                <option value="38">Ethnicity-Race List (write,addonly optional)</option>
+                                                                <option value="37">Language List (write,addonly optional)</option>
+                                                                <option value="35">State List (write,addonly optional)</option>
+                                                                <optgroup label="Patient Portal"></optgroup>
+                                                                <option value="39">Patient Portal</option>
+                                                                <optgroup label="Patients"></optgroup>
+                                                                <option value="56">Amendments (write,addonly optional)</option>
+                                                                <option value="40">Appointments (write,wsome optional)</option>
+                                                                <option value="41">Demographics (write,addonly optional)</option>
+                                                                <option value="54">Disclosures (write,addonly optional)</option>
+                                                                <option value="44">Documents (write,addonly optional)</option>
+                                                                <option value="66">Documents Delete</option>
+                                                                <option value="57">Lab Results (write,addonly optional)</option>
+                                                                <option value="42">Medical/History (write,addonly optional)</option>
+                                                                <option value="45">Patient Notes (write,addonly optional)</option>
+                                                                <option value="52">Patient Reminders (write,addonly optional)</option>
+                                                                <option value="55">Prescriptions (write,addonly optional)</option>
+                                                                <option value="46">Sign Lab Results (write,addonly optional)</option>
+                                                                <option value="43">Transactions (write optional)</option>
+                                                                <optgroup label="Sensitivities"></optgroup>
+                                                                <option value="48">High</option>
+                                                                <option value="47">Normal</option>
+                                                                <optgroup label="Nation Notes"></optgroup>
+                                                                <option value="50">Nation Notes Configure</option>
+                                                                <optgroup label="Menus"></optgroup>
+                                                                <option value="51">Modules</option>
+                                                                <optgroup label="Groups"></optgroup>
+                                                                <option value="59">View/Add/Update groups</option>
+                                                                <option value="60">View/Create/Update groups appointment in calendar</option>
+                                                                <option value="62">Group detailed log of appointment in patient record</option>
+                                                                <option value="61">Group encounter log</option>
+                                                                <option value="63">Send message from the permanent group therapist to the personal therapist</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapsesix">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse8">
                                             Clinicians-wsome
                                         </a>
                                         </div>
-                                        <div id="collapsesix" class="collapse" data-parent="#accordion">
-                                            <div class="card-body"></div>
+                                        <div id="collapse8" class="collapse" data-parent="#accordion2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Active</label>
+                                                            <fieldset class="form-group">
+                                                                <select name="active[]" size="5" multiple="" class="form-control">
+                                                                    <optgroup label="Patients"></optgroup>
+                                                                    <option value="53">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                                                    <option value="67">Patient Report</option><optgroup label="Placeholder"></optgroup>
+                                                                    <option value="49">Placeholder (Maintains empty ACLs)</option>
+                                                                </select>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Inactive</label>
+                                                            <select name="inactive[]" size="6" multiple="" class="form-control">
+                                                                <optgroup label="Accounting"></optgroup>
+                                                                <option value="10">Billing (write optional)</option>
+                                                                <option value="11">Price Discounting</option>
+                                                                <option value="12">EOB Data Entry</option>
+                                                                <option value="13">Financial Reporting - my encounters</option>
+                                                                <option value="14">Financial Reporting - anything</option>
+                                                                <optgroup label="Administration"></optgroup>
+                                                                <option value="25">ACL Administration</option>
+                                                                <option value="22">Batch Communication Tool</option>
+                                                                <option value="16">Calendar Settings</option>
+                                                                <option value="17">Database Reporting</option>
+                                                                <option value="24">Pharmacy Dispensary</option>
+                                                                <option value="18">Forms Administration</option>
+                                                                <option value="23">Language Interface Tool</option>
+                                                                <option value="65">Manage modules</option>
+                                                                <option value="64">Menu</option>
+                                                                <option value="58">Multipledb</option>
+                                                                <option value="19">Practice Settings</option>
+                                                                <option value="15">Superuser</option>
+                                                                <option value="20">Superbill Codes Administration</option>
+                                                                <option value="21">Users/Groups/Logs Administration</option>
+                                                                <optgroup label="Encounters"></optgroup>
+                                                                <option value="26">Authorize - my encounters</option>
+                                                                <option value="27">Authorize - any encounters</option>
+                                                                <option value="28">Coding - my encounters (write,wsome optional)</option>
+                                                                <option value="29">Coding - any encounters (write,wsome optional)</option>
+                                                                <option value="32">Fix encounter dates - any encounters</option>
+                                                                <option value="30">Notes - my encounters (write,addonly optional)</option>
+                                                                <option value="31">Notes - any encounters (write,addonly optional)</option>
+                                                                <option value="33">Less-private information (write,addonly optional)</option>
+                                                                <optgroup label="Lists"></optgroup>
+                                                                <option value="36">Country List (write,addonly optional)</option>
+                                                                <option value="34">Default List (write,addonly optional)</option>
+                                                                <option value="38">Ethnicity-Race List (write,addonly optional)</option>
+                                                                <option value="37">Language List (write,addonly optional)</option>
+                                                                <option value="35">State List (write,addonly optional)</option>
+                                                                <optgroup label="Patient Portal"></optgroup>
+                                                                <option value="39">Patient Portal</option>
+                                                                <optgroup label="Patients"></optgroup>
+                                                                <option value="56">Amendments (write,addonly optional)</option>
+                                                                <option value="40">Appointments (write,wsome optional)</option>
+                                                                <option value="41">Demographics (write,addonly optional)</option>
+                                                                <option value="54">Disclosures (write,addonly optional)</option>
+                                                                <option value="44">Documents (write,addonly optional)</option>
+                                                                <option value="66">Documents Delete</option>
+                                                                <option value="57">Lab Results (write,addonly optional)</option>
+                                                                <option value="42">Medical/History (write,addonly optional)</option>
+                                                                <option value="45">Patient Notes (write,addonly optional)</option>
+                                                                <option value="52">Patient Reminders (write,addonly optional)</option>
+                                                                <option value="55">Prescriptions (write,addonly optional)</option>
+                                                                <option value="46">Sign Lab Results (write,addonly optional)</option>
+                                                                <option value="43">Transactions (write optional)</option>
+                                                                <optgroup label="Sensitivities"></optgroup>
+                                                                <option value="48">High</option>
+                                                                <option value="47">Normal</option>
+                                                                <optgroup label="Nation Notes"></optgroup>
+                                                                <option value="50">Nation Notes Configure</option>
+                                                                <optgroup label="Menus"></optgroup>
+                                                                <option value="51">Modules</option>
+                                                                <optgroup label="Groups"></optgroup>
+                                                                <option value="59">View/Add/Update groups</option>
+                                                                <option value="60">View/Create/Update groups appointment in calendar</option>
+                                                                <option value="62">Group detailed log of appointment in patient record</option>
+                                                                <option value="61">Group encounter log</option>
+                                                                <option value="63">Send message from the permanent group therapist to the personal therapist</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapsesix">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse9">
                                             Clinicians-write
                                         </a>
                                         </div>
-                                        <div id="collapsesix" class="collapse" data-parent="#accordion">
-                                            <div class="card-body"></div>
+                                        <div id="collapse9" class="collapse" data-parent="#accordion2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Active</label>
+                                                            <fieldset class="form-group">
+                                                                <select name="active[]" size="5" multiple="" class="form-control">
+                                                                    <optgroup label="Patients"></optgroup>
+                                                                    <option value="53">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                                                    <option value="67">Patient Report</option><optgroup label="Placeholder"></optgroup>
+                                                                    <option value="49">Placeholder (Maintains empty ACLs)</option>
+                                                                </select>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Inactive</label>
+                                                            <select name="inactive[]" size="6" multiple="" class="form-control">
+                                                                <optgroup label="Accounting"></optgroup>
+                                                                <option value="10">Billing (write optional)</option>
+                                                                <option value="11">Price Discounting</option>
+                                                                <option value="12">EOB Data Entry</option>
+                                                                <option value="13">Financial Reporting - my encounters</option>
+                                                                <option value="14">Financial Reporting - anything</option>
+                                                                <optgroup label="Administration"></optgroup>
+                                                                <option value="25">ACL Administration</option>
+                                                                <option value="22">Batch Communication Tool</option>
+                                                                <option value="16">Calendar Settings</option>
+                                                                <option value="17">Database Reporting</option>
+                                                                <option value="24">Pharmacy Dispensary</option>
+                                                                <option value="18">Forms Administration</option>
+                                                                <option value="23">Language Interface Tool</option>
+                                                                <option value="65">Manage modules</option>
+                                                                <option value="64">Menu</option>
+                                                                <option value="58">Multipledb</option>
+                                                                <option value="19">Practice Settings</option>
+                                                                <option value="15">Superuser</option>
+                                                                <option value="20">Superbill Codes Administration</option>
+                                                                <option value="21">Users/Groups/Logs Administration</option>
+                                                                <optgroup label="Encounters"></optgroup>
+                                                                <option value="26">Authorize - my encounters</option>
+                                                                <option value="27">Authorize - any encounters</option>
+                                                                <option value="28">Coding - my encounters (write,wsome optional)</option>
+                                                                <option value="29">Coding - any encounters (write,wsome optional)</option>
+                                                                <option value="32">Fix encounter dates - any encounters</option>
+                                                                <option value="30">Notes - my encounters (write,addonly optional)</option>
+                                                                <option value="31">Notes - any encounters (write,addonly optional)</option>
+                                                                <option value="33">Less-private information (write,addonly optional)</option>
+                                                                <optgroup label="Lists"></optgroup>
+                                                                <option value="36">Country List (write,addonly optional)</option>
+                                                                <option value="34">Default List (write,addonly optional)</option>
+                                                                <option value="38">Ethnicity-Race List (write,addonly optional)</option>
+                                                                <option value="37">Language List (write,addonly optional)</option>
+                                                                <option value="35">State List (write,addonly optional)</option>
+                                                                <optgroup label="Patient Portal"></optgroup>
+                                                                <option value="39">Patient Portal</option>
+                                                                <optgroup label="Patients"></optgroup>
+                                                                <option value="56">Amendments (write,addonly optional)</option>
+                                                                <option value="40">Appointments (write,wsome optional)</option>
+                                                                <option value="41">Demographics (write,addonly optional)</option>
+                                                                <option value="54">Disclosures (write,addonly optional)</option>
+                                                                <option value="44">Documents (write,addonly optional)</option>
+                                                                <option value="66">Documents Delete</option>
+                                                                <option value="57">Lab Results (write,addonly optional)</option>
+                                                                <option value="42">Medical/History (write,addonly optional)</option>
+                                                                <option value="45">Patient Notes (write,addonly optional)</option>
+                                                                <option value="52">Patient Reminders (write,addonly optional)</option>
+                                                                <option value="55">Prescriptions (write,addonly optional)</option>
+                                                                <option value="46">Sign Lab Results (write,addonly optional)</option>
+                                                                <option value="43">Transactions (write optional)</option>
+                                                                <optgroup label="Sensitivities"></optgroup>
+                                                                <option value="48">High</option>
+                                                                <option value="47">Normal</option>
+                                                                <optgroup label="Nation Notes"></optgroup>
+                                                                <option value="50">Nation Notes Configure</option>
+                                                                <optgroup label="Menus"></optgroup>
+                                                                <option value="51">Modules</option>
+                                                                <optgroup label="Groups"></optgroup>
+                                                                <option value="59">View/Add/Update groups</option>
+                                                                <option value="60">View/Create/Update groups appointment in calendar</option>
+                                                                <option value="62">Group detailed log of appointment in patient record</option>
+                                                                <option value="61">Group encounter log</option>
+                                                                <option value="63">Send message from the permanent group therapist to the personal therapist</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapsesix">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse10">
                                             Emergency Login-write
                                         </a>
                                         </div>
-                                        <div id="collapsesix" class="collapse" data-parent="#accordion">
-                                            <div class="card-body"></div>
+                                        <div id="collapse10" class="collapse" data-parent="#accordion2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Active</label>
+                                                            <fieldset class="form-group">
+                                                                <select name="active[]" size="5" multiple="" class="form-control">
+                                                                    <optgroup label="Patients"></optgroup>
+                                                                    <option value="53">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                                                    <option value="67">Patient Report</option><optgroup label="Placeholder"></optgroup>
+                                                                    <option value="49">Placeholder (Maintains empty ACLs)</option>
+                                                                </select>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Inactive</label>
+                                                            <select name="inactive[]" size="6" multiple="" class="form-control">
+                                                                <optgroup label="Accounting"></optgroup>
+                                                                <option value="10">Billing (write optional)</option>
+                                                                <option value="11">Price Discounting</option>
+                                                                <option value="12">EOB Data Entry</option>
+                                                                <option value="13">Financial Reporting - my encounters</option>
+                                                                <option value="14">Financial Reporting - anything</option>
+                                                                <optgroup label="Administration"></optgroup>
+                                                                <option value="25">ACL Administration</option>
+                                                                <option value="22">Batch Communication Tool</option>
+                                                                <option value="16">Calendar Settings</option>
+                                                                <option value="17">Database Reporting</option>
+                                                                <option value="24">Pharmacy Dispensary</option>
+                                                                <option value="18">Forms Administration</option>
+                                                                <option value="23">Language Interface Tool</option>
+                                                                <option value="65">Manage modules</option>
+                                                                <option value="64">Menu</option>
+                                                                <option value="58">Multipledb</option>
+                                                                <option value="19">Practice Settings</option>
+                                                                <option value="15">Superuser</option>
+                                                                <option value="20">Superbill Codes Administration</option>
+                                                                <option value="21">Users/Groups/Logs Administration</option>
+                                                                <optgroup label="Encounters"></optgroup>
+                                                                <option value="26">Authorize - my encounters</option>
+                                                                <option value="27">Authorize - any encounters</option>
+                                                                <option value="28">Coding - my encounters (write,wsome optional)</option>
+                                                                <option value="29">Coding - any encounters (write,wsome optional)</option>
+                                                                <option value="32">Fix encounter dates - any encounters</option>
+                                                                <option value="30">Notes - my encounters (write,addonly optional)</option>
+                                                                <option value="31">Notes - any encounters (write,addonly optional)</option>
+                                                                <option value="33">Less-private information (write,addonly optional)</option>
+                                                                <optgroup label="Lists"></optgroup>
+                                                                <option value="36">Country List (write,addonly optional)</option>
+                                                                <option value="34">Default List (write,addonly optional)</option>
+                                                                <option value="38">Ethnicity-Race List (write,addonly optional)</option>
+                                                                <option value="37">Language List (write,addonly optional)</option>
+                                                                <option value="35">State List (write,addonly optional)</option>
+                                                                <optgroup label="Patient Portal"></optgroup>
+                                                                <option value="39">Patient Portal</option>
+                                                                <optgroup label="Patients"></optgroup>
+                                                                <option value="56">Amendments (write,addonly optional)</option>
+                                                                <option value="40">Appointments (write,wsome optional)</option>
+                                                                <option value="41">Demographics (write,addonly optional)</option>
+                                                                <option value="54">Disclosures (write,addonly optional)</option>
+                                                                <option value="44">Documents (write,addonly optional)</option>
+                                                                <option value="66">Documents Delete</option>
+                                                                <option value="57">Lab Results (write,addonly optional)</option>
+                                                                <option value="42">Medical/History (write,addonly optional)</option>
+                                                                <option value="45">Patient Notes (write,addonly optional)</option>
+                                                                <option value="52">Patient Reminders (write,addonly optional)</option>
+                                                                <option value="55">Prescriptions (write,addonly optional)</option>
+                                                                <option value="46">Sign Lab Results (write,addonly optional)</option>
+                                                                <option value="43">Transactions (write optional)</option>
+                                                                <optgroup label="Sensitivities"></optgroup>
+                                                                <option value="48">High</option>
+                                                                <option value="47">Normal</option>
+                                                                <optgroup label="Nation Notes"></optgroup>
+                                                                <option value="50">Nation Notes Configure</option>
+                                                                <optgroup label="Menus"></optgroup>
+                                                                <option value="51">Modules</option>
+                                                                <optgroup label="Groups"></optgroup>
+                                                                <option value="59">View/Add/Update groups</option>
+                                                                <option value="60">View/Create/Update groups appointment in calendar</option>
+                                                                <option value="62">Group detailed log of appointment in patient record</option>
+                                                                <option value="61">Group encounter log</option>
+                                                                <option value="63">Send message from the permanent group therapist to the personal therapist</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapsesix">
-                                            Emergency Login-write
-                                        </a>
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapse11">Front Office-addonly</a>
                                         </div>
-                                        <div id="collapsesix" class="collapse" data-parent="#accordion">
-                                            <div class="card-body"></div>
+                                        <div id="collapse11" class="collapse" data-parent="#accordion2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Active</label>
+                                                            <fieldset class="form-group">
+                                                                <select name="active[]" size="5" multiple="" class="form-control">
+                                                                    <optgroup label="Patients"></optgroup>
+                                                                    <option value="53">Clinical Reminders/Alerts (write,addonly optional)</option>
+                                                                    <option value="67">Patient Report</option><optgroup label="Placeholder"></optgroup>
+                                                                    <option value="49">Placeholder (Maintains empty ACLs)</option>
+                                                                </select>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="accountant">
+                                                            <label>Inactive</label>
+                                                            <select name="inactive[]" size="6" multiple="" class="form-control">
+                                                                <optgroup label="Accounting"></optgroup>
+                                                                <option value="10">Billing (write optional)</option>
+                                                                <option value="11">Price Discounting</option>
+                                                                <option value="12">EOB Data Entry</option>
+                                                                <option value="13">Financial Reporting - my encounters</option>
+                                                                <option value="14">Financial Reporting - anything</option>
+                                                                <optgroup label="Administration"></optgroup>
+                                                                <option value="25">ACL Administration</option>
+                                                                <option value="22">Batch Communication Tool</option>
+                                                                <option value="16">Calendar Settings</option>
+                                                                <option value="17">Database Reporting</option>
+                                                                <option value="24">Pharmacy Dispensary</option>
+                                                                <option value="18">Forms Administration</option>
+                                                                <option value="23">Language Interface Tool</option>
+                                                                <option value="65">Manage modules</option>
+                                                                <option value="64">Menu</option>
+                                                                <option value="58">Multipledb</option>
+                                                                <option value="19">Practice Settings</option>
+                                                                <option value="15">Superuser</option>
+                                                                <option value="20">Superbill Codes Administration</option>
+                                                                <option value="21">Users/Groups/Logs Administration</option>
+                                                                <optgroup label="Encounters"></optgroup>
+                                                                <option value="26">Authorize - my encounters</option>
+                                                                <option value="27">Authorize - any encounters</option>
+                                                                <option value="28">Coding - my encounters (write,wsome optional)</option>
+                                                                <option value="29">Coding - any encounters (write,wsome optional)</option>
+                                                                <option value="32">Fix encounter dates - any encounters</option>
+                                                                <option value="30">Notes - my encounters (write,addonly optional)</option>
+                                                                <option value="31">Notes - any encounters (write,addonly optional)</option>
+                                                                <option value="33">Less-private information (write,addonly optional)</option>
+                                                                <optgroup label="Lists"></optgroup>
+                                                                <option value="36">Country List (write,addonly optional)</option>
+                                                                <option value="34">Default List (write,addonly optional)</option>
+                                                                <option value="38">Ethnicity-Race List (write,addonly optional)</option>
+                                                                <option value="37">Language List (write,addonly optional)</option>
+                                                                <option value="35">State List (write,addonly optional)</option>
+                                                                <optgroup label="Patient Portal"></optgroup>
+                                                                <option value="39">Patient Portal</option>
+                                                                <optgroup label="Patients"></optgroup>
+                                                                <option value="56">Amendments (write,addonly optional)</option>
+                                                                <option value="40">Appointments (write,wsome optional)</option>
+                                                                <option value="41">Demographics (write,addonly optional)</option>
+                                                                <option value="54">Disclosures (write,addonly optional)</option>
+                                                                <option value="44">Documents (write,addonly optional)</option>
+                                                                <option value="66">Documents Delete</option>
+                                                                <option value="57">Lab Results (write,addonly optional)</option>
+                                                                <option value="42">Medical/History (write,addonly optional)</option>
+                                                                <option value="45">Patient Notes (write,addonly optional)</option>
+                                                                <option value="52">Patient Reminders (write,addonly optional)</option>
+                                                                <option value="55">Prescriptions (write,addonly optional)</option>
+                                                                <option value="46">Sign Lab Results (write,addonly optional)</option>
+                                                                <option value="43">Transactions (write optional)</option>
+                                                                <optgroup label="Sensitivities"></optgroup>
+                                                                <option value="48">High</option>
+                                                                <option value="47">Normal</option>
+                                                                <optgroup label="Nation Notes"></optgroup>
+                                                                <option value="50">Nation Notes Configure</option>
+                                                                <optgroup label="Menus"></optgroup>
+                                                                <option value="51">Modules</option>
+                                                                <optgroup label="Groups"></optgroup>
+                                                                <option value="59">View/Add/Update groups</option>
+                                                                <option value="60">View/Create/Update groups appointment in calendar</option>
+                                                                <option value="62">Group detailed log of appointment in patient record</option>
+                                                                <option value="61">Group encounter log</option>
+                                                                <option value="63">Send message from the permanent group therapist to the personal therapist</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -763,6 +1644,61 @@
         </div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Modal Add New Provider Code  -->
+
+    <!-- The Modal -->
+    <div class="modal" id="add-group">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="ft-plus"></i>New Group Information</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row align-items-end">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Title:</label>
+                                    <input type="text" class="form-control" placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phone">Identifier(one word):</label>
+                                    <input type="text" class="form-control" placeholder="Enter Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="address">Return Value:</label>
+                                    <select class="form-control">
+                                        <option value="view">view</option>
+                                        <option value="addonly">addonly</option>
+                                        <option value="wsome">wsome</option>
+                                        <option value="write">write</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="phone">Description:</label>
+                                    <textarea class="form-control" rows="5" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-info">Add Group</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer footer-static footer-light navbar-border navbar-shadow">
         <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
